@@ -1,0 +1,2 @@
+/**handles:home**/
+$(document).ready(function(){$("#services-slider").owlCarousel({loop:!0,autoplayHoverPause:!0,margin:0,nav:!0,autoplay:!1,autoplayTimeout:3e3,smartSpeed:2500,mouseDrag:!0,touchDrag:!0,dots:!1,responsiveClass:!0,responsive:{0:{items:1,mouseDrag:!1,touchDrag:!0},500:{items:2,mouseDrag:!1,touchDrag:!0},600:{items:3,mouseDrag:!1,touchDrag:!0},800:{items:2},1e3:{items:2},1200:{items:4},1300:{items:5}}})});
