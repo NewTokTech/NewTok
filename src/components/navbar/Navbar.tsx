@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import { animated, useSpring } from "@react-spring/web";
 import Image from "next/image";
@@ -10,6 +10,7 @@ import Logo from "../logo/Logo";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
+  const [logoColorChange, setLogoColorChange] = useState(false);
 
   const handleService = () => {
     setShowServices(!showServices);
@@ -34,6 +35,28 @@ const Navbar = () => {
       : "translate(2px, 31px) rotate(0deg)",
   });
 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+      const scrollTop = window.scrollY;
+
+      // Check if the user has scrolled close to the bottom
+      if (documentHeight - scrollTop === windowHeight) {
+        setLogoColorChange(true);
+      } else {
+        setLogoColorChange(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="relative">
@@ -43,7 +66,7 @@ const Navbar = () => {
               <h1>
                 E-Commerce Development Company in Kochi, Kerala, India
                 <Link href="/">
-                  <Logo color={!isOpen ? 'black' : 'white'}/>
+                  <Logo color={!logoColorChange ? 'black' : 'white'}/>
                 </Link>
               </h1>
             </div>
@@ -51,8 +74,7 @@ const Navbar = () => {
               <div id="menu-icon-wrapper" className="menu-icon-wrapper">
                 <svg
                   className={`menu-icon ${
-                    isOpen ? "fill-primary" : ""
-                  } transition-colors ease-in-out duration-100`}
+                    isOpen ? "fill-primary" : ""} ${logoColorChange ? 'fill-white' : ''} transition-colors ease-in-out duration-1000`}
                   width="30px"
                   height="30px"
                   viewBox="0 0 44 44"

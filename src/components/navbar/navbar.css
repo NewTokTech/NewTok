@@ -25,6 +25,24 @@
   padding: 0px 50px;
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1080px) {
+  .main-menu .col-container .menu-content .menu-div {
+    width: 70%;
+  }
+  .main-menu .col-container .menu-content .contact-div {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    margin-right: calc(100% - 294px);
+  }
+  .menu-toggle {
+    padding: 35px 40px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .main_header .col-container {
     
@@ -441,7 +459,15 @@ h2.title {
     right: 60px;
   }
 }
-
+@media only screen and (min-width: 994px) and (max-width: 1024px) {
+  .main-menu .col-container .menu-content .menu-div {
+    width: 70%;
+    min-width: 1px;
+  }
+  .main-menu .col-container .menu-content .contact-div {
+    width: 30%;
+  }
+}
 @media only screen and (max-width: 993px) {
   .main-menu .col-container .menu-content .menu-div {
     min-width: 1px;
@@ -485,5 +511,73 @@ h2.title {
     font-size: 30px;
     line-height: 22px;
   }
+
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    .main-menu .col-container .menu-content .menu-div {
+      min-width: 1px;
+    }
+    .main-menu .col-container .menu-content .menu-div .menu-list li {
+      margin-bottom: 15px;
+    }
+    .main-menu .col-container .menu-content .menu-div .menu-list li a span {
+      font-size: 30px;
+    }
+    .main-menu
+      .col-container
+      .menu-content
+      .menu-div
+      .menu-list
+      li:nth-child(5)
+      a
+      span {
+      font-size: 24px;
+      line-height: 35px;
+    }
+    .main-menu
+      .col-container
+      .menu-content
+      .menu-div
+      .menu-list
+      li:nth-child(6)
+      a
+      span {
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }  
   
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+  .main-menu .col-container .menu-content .menu-div {
+    min-width: 1px;
+  }
+  .main-menu .col-container .menu-content .menu-div .menu-list li {
+    margin-bottom: 15px;
+  }
+  .main-menu .col-container .menu-content .menu-div .menu-list li a span {
+    font-size: 30px;
+  }
+  .main-menu
+    .col-container
+    .menu-content
+    .menu-div
+    .menu-list
+    li:nth-child(5)
+    a
+    span {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .main-menu
+    .col-container
+    .menu-content
+    .menu-div
+    .menu-list
+    li:nth-child(6)
+    a
+    span {
+    font-size: 24px;
+    line-height: 35px;
+  }
 }
