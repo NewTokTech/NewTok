@@ -9,8 +9,30 @@ import BannerImgone from "../../../public/svg/undraw_web_devices_re_m8sc.svg";
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const images = [{img:BannerImg,color:"bg-white",textOne:"TECHNOLOGY FOR ",textTwo:"SMART" ,textThree:"INVENTIONS",textP:"SOFTWARE APPLICATION AND PRODUCT DEVELOPMENT SERVICES"},
-  {img:BannerImgone,color:"bg-primary",textOne:"TECHNOLOGY FOR ",textTwo:"SMART" ,textThree:"INVENTIONS",textP:"SOFTWARE APPLICATION AND PRODUCT DEVELOPMENT SERVICES"}];
+  const images = [
+    {
+      img: BannerImg,
+      color: "bg-white",
+      textOne: "TECHNOLOGY FOR ",
+      textTwo: "SMART",
+      textThree: "INVENTIONS",
+      textP: "SOFTWARE APPLICATION AND PRODUCT DEVELOPMENT SERVICES0",
+      textColor: " text-secondary",
+      textColorOne: "text-secondary",
+      textColorTwo: "text-primary",
+    },
+    {
+      img: BannerImgone,
+      color: "bg-primary",
+      textOne: "TECHNOLOGY FOR ",
+      textTwo: "SMART",
+      textThree: "LIVING",
+      textP: "TURN KEY SOLUTIONS FOR HOME AND BUILDING AUTOMATION",
+      textColor: "text-white",
+      textColorOne: "text-dark",
+      textColorTwo: "text-dark",
+    },
+  ];
 
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
@@ -29,30 +51,71 @@ const Banner = () => {
   return (
     <div className="relative w-full h-screen">
       {/* Carousel wrapper */}
-      <div className="relative h-screen overflow-hidden rounded-lg ">
+      <div className="relative h-screen overflow-hidden">
         {images.map((data, index) => (
           <div
             key={index}
-            className={`${data.color} absolute w-full h-screen transform transition-transform ${
-              index === activeIndex ? "translate-x-0" : "translate-x-full"
+            className={`${
+              data.color
+            } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${
+              index === activeIndex ? "opacity-0" : "opacity-100"
             }`}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen">
-              <div className="col-span-3 p-10 flex justify-center items-center">
-                <h1 className="text-dark lg:text-[60px] font-inter font-semibold">{data.textOne} <br/> {data.textTwo} <span className="text-green-500">{data.textThree}</span>  <br/><span className="text-sm">{data.textP}</span> </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
+              <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
+                <h1 className="text-dark lg:text-[76px]  font-inter font-semibold">
+                  <span className={`${data.textColor} mt-0`}>
+                    {data.textOne}{" "}
+                  </span>
+                  <br />
+                  <span className={`${data.textColorOne} mt-0`}>
+                    {data.textTwo}
+                  </span>
+                  <span className="mr-2">{/* Add space here */}</span>
+                  <span className={`${data.textColorTwo} mt-0`}>
+                    {data.textThree}
+                  </span>
+                  <br />
+                  <span className={`${data.textColor} mt-0 lg:text-[24px]`}>
+                    {" "}
+                    {data.textP}
+                  </span>{" "}
+                </h1>
               </div>
-           
-              <div className={`col-span-2 p-4 h-screen lg:mt-10 flex justify-start items-center`}>
+
+              <div
+                className={`col-span-2 p-4 h-screen lg:mt-10 mt-0 flex justify-start items-center`}
+              >
                 <Image
                   width={10}
                   src={data.img}
                   alt={`Slide ${index + 1}`}
-                  className="object-cover lg:w-[411px] h-auto "
+                  className="object-cover lg:w-[411px] h-auto opacity-10 md:opacity-100"
                 />
+
+                <div className=" col-span-3 p-10 flex justify-center items-center absolute md:hidden ">
+                  <h1 className="text-dark lg:text-[76px] text-[22px] font-inter  font-semibold">
+                    <span className={`${data.textColor} mt-0`}>
+                      {data.textOne}{" "}
+                    </span>
+                    <br />
+                    <span className={`${data.textColorOne} mt-0`}>
+                      {data.textTwo}
+                    </span>
+                    <span className="mr-2">{/* Add space here */}</span>
+                    <span className={`${data.textColorTwo} mt-0`}>
+                      {data.textThree}
+                    </span>
+                    <br />
+                    <span className={`${data.textColor} mt-0 lg:text-[24px] text-[7px]`}>
+                      {" "}
+                      {data.textP}
+                    </span>{" "}
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-          
         ))}
       </div>
     </div>
