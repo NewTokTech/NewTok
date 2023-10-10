@@ -63,7 +63,7 @@ const Banner = () => {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
-                <h1 className="text-dark text-sm md:text-base lg:text-xl xl:text-2xl  font-inter font-semibold flex-grow">
+                <h1 className="text-dark lg:text-[76px]  font-inter font-semibold">
                   <span className={`${data.textColor} mt-0`}>
                     {data.textOne}{" "}
                   </span>
