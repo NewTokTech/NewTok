@@ -1,11 +1,11 @@
 import Banner from '@/components/baneer/Banner'
-import Navbar from '@/components/navbar/Navbar'
-import Image from 'next/image'
+import OurClients from '@/components/ourClients/OurClients'
 
 export default function Home() {
   return (
     <div>
      <Banner/>
+     <OurClients/>
     </div>
   )
 }

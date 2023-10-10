@@ -24,6 +24,15 @@ const config: Config = {
     },
     
   },
+  fontSize: {
+    'xs': '12px',
+    'sm': '14px',
+    'base': '16px',
+    'lg': '18px',
+    'xl': '20px',
+    '2xl': '24px',
+    // Add more custom font sizes as needed
+  },
   plugins: [],
 }
 export default config

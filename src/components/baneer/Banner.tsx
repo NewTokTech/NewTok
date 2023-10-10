@@ -63,7 +63,7 @@ const Banner = () => {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
-                <h1 className="text-dark lg:text-[76px]  font-inter font-semibold">
+                <h1 className="text-dark text-sm md:text-base lg:text-xl xl:text-2xl  font-inter font-semibold flex-grow">
                   <span className={`${data.textColor} mt-0`}>
                     {data.textOne}{" "}
                   </span>
@@ -90,10 +90,10 @@ const Banner = () => {
                   width={10}
                   src={data.img}
                   alt={`Slide ${index + 1}`}
-                  className="object-cover lg:w-[411px] h-auto opacity-10 md:opacity-100"
+                  className="object-cover lg:w-[411px] h-auto opacity-10 lg:opacity-100"
                 />
 
-                <div className=" col-span-3 p-10 flex justify-center items-center absolute md:hidden ">
+                <div className=" col-span-3 p-10 flex justify-center items-center absolute lg:hidden ">
                   <h1 className="text-dark lg:text-[76px] text-[22px] font-inter  font-semibold">
                     <span className={`${data.textColor} mt-0`}>
                       {data.textOne}{" "}
