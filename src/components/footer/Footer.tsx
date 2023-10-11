@@ -8,19 +8,14 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-
+import Link from "next/link";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Footer = () => {
-
   const [isVisible, setIsVisible] = useState(false);
 
-  const easeInOutCubic = (t: number): number => {
-    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
-  };
-
-  
   const toggleVisibility = () => {
-    if (window.scrollY  > 300) {
+    if (window.scrollY > 300) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
@@ -54,10 +49,9 @@ const Footer = () => {
     };
   }, []);
 
-
   return (
     <>
-      <footer className="main-footer">
+      <footer className="main-footer h-screen">
         <div className="copyright">© 2003 - 2023</div>
         <button className="go-to-top" onClick={scrollToTop}>
           scroll up
@@ -170,7 +164,7 @@ const Footer = () => {
         <ul className="social">
           <li>
             <a
-              href="https://www.facebook.com/ewokesoft/"
+              href="https://www.facebook.com/newtoksoft/"
               className="facebook"
               target="_blank"
             >
@@ -198,7 +192,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://in.pinterest.com/ewokesoft/_created/"
+              href="https://in.pinterest.com/newtoksoft/_created/"
               className="twitter"
               target="_blank"
             >
@@ -207,47 +201,200 @@ const Footer = () => {
           </li>
         </ul>
         <div className="container">
-          <div className="row col-container address">
+          <div className="row col-container address flex">
             <div className="inline col-3">
               <div className="address-div">
                 <h5 className="address-title">
-                  eWoke <span>Canada</span>
+                  Newtok <span>India</span>
                 </h5>
                 <p>
-                  Ewoke Innovative Solutions
+                  Newtok Technologies Pvt Ltd.
                   <br />
-                  1430 street, Pembina hwy,
+                  Malappuram
                   <br />
-                  Winnipeg, Canada
+                  Kerala, India
                 </p>
-                <a href="tel:+12049607672">+1 204 960 7672</a>
+                <span className="flex phone-number gap-2">
+                  <BiSolidPhoneCall />{" "}
+                  <a href="tel:+917012935874"> +91 7012935874</a>{" "}
+                </span>
               </div>
             </div>
-            <div className="inline col-3">
+            <div className="col-3 hidden lg:inline">
               <div className="address-div">
                 <h5 className="address-title">
-                  eWoke <span>Middle East</span>
+                  Newtok <span>India</span>
                 </h5>
-                <p>
-                  Mars Infotech - An associates of Ewoke <br />
-                  PO Box 158, Postal Code 133, <br />
-                  Muscat, Sultanate of Oman
+                <p >
+                  Newtok Technologies Pvt Ltd.
+                  <br />
+                  Malappuram
+                  <br />
+                  Kerala, India
                 </p>
-                <a href="tel:+96893861384">+968 93 861 384</a>
+                <span className="flex phone-number gap-2"><BiSolidPhoneCall />  <a href="tel:+917012935874"> +91 7012935874</a> </span>
               </div>
             </div>
-            <div className="inline col-3">
+            <div className="hidden lg:inline col-3">
               <div className="address-div">
                 <h5 className="address-title">
-                  eWoke
-                  <span>India</span>
+                  Newtok <span>India</span>
                 </h5>
-                <p>
-                  Ewoke Innovative Solutions Pvt. Ltd. <br />
-                  4th Floor, Monlash Business Centre, <br />
-                  Crescens Tower, Kochi - 682033
+                <p >
+                  Newtok Technologies Pvt Ltd.
+                  <br />
+                  Malappuram
+                  <br />
+                  Kerala, India
                 </p>
-                <a href="tel:+914844011448">+91 907 238 2964</a>
+                <span className="flex phone-number gap-2"><BiSolidPhoneCall />  <a href="tel:+917012935874"> +91 7012935874</a> </span>
+              </div>
+            </div>
+          </div>
+          <div className="px-4 text-white justify-between w-full lg:flex hidden">
+            <div className="it-services ">
+              <h2 className="text-primary text-xl font-bold mb-4">
+                IT SERVICES
+              </h2>
+              <div className="hidden md:block lg:flex justify-between gap-x-20">
+                {/* Left Column on Larger Screens */}
+                <div className="md:w-1/2 ">
+                  <ul className="space-y-4">
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Mobile Application Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Embedded Software Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Mac OSX Application Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Cloud-based Application Development</Link>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Right Column on Larger Screens */}
+                <div className="md:w-1/2 mt-4 md:mt-0">
+                  <ul className="space-y-4">
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Windows Application Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Cross-Platform Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Web-based Application Development</Link>
+                    </li>
+                    <li className="hover:text-primary list-item">
+                      <Link href="/">Internet of Things (IoT)</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Single Column on Smaller Screens */}
+              <div className="mt-4 md:hidden">
+                <ul className="space-y-2">
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Mobile Application Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Embedded Software Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Mac OSX Application Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Cloud-based Application Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Windows Application Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Cross-Platform Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Web-based Application Development</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">Internet of Things (IoT)</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">VoIP Development Services</Link>
+                  </li>
+                  <li className="hover:text-primary list-item">
+                    <Link href="/">E-commerce Websites and Portals</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="links-footer ">
+              <h2 className="text-primary text-xl font-bold mb-4">Links</h2>
+              <div className="mt-4 md:mt-0">
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="flex lg:hidden justify-center">
+            <div className="links-footer text-white">
+              <h2 className="text-primary text-xl font-bold mb-4">Links</h2>
+              <div className="mt-4 md:mt-0">
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -256,7 +403,7 @@ const Footer = () => {
         <div className="copyright-text absolute bottom-[15px] w-full border-t-[1px] border-[#171919] p-5">
           {/* <hr className=" h-[1.5px] bg-white w-full my-6 sm:mx-auto lg:my-8"></hr> */}
           <p className="font-xs text-white text-center hover:text-primary">
-           Newtok Technologies Pvt. Ltd. All rights reserved.
+            Newtok Technologies Pvt. Ltd. All rights reserved.
           </p>
         </div>
       </footer>
@@ -265,4 +412,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

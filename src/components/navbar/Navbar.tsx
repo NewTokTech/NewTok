@@ -6,6 +6,12 @@ import { animated, useSpring } from "@react-spring/web";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../logo/Logo";
+import {
+  RiTwitterXFill,
+  RiFacebookFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,25 +41,26 @@ const Navbar = () => {
       : "translate(2px, 31px) rotate(0deg)",
   });
 
-
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
-      const scrollTop = window.scrollY;
+      const scrollPosition = window.scrollY;
 
-      // Check if the user has scrolled close to the bottom
-      if (documentHeight - scrollTop === windowHeight) {
+      // Check if we've reached the bottom of the page
+      if (windowHeight + scrollPosition >= documentHeight) {
         setLogoColorChange(true);
       } else {
         setLogoColorChange(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
 
+    // Clean up the event listener when the component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -66,15 +73,16 @@ const Navbar = () => {
               <h1>
                 E-Commerce Development Company in Kochi, Kerala, India
                 <Link href="/">
-                  <Logo color={logoColorChange || isOpen ? 'white' : 'black'}/>
+                  <Logo color={logoColorChange || isOpen ? "white" : "black"} />
                 </Link>
               </h1>
             </div>
             <div className="menu-toggle">
               <div id="menu-icon-wrapper" className="menu-icon-wrapper">
                 <svg
-                  className={`menu-icon ${
-                    isOpen ? "fill-primary" : ""} ${logoColorChange ? 'fill-white' : ''} transition-colors ease-in-out duration-1000`}
+                  className={`menu-icon ${isOpen ? "fill-primary" : ""} ${
+                    logoColorChange ? "fill-white" : ""
+                  } transition-colors ease-in-out duration-1000`}
                   width="30px"
                   height="30px"
                   viewBox="0 0 44 44"
@@ -95,52 +103,44 @@ const Navbar = () => {
             <div className={`main-menu ${isOpen ? "open" : ""}`}>
               <div className="copyright">© 2003 - 2023</div>
               <ul className="social">
-                <li>
-                  <a
-                    href="https://www.facebook.com/ewokesoft/"
-                    className="facebook"
-                    target="_blank"
-                  >
-                    <i className="fa fa-facebook" aria-hidden="true" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/ewoke_soft/"
-                    className="instagram"
-                    target="_blank"
-                  >
-                    <i className="fa fa-instagram" aria-hidden="true" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/ewokesoft/"
-                    className="linkedin"
-                    target="_blank"
-                  >
-                    <i className="fa fa-linkedin" aria-hidden="true" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="skype:ewokesoft?call"
-                    className="skype"
-                    target="_blank"
-                  >
-                    <i className="fa fa-skype" aria-hidden="true" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://in.pinterest.com/ewokesoft/_created/"
-                    className="whatsapp"
-                    target="_blank"
-                  >
-                    <i className="fa fa-pinterest" aria-hidden="true" />
-                  </a>
-                </li>
-              </ul>
+          <li>
+            <a
+              href="https://www.facebook.com/newtoksoft/"
+              className="facebook"
+              target="_blank"
+            >
+              <RiFacebookFill />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/newtoktech"
+              className="instagram"
+              target="_blank"
+            >
+              <RiInstagramFill />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
+              className="linkedin"
+              target="_blank"
+            >
+              <RiLinkedinFill />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://in.pinterest.com/newtoksoft/_created/"
+              className="twitter"
+              target="_blank"
+            >
+              <RiTwitterXFill />
+            </a>
+          </li>
+        </ul>
               <div className="container">
                 <div className={`col-container`}>
                   <div className="menu-content">
@@ -177,8 +177,16 @@ const Navbar = () => {
                                       Digital Engineering
                                     </h2>
                                     <div className="list-service">
-                                      <p><Link href={'/'}>Enterprise Solutions</Link></p>
-                                      <p><Link href={'/'}>Application Developement</Link></p>
+                                      <p>
+                                        <Link href={"/"}>
+                                          Enterprise Solutions
+                                        </Link>
+                                      </p>
+                                      <p>
+                                        <Link href={"/"}>
+                                          Application Developement
+                                        </Link>
+                                      </p>
                                     </div>
                                   </div>
 
@@ -188,9 +196,16 @@ const Navbar = () => {
                                       AI / ML
                                     </h2>
                                     <div className="list-service">
-                                      <p><Link href={'/'}>Advanced Analytics</Link></p>
-                                      <p><Link href={'/'}>Data Visualization</Link></p>
-
+                                      <p>
+                                        <Link href={"/"}>
+                                          Advanced Analytics
+                                        </Link>
+                                      </p>
+                                      <p>
+                                        <Link href={"/"}>
+                                          Data Visualization
+                                        </Link>
+                                      </p>
                                     </div>
                                   </div>
 
@@ -200,8 +215,12 @@ const Navbar = () => {
                                       Experience
                                     </h2>
                                     <div className="list-service">
-                                      <p className="hover:text-primary"><Link href={'/'} >UI/UX</Link></p>
-                                      <p className="hover:text-primary"><Link href={'/'} >Digital Commerce</Link></p>
+                                      <p className="hover:text-primary">
+                                        <Link href={"/"}>UI/UX</Link>
+                                      </p>
+                                      <p className="hover:text-primary">
+                                        <Link href={"/"}>Digital Commerce</Link>
+                                      </p>
                                     </div>
                                   </div>
                                 </div>
@@ -231,32 +250,36 @@ const Navbar = () => {
                       </ul>
                     </div>
                     <div
-                       className={`${
-                        !showServices ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 -translate-x-4 scale-0'
-                      } transform transition-transform ease-in-out duration-300 ease-in-out duration-300 contact-div`}
+                      className={`${
+                        !showServices
+                          ? "opacity-100 translate-x-0 scale-100"
+                          : "opacity-0 -translate-x-4 scale-0"
+                      } transform transition-transform ease-in-out duration-300 contact-div`}
                     >
                       <div className="phone">
                         <h6>India</h6>
-                        <a href="tel:+919072382964">+91 907 238 2964</a>
-                        {/*<a href="tel:+919072323448">+91 907 232 3448</a>*/}
+                        <a href="tel:+917012935874">+91 701 293 5874</a>
+                       
                       </div>
-                      <div className="phone">
+                      {/* <div className="phone">
                         <h6>Canada</h6>
                         <a href="tel:+12049607672">+1 204 960 7672</a>
                       </div>
                       <div className="phone">
                         <h6>Middle East</h6>
                         <a href="tel:+96893861384">+968 93 861 384</a>
-                      </div>
+                      </div> */}
                       <div className="mail">
                         <h6>Projects</h6>
-                        <a href="mailto:mail@ewokesoft.com">
-                          mail@ewokesoft.com
+                        <a href="mailto:info@newtoktech.com">
+                          info@newtoktech.com
                         </a>
                       </div>
                       <div className="mail">
                         <h6>Career</h6>
-                        <a href="mailto:hr@ewokesoft.com">hr@ewokesoft.com</a>
+                        <a href="mailto:careers@newtoktech.com">
+                          careers@newtoktech.com
+                        </a>
                       </div>
                     </div>
                   </div>
