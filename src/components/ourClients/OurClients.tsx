@@ -17,26 +17,26 @@ const OurClients = () => {
       <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
         Our Clients
       </h1>
-      <p className="text-secondary lg:text-[18px] mt-5 text-center font-inter font-semibold">
-        We have been working with some Fortune 500+ clients
+      <p className="text-secondary lg:text-[18px]  mt-5 text-center font-inter font-semibold">
+        We have been working with  some Fortune <br className="lg:hidden block"/> 500+ clients
       </p>
       <div className=" mx-auto flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  gap-4 ">
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client8} alt="" className="w-40" />
+          <div className="bg-blue-200 p-4 flex flex-col items-center pt-12">
+            <Image src={client8} alt="" className="w-36" />
           </div>
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client5} alt="" className="w-40" />
+          <div className="bg-blue-200 p-4 flex flex-col items-center pt-16">
+            <Image src={client5} alt="" className="w-42" />
           </div>
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
+          <div className="bg-blue-200 p-4 flex flex-col items-center pt-16">
             <Image src={client7} alt="" className="w-40" />
           </div>
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client6} alt="" className="w-40" />
+            <Image src={client6} alt="" className="w-36" />
           </div>
 
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client4} alt="" className="w-40" />
+          <div className="bg-blue-200 p-4 flex flex-col items-center pt-10">
+            <Image src={client4} alt="" className="w-36" />
           </div>
 
           <div className="bg-blue-200 p-4 flex flex-col items-center">

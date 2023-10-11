@@ -12,7 +12,7 @@ function Service() {
       Service
       </h1>
       <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-inter font-semibold">
-        We have been working with some Fortune 500+ clients
+      We have been working with  some Fortune <br className="lg:hidden block"/> 500+ clients
       </p>
       <div className=" mx-auto flex justify-center mt-5 ">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
@@ -25,10 +25,10 @@ function Service() {
                 src={icon}
                 alt="Bonnie image"
               />
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                <span className="ms-8 text-secondary"> DIGITAL</span>
+            <h5 className="mb-1  text-xl font-medium text-gray-900 dark:text-white ">
+                <span className="ms-14 text-secondary text-[36px]"> DIGITAL</span>
                 <br />
-                <span className=" text-primary"> ENGINEERING</span>
+                <span className=" text-primary text-[36px] text-center"> ENGINEERING</span>
               </h5>
               <span className="text-sm text-secondary text-center">
                 We have been working with some Fortune
@@ -56,10 +56,10 @@ function Service() {
                 src={icon1}
                 alt="Bonnie image"
               />
-              <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">
-                <span className="ms-8 text-secondary"> DIGITAL</span>
-                <br />
-                <span className=" text-primary"> ENGINEERING</span>
+           <h5 className="mb-1  text-xl font-medium text-gray-900 dark:text-white mb-9">
+                <span className="text-center text-secondary text-[36px]"> DATA</span>
+                {/* <br /> */}
+                <span className=" text-primary text-[36px]"> & AI</span>
               </h5>
               <span className="text-sm text-secondary text-center">
                 We have been working with some Fortune
@@ -79,17 +79,17 @@ function Service() {
           </div>
 
           {/* three */}
-          <div className="w-full max-w-sm bg-white  rounded-lg shadow  p-5">
-            <div className="flex flex-col items-center pb-10 pt-10 ">
+          <div className="w-full  bg-white  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-10">
+            <div className="flex flex-col items-center pb-10 pt-10">
               <Image
                 className="w-24 h-24 mb-3 "
                 src={icon2}
                 alt="Bonnie image"
               />
-              <h5 className="mb-1  text-xl font-medium text-gray-900 dark:text-white ">
-                <span className="ms-12 text-secondary text-[36px]"> DIGITAL</span>
-                <br />
-                <span className=" text-primary text-[36px]"> ENGINEERING</span>
+           <h5 className="mb-1  text-xl font-medium text-gray-900 dark:text-white mb-9">
+                <span className="text-center text-secondary text-[36px]">EXPER</span>
+                {/* <br /> */}
+                <span className=" text-primary text-[36px]">IENCE</span>
               </h5>
               <span className="text-sm text-secondary text-center">
                 We have been working with some Fortune
@@ -107,6 +107,8 @@ function Service() {
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
       <div className="flex justify-center mt-8">
