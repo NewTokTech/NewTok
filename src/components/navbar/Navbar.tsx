@@ -103,44 +103,44 @@ const Navbar = () => {
             <div className={`main-menu ${isOpen ? "open" : ""}`}>
               <div className="copyright">© 2003 - 2023</div>
               <ul className="social">
-          <li>
-            <a
-              href="https://www.facebook.com/newtoksoft/"
-              className="facebook"
-              target="_blank"
-            >
-              <RiFacebookFill />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://instagram.com/newtoktech"
-              className="instagram"
-              target="_blank"
-            >
-              <RiInstagramFill />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
-              className="linkedin"
-              target="_blank"
-            >
-              <RiLinkedinFill />
-            </a>
-          </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/newtoksoft/"
+                    className="facebook"
+                    target="_blank"
+                  >
+                    <RiFacebookFill />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/newtoktech"
+                    className="instagram"
+                    target="_blank"
+                  >
+                    <RiInstagramFill />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
+                    className="linkedin"
+                    target="_blank"
+                  >
+                    <RiLinkedinFill />
+                  </a>
+                </li>
 
-          <li>
-            <a
-              href="https://in.pinterest.com/newtoksoft/_created/"
-              className="twitter"
-              target="_blank"
-            >
-              <RiTwitterXFill />
-            </a>
-          </li>
-        </ul>
+                <li>
+                  <a
+                    href="https://in.pinterest.com/newtoksoft/_created/"
+                    className="twitter"
+                    target="_blank"
+                  >
+                    <RiTwitterXFill />
+                  </a>
+                </li>
+              </ul>
               <div className="container">
                 <div className={`col-container`}>
                   <div className="menu-content">
@@ -259,7 +259,6 @@ const Navbar = () => {
                       <div className="phone">
                         <h6>India</h6>
                         <a href="tel:+917012935874">+91 701 293 5874</a>
-                       
                       </div>
                       {/* <div className="phone">
                         <h6>Canada</h6>
