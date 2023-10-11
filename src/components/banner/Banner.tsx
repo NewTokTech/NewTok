@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import BannerImg from "../../../public/svg/Group 239.svg";
 import BannerImgone from "../../../public/svg/undraw_web_devices_re_m8sc.svg";
-import "./baneer.css";
+import "./banner.css";
 import {
   RiTwitterXFill,
   RiFacebookFill,
