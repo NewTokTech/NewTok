@@ -13,40 +13,53 @@ import client8 from "../../../public/client/client5.png";
 
 const OurClients = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div className=" mx-auto mt-10">
       <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
         Our Clients
       </h1>
       <p className="text-secondary lg:text-[18px] mt-5 text-center font-inter font-semibold">
         We have been working with some Fortune 500+ clients
       </p>
-      <div className="container mx-auto flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-4 ">
+      <div className=" mx-auto flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  gap-4 ">
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client1} alt="" />
+            <Image src={client8} alt="" className="w-40" />
           </div>
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client2} alt="" />
+            <Image src={client5} alt="" className="w-40" />
           </div>
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client3} alt="" />
+            <Image src={client7} alt="" className="w-40" />
           </div>
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client4} alt="" />
+            <Image src={client6} alt="" className="w-40" />
           </div>
+
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client5} alt="" />
+            <Image src={client4} alt="" className="w-40" />
           </div>
+
           <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client6} alt="" />
+            <Image src={client2} alt="" className="w-40" />
           </div>
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client7} alt="" />
+
+          <div className="bg-blue-200 p-4 flex flex-col items-center ">
+            <Image src={client1} alt="" className="w-40" />
           </div>
-          <div className="bg-blue-200 p-4 flex flex-col items-center">
-            <Image src={client8} alt="" />
+
+          <div className="bg-blue-200 p-4 flex flex-col items-center ">
+            <Image src={client3} alt="" className="w-40" />
           </div>
         </div>
+      </div>
+      <div className="flex justify-center mt-8">
+        <a
+          href="#"
+          className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary  hover:text-secondary"
+        >
+          See All--
+        </a>
+      
       </div>
     </div>
   );

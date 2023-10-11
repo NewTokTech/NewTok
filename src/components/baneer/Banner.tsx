@@ -87,7 +87,7 @@ const Banner = () => {
                 className={`col-span-2 p-4 h-screen lg:mt-10 mt-0 flex justify-start items-center`}
               >
                 <Image
-                  width={10}
+                  // width={10}
                   src={data.img}
                   alt={`Slide ${index + 1}`}
                   className="object-cover lg:w-[411px] h-auto opacity-10 lg:opacity-100"
