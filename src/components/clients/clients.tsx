@@ -40,6 +40,10 @@ const OurClients = () => {
             <Image src={client4} alt="" className="w-36" />
           </div>
 
+          <div className="bg-blue-200 p-4 xl:flex flex-col items-center hidden ">
+            {/* <Image src={client3} alt="" className="w-40" /> */}
+          </div>
+
           <div className="bg-blue-200 p-4 flex flex-col items-center">
             <Image src={client2} alt="" className="w-40" />
           </div>
