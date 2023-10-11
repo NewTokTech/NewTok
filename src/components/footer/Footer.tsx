@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./footer.css"
+import { BiLogoFacebook, BiLogoLinkedinSquare } from "react-icons/bi"
 
 const Footer = () => {
 
@@ -10,7 +11,7 @@ const Footer = () => {
       <footer className="main-footer">
       
         <div className="copyright">© 2003 - 2023</div>
-        <a href="index.html#!" className="goto-top">
+        <a href="index.html#!" className="go-to-top">
           scroll up
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -125,13 +126,13 @@ const Footer = () => {
               className="facebook"
               target="_blank"
             >
-                Hi
-              <i className="fa fa-facebook" aria-hidden="true" />
+                <BiLogoFacebook />
+              
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/ewoke_soft/"
+              href="https://instagram.com/newtoktech"
               className="instagram"
               target="_blank"
             >
@@ -140,11 +141,11 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/company/ewokesoft/"
+              href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
               className="linkedin"
               target="_blank"
             >
-              <i className="fa fa-linkedin" aria-hidden="true" />
+              <BiLogoLinkedinSquare />
             </a>
           </li>
           <li>
