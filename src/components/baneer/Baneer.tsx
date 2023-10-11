@@ -5,8 +5,15 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import BannerImg from "../../../public/svg/Group 239.svg";
 import BannerImgone from "../../../public/svg/undraw_web_devices_re_m8sc.svg";
+import "./baneer.css";
+import {
+  RiTwitterXFill,
+  RiFacebookFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
 
-const Banner = () => {
+const Baneer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
@@ -20,6 +27,7 @@ const Banner = () => {
       textColor: " text-secondary",
       textColorOne: "text-secondary",
       textColorTwo: "text-primary",
+      copyright_social: "text-dark"
     },
     {
       img: BannerImgone,
@@ -31,6 +39,7 @@ const Banner = () => {
       textColor: "text-white",
       textColorOne: "text-dark",
       textColorTwo: "text-dark",
+      copyright_social: "text-primary"
     },
   ];
 
@@ -60,9 +69,6 @@ const Banner = () => {
     requestAnimationFrame(scroll);
   };
 
-
-
-
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
@@ -72,15 +78,17 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen banner">
       {/* Carousel wrapper */}
       <div className="relative h-screen overflow-hidden">
         {images.map((data, index) => (
           <div
             key={index}
-            className={`${data.color
-              } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${index === activeIndex ? "opacity-0" : "opacity-100"
-              }`}
+            className={`${
+              data.color
+            } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${
+              index === activeIndex ? "opacity-0" : "opacity-100"
+            }`}
           >
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
@@ -102,9 +110,10 @@ const Banner = () => {
                     {data.textP}
                   </span>{" "}
                 </h1>
-
               </div>
-              <div className="absolute bottom-10 left-2 transform -rotate-90 text-gray-300 text-xs">© 2003 - 2023</div>
+              <div className={`${data.copyright_social} copyright`}>
+                © 2003 - 2023
+              </div>
 
               {/* <button className="go-to-top" onClick={scrollToTop}>
                 scroll up
@@ -215,6 +224,45 @@ const Banner = () => {
                 </svg>
               </button> */}
 
+              <ul className="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/newtoksoft/"
+                    className="facebook"
+                    target="_blank"
+                  >
+                    <RiFacebookFill />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/newtoktech"
+                    className="instagram"
+                    target="_blank"
+                  >
+                    <RiInstagramFill />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
+                    className="linkedin"
+                    target="_blank"
+                  >
+                    <RiLinkedinFill />
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://in.pinterest.com/newtoksoft/_created/"
+                    className="twitter"
+                    target="_blank"
+                  >
+                    <RiTwitterXFill />
+                  </a>
+                </li>
+              </ul>
               <div
                 className={`col-span-2 p-4 h-screen lg:mt-10 mt-0 flex justify-start items-center`}
               >
@@ -239,7 +287,9 @@ const Banner = () => {
                       {data.textThree}
                     </span>
                     <br />
-                    <span className={`${data.textColor} mt-0 lg:text-[24px] text-[7px]`}>
+                    <span
+                      className={`${data.textColor} mt-0 lg:text-[24px] text-[7px]`}
+                    >
                       {" "}
                       {data.textP}
                     </span>{" "}
@@ -254,4 +304,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Baneer;
