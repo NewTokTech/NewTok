@@ -89,8 +89,8 @@ footer .col-container {
 .goto-top {
   font-size: 10px;
   position: absolute;
-  left: calc(50% - 50px);
-  bottom: 55px;
+  left: calc(10% - 20px);
+  bottom: 155px;
   transform: rotate(-90deg);
   -webkit-transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
   transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
