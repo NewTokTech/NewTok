@@ -1,17 +1,65 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
-import "./footer.css"
-import { BiLogoFacebook, BiLogoLinkedinSquare } from "react-icons/bi"
+import "./footer.css";
+import {
+  RiTwitterXFill,
+  RiFacebookFill,
+  RiInstagramFill,
+  RiLinkedinFill,
+} from "react-icons/ri";
+
 
 const Footer = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const easeInOutCubic = (t: number): number => {
+    return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+  };
+
+  
+  const toggleVisibility = () => {
+    if (window.scrollY  > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    const scrollDuration = 1000; // Duration of the scroll animation in milliseconds
+    const start = window.scrollY;
+    const startTime = performance.now();
+
+    const scroll = (currentTime: number) => {
+      const elapsedTime = currentTime - startTime;
+      const t = Math.min(1, elapsedTime / scrollDuration);
+      const scrollTo = start - start * t;
+
+      window.scrollTo(0, scrollTo);
+
+      if (t < 1) {
+        requestAnimationFrame(scroll);
+      }
+    };
+
+    requestAnimationFrame(scroll);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
 
   return (
     <>
       <footer className="main-footer">
-      
         <div className="copyright">© 2003 - 2023</div>
-        <a href="index.html#!" className="go-to-top">
+        <button className="go-to-top" onClick={scrollToTop}>
           scroll up
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +166,7 @@ const Footer = () => {
             <g />
             <g />
           </svg>
-        </a>
+        </button>
         <ul className="social">
           <li>
             <a
@@ -126,8 +174,7 @@ const Footer = () => {
               className="facebook"
               target="_blank"
             >
-                <BiLogoFacebook />
-              
+              <RiFacebookFill />
             </a>
           </li>
           <li>
@@ -136,7 +183,7 @@ const Footer = () => {
               className="instagram"
               target="_blank"
             >
-              <i className="fa fa-instagram" aria-hidden="true" />
+              <RiInstagramFill />
             </a>
           </li>
           <li>
@@ -145,26 +192,21 @@ const Footer = () => {
               className="linkedin"
               target="_blank"
             >
-              <BiLogoLinkedinSquare />
+              <RiLinkedinFill />
             </a>
           </li>
-          <li>
-            <a href="skype:ewokesoft?call" className="skype" target="_blank">
-              <i className="fa fa-skype" aria-hidden="true" />
-            </a>
-          </li>
+
           <li>
             <a
               href="https://in.pinterest.com/ewokesoft/_created/"
-              className="whatsapp"
+              className="twitter"
               target="_blank"
             >
-              <i className="fa fa-pinterest" aria-hidden="true" />
+              <RiTwitterXFill />
             </a>
           </li>
         </ul>
         <div className="container">
-        
           <div className="row col-container address">
             <div className="inline col-3">
               <div className="address-div">
@@ -197,7 +239,7 @@ const Footer = () => {
             <div className="inline col-3">
               <div className="address-div">
                 <h5 className="address-title">
-                  eWoke 
+                  eWoke
                   <span>India</span>
                 </h5>
                 <p>
@@ -211,11 +253,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"></hr>
-
+        <div className="copyright-text absolute bottom-[15px] w-full border-t-[1px] border-[#171919] p-5">
+          {/* <hr className=" h-[1.5px] bg-white w-full my-6 sm:mx-auto lg:my-8"></hr> */}
+          <p className="font-xs text-white text-center hover:text-primary">
+           Newtok Technologies Pvt. Ltd. All rights reserved.
+          </p>
+        </div>
       </footer>
     </>
   );
 };
 
 export default Footer;
+

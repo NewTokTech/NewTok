@@ -65,6 +65,8 @@ footer .col-container {
   padding-left: 15px;
   position: relative;
 }
+
+
 .copyright {
   display: inline-block;
   transform: rotate(-90deg);
@@ -223,15 +225,13 @@ footer .col-container {
   }
 }
 
-
-
 .social {
     font-size: 0px;
     margin: 0px 0px 0px 0px;
     text-align: center;
     position: absolute;
     right: 60px;
-    bottom: 50px;
+    bottom: 75px;
     z-index: 1;
   }
   .social li {
@@ -258,11 +258,9 @@ footer .col-container {
   .social li a.linkedin:hover {
     color: #0077b5;
   }
-  .social li a.skype:hover {
-    color: #0078ca;
-  }
-  .social li a.whatsapp:hover {
-    color: #00e676;
+
+  .social li a.twitter:hover {
+    color: #ffffff;
   }
   .social li a:hover {
     -webkit-transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
