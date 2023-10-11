@@ -163,14 +163,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="container">
-          <div className="col-container">
-            <div className="contact-title">
-              <span className="title-note dark"></span>
-              <h3 className="main-title" data-splitting="">
-                Contact
-              </h3>
-            </div>
-          </div>
+        
           <div className="row col-container address">
             <div className="inline col-3">
               <div className="address-div">
