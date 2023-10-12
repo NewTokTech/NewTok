@@ -6,45 +6,12 @@ import "./testimonials.css";
 import Image from "next/image";
 
 const Testimonials = () => {
-    // const [activeIndex, setActiveIndex] = useState(0);
-
-    const images = [
-        {
-            color: "bg-primary",
-            textOne: "TECHNOLOGY FOR ",
-            textTwo:
-                "Nobis minus voluptatibus pariatur dignissimos libero quaerat iure  SMART",
-            textThree:
-                "Nobis minus voluptatibus pariatur dignissimos libero quaerat iure  ",
-            textP:
-                "777777777777777777 APPLICATION AND PRODUCT DEVELOPMENT SERVICES0   dicta veniam  aspernatur quam mollitia.",
-            textColor: "text-white",
-            textColorOne: "text-dark",
-            textColorTwo: "text-dark",
-            copyright_social: "text-primary",
-            padding: "pb-30",
-        },
-        {
-            color: "bg-primary",
-            textOne: "TECHNOLOGY FOR ",
-            textTwo:
-                "Nobis minus voluptatibus pariatur dignissimos libero quaerat iure  SMART",
-            textThree:
-                "Nobis minus voluptatibus pariatur dignissimos libero quaerat iure  ",
-            textP:
-                "88888888888 APPLICATION AND PRODUCT DEVELOPMENT SERVICES0   dicta veniam  aspernatur quam mollitia.",
-            textColor: "text-white",
-            textColorOne: "text-dark",
-            textColorTwo: "text-dark",
-            copyright_social: "text-primary",
-        },
-    ];
 
     const textArray = [
-        "  “1Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”",
-        "  “2Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”",
-        "  “3Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”",
-        "  “4Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”",
+        { text1: "  “1Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”", text2: "Bruce H. Lowry, President and CEO,", text3: "Summitsoft Corporation, USA" },
+        { text1: " “I am very pleased with your Project Management capability. Your team has excellent communication skills and a fast response, highest work quality and turnaround time. I can say that Newtok is a honest and decent group of people with the highest work ethic I have seen for development team.”", text2: "CEO, Straight Path International School", text3: "" },
+        { text1: "  “I also wanted to tell you how pleased we are with your company’s development services. It is wonderful to work with your team and not have to worry anything”", text2: "MD, Micaza Holidays", text3: "" },
+        { text1: " “I never have trouble with your services and the people I talk to always have good information. I’ll highly recommend Newtok to my other business friends!”", text2: "CEO, CIUDAD BUILDERS", text3: "" }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,22 +40,20 @@ const Testimonials = () => {
 
                     <>
                         <div className="flex justify-center">
-                            <div className="w-11/12 lg:w-10/12 bg-white shadow-lg ps-2 pe-2 pt-2   ">
-                                <div className="justify-center flex">
-                                    <h1 className="text-center pt-20 max-w-screen-sm font-bold">
-                                        {textArray[currentIndex]}
+                            <div className="w-11/12 lg:w-10/12 bg-white shadow-lg ps-2 pe-2 pt-2 ">
+                                <div className="justify-center flex lg:h-52">
+                                    <h1 className="text-center pt-20 max-w-screen-sm  font-bold">
+                                        {textArray[currentIndex].text1}
                                     </h1>
                                 </div>
                                 <div className="justify-center flex mt-10">
-                                    <p> <span>HEllo world</span> <span>HEllo world</span></p>
+                                    <p className="text-primary text-center"> <span>{textArray[currentIndex].text2}</span><br /><span>{textArray[currentIndex].text3}</span></p>
                                 </div>
-
-
                                 <div className="flex mt-10 w-full">
-                                    <div className={`  h-2 w-3/12 ${currentIndex == 0 ? "bg-primary" : "bg-white"}`} ></div>
-                                    <div className={`  h-2 w-3/12 ${currentIndex == 1 ? "bg-primary" : "bg-white"}`} ></div>
-                                    <div className={`  h-2 w-3/12 ${currentIndex == 2 ? "bg-primary" : "bg-white"}`} ></div>
-                                    <div className={`  h-2 w-3/12 ${currentIndex == 3 ? "bg-primary" : "bg-white"}`} ></div>
+                                    <div className={`  h-1 w-3/12 ${currentIndex == 0 ? "bg-primary" : "bg-white"}`} ></div>
+                                    <div className={`  h-1 w-3/12 ${currentIndex == 1 ? "bg-primary" : "bg-white"}`} ></div>
+                                    <div className={`  h-1 w-3/12 ${currentIndex == 2 ? "bg-primary" : "bg-white"}`} ></div>
+                                    <div className={`  h-1 w-3/12 ${currentIndex == 3 ? "bg-primary" : "bg-white"}`} ></div>
                                 </div>
 
                             </div>
