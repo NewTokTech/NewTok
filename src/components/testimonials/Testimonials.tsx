@@ -8,10 +8,10 @@ import Image from "next/image";
 const Testimonials = () => {
 
     const textArray = [
-        { text1: "  “1Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”", text2: "Bruce H. Lowry, President and CEO,", text3: "Summitsoft Corporation, USA" },
-        { text1: " “I am very pleased with your Project Management capability. Your team has excellent communication skills and a fast response, highest work quality and turnaround time. I can say that Newtok is a honest and decent group of people with the highest work ethic I have seen for development team.”", text2: "CEO, Straight Path International School", text3: "" },
-        { text1: "  “I also wanted to tell you how pleased we are with your company’s development services. It is wonderful to work with your team and not have to worry anything”", text2: "MD, Micaza Holidays", text3: "" },
-        { text1: " “I never have trouble with your services and the people I talk to always have good information. I’ll highly recommend Newtok to my other business friends!”", text2: "CEO, CIUDAD BUILDERS", text3: "" }
+        { text1: "  “Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”", text2: "Bruce H. Lowry, President and CEO,Summitsoft Corporation, USA ", },
+        { text1: " “I am very pleased with your Project Management capability. Your team has excellent communication skills and a fast response, highest work quality and turnaround time. I can say that Newtok is a honest and decent group of people with the highest work ethic I have seen for development team.”", text2: "CEO, Straight Path International School", },
+        { text1: "  “I also wanted to tell you how pleased we are with your company’s development services. It is wonderful to work with your team and not have to worry anything”", text2: "MD, Micaza Holidays", },
+        { text1: " “I never have trouble with your services and the people I talk to always have good information. I’ll highly recommend Newtok to my other business friends!”", text2: "CEO, CIUDAD BUILDERS", }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,29 +27,34 @@ const Testimonials = () => {
 
     return (
         <>
-            <section id="section" className="w-screen h-screen m-0 p-0 relative">
+            <section id="section" className="w-screen h-full m-0 p-0 relative">
 
-                <div className="z-10 relative block mt-52">
-                    <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
-                        Service
-                    </h1>
-                    <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-inter font-semibold">
-                        We have been working with some Fortune{" "}
-                        <br className="lg:hidden block" /> 500+ clients
-                    </p>
+                <div className="flex justify-center ">
+                    <button
+                        type="button"
+                        className="py-2.5  px-5 mr-2 mb-2 mt-5 text-sm font-medium text-primary focus:outline-none border  hover:bg-primary  hover:text-white  hover:duration-75 "
+                    >
+                        EXPLORE OUR SERVICES
+                    </button>
+                </div>
+                <div className="z-10 relative block mt-52 mb-9">
 
                     <>
+                        <h1 className="text-secondary lg:text-[40px] lg:ms-36 ms-10 mt-5  mb-5 text-start font-inter font-semibold">
+                            <span> What Our</span><span className="text-primary">Clients Say About Us</span>
+                        </h1>
                         <div className="flex justify-center">
+
                             <div className="w-11/12 lg:w-10/12 bg-white shadow-lg ps-2 pe-2 pt-2 ">
-                                <div className="justify-center flex lg:h-52">
-                                    <h1 className="text-center pt-20 max-w-screen-sm  font-bold">
+                                <div className="justify-center flex  lg:h-[300px] h-[300px] items-center">
+                                    <h1 className="text-center pt-20 lg:max-w-screen-md  max-w-screen-sm font-bold font-mono">
                                         {textArray[currentIndex].text1}
                                     </h1>
                                 </div>
-                                <div className="justify-center flex mt-10">
-                                    <p className="text-primary text-center"> <span>{textArray[currentIndex].text2}</span><br /><span>{textArray[currentIndex].text3}</span></p>
+                                <div className="justify-center flex items-center">
+                                    <p className="text-primary text-center" > <span>{textArray[currentIndex].text2}</span><br /></p>
                                 </div>
-                                <div className="flex mt-10 w-full">
+                                <div className="flex mt-10 w-full ms-0">
                                     <div className={`  h-1 w-3/12 ${currentIndex == 0 ? "bg-primary" : "bg-white"}`} ></div>
                                     <div className={`  h-1 w-3/12 ${currentIndex == 1 ? "bg-primary" : "bg-white"}`} ></div>
                                     <div className={`  h-1 w-3/12 ${currentIndex == 2 ? "bg-primary" : "bg-white"}`} ></div>
@@ -62,7 +67,7 @@ const Testimonials = () => {
                     </>
                 </div>
 
-                <div className="absolute top-32 right-16 opacity-75">
+                <div className="absolute top-32 right-16 lg:opacity-75 opacity-10">
                     <Image src={test} alt=""></Image>
                 </div>
 
