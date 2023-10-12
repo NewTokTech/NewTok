@@ -1,8 +1,8 @@
-import AboutClient from '@/components/AboutClient/AboutClient'
-import About from '@/components/about/About'
-import Banner from '@/components/baneer/Banner'
-import OurClients from '@/components/ourClients/OurClients'
+import AboutClient from '@/components/testimonials/Testimonials'
+import Banner from '@/components/baneer/Baneer'
+import OurClients from '@/components/clients/clients'
 import Service from '@/components/services/services'
+import About from '@/components/about/About'
 
 export default function Home() {
   return (

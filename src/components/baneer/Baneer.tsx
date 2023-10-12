@@ -13,7 +13,7 @@ import {
   RiLinkedinFill,
 } from "react-icons/ri";
 
-const Banner = () => {
+const Baneer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
@@ -304,4 +304,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Baneer;

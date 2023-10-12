@@ -1,72 +1,52 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import "./about.css";
+import ImageContainer from "./ImageContainer";
 import Image from "next/image";
 
 const About = () => {
-  const images = [
-    "/about/image1.svg",
-    "/about/image2.svg",
-    "/about/image3.svg",
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Calculate the next index with wrapping
-      const nextIndex = (currentIndex + 1) % images.length;
-      setCurrentIndex(nextIndex);
-    }, 3000); // Change image every 3 seconds (adjust as needed)
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [currentIndex]);
-
   return (
     <>
-        <div className="py-16 bg-white">
-      <div className="container px-6 text-gray-600 md:px-12 xl:px-6">
-        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-          <div className="md:5/12 lg:w-5/12">
-            {images.map((image, index) => (
-              <div
-                key={index}
-                className={`transform transition-transform ease-in-out duration-300  ${currentIndex === index ? 'opacity-100 translate-x-0 scale-100 block' : 'opacity-0 -translate-x-4 scale-0 hidden'}`}
-      
-              >
-                <Image
-                  src={image}
-                  alt="image"
-                  loading="lazy"
-                  width={873}
-                  height={590}
-                />
-              </div>
-            ))}
+      <div className="py-16 my-auto bg-white about text-secondary">
+        <div className="m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+          <div className="space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 lg:items-center lg:gap-12">
+            {/* <ImageContainer /> */}
+            <Image
+              src={"/about/image4.svg"}
+              alt="about 1"
+              height={827}
+              width={518}
+            />
+            <div className="md:7/12 lg:w-6/12 p-10">
+              <h2 className="text-[18px] md:text-[24px] lg:text-[30px] font-semibold">
+                Navigating Tomo
+                <span className="text-primary">rrow{"'"}s Horizons: </span>
+                <br />
+                Crafting Digital E
+                <span className="text-primary">xcellence at Newtok</span>
+                <br />
+                Technologies
+              </h2>
+              <p className="mt-6 text-[14px] font-[500] leading-5">
+                Welcome to Newtok Technologies, where we redefine software
+                solutions with innovation. Since our 2003 inception, we{"'"}ve
+                crafted digital transformation for enterprises through custom
+                application development and IT services. We{"'"}re not just
+                developers; we{"'"}re your digital partners, dedicated to
+                forging unique solutions that set you apart. Join us in
+                exploring the limitless possibilities of technology. Welcome to
+                Newtok Technologies, where digital excellence awaits.
+              </p>
 
-          </div>
-          <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              Nuxt development is carried out by passionate developers
-            </h2>
-            <p className="mt-6 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
-              omnis voluptatem accusantium nemo perspiciatis delectus atque autem!
-              Voluptatum tenetur beatae unde aperiam, repellat expedita
-              consequatur! Officiis id consequatur atque doloremque!
-            </p>
-            <p className="mt-4 text-gray-600">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
-            </p>
+              <button
+                type="button"
+                className="mt-10 py-2.5 px-12 mr-2 mb-5 text-sm font-medium text-primary focus:outline-none bg-white  border border-primary border-5 hover:bg-primary  hover:text-white transform transition-colors duration-300 ease-in-out"
+              >
+                MORE ABOUT US
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 };

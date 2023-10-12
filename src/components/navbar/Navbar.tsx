@@ -66,7 +66,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative z-[100]">
         <header className="main_header">
           <div className="col-container">
             <div className="logo">
