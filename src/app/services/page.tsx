@@ -17,7 +17,6 @@ const Services = () => {
           </p>
         </div>
 
-        
         <ServiceContainer />
       </section>
     </>
