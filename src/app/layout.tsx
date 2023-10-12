@@ -21,7 +21,7 @@ export default function RootLayout({
       <head>
 
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + " bg-backgound"}>
         <Navbar/>
         {children}
         <Footer/>
