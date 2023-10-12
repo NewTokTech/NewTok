@@ -12,18 +12,24 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
   const [logoColorChange, setLogoColorChange] = useState(false);
 
-  const router = useRouter();
 
   useEffect(() => {
-    setIsOpen(false);
-  }, [router.asPath]); // The router.asPath will change when the route changes
+    const handleRouteChange = () => {
+      setIsOpen(false);
+    };
+
+    window.addEventListener('routeChange', handleRouteChange);
+
+    return () => {
+      window.removeEventListener('routeChange', handleRouteChange);
+    };
+  }, []);
 
   const handleService = () => {
     setShowServices(!showServices);
@@ -159,7 +165,7 @@ const Navbar = () => {
                       <ul className="menu-list">
                         <li>
                           <span>1.</span>
-                          <Link href="/about-us">
+                          <Link href="/about">
                             <span data-hover="About Us">About Us</span>
                           </Link>
                         </li>
@@ -247,9 +253,9 @@ const Navbar = () => {
                         </li>
                         <li>
                           <span>5.</span>
-                          <a href="https://www.ewokesoft.com/contact-us/">
+                          <Link href="/contact-us">
                             <span data-hover="Contact Us">Contact Us</span>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
