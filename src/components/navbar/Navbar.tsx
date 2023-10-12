@@ -12,11 +12,18 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
   const [logoColorChange, setLogoColorChange] = useState(false);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [router.asPath]); // The router.asPath will change when the route changes
 
   const handleService = () => {
     setShowServices(!showServices);
@@ -141,7 +148,7 @@ const Navbar = () => {
                   </a>
                 </li>
               </ul>
-              <div className="container">
+              <div className="lg:container">
                 <div className={`col-container`}>
                   <div className="menu-content">
                     <div
@@ -152,9 +159,9 @@ const Navbar = () => {
                       <ul className="menu-list">
                         <li>
                           <span>1.</span>
-                          <a href="about-us/index.html">
+                          <Link href="/about-us">
                             <span data-hover="About Us">About Us</span>
-                          </a>
+                          </Link>
                         </li>
                         <li className="relative">
                           <span>2.</span>
@@ -171,7 +178,6 @@ const Navbar = () => {
                             >
                               <div className="p-2 mb-10 px-10">
                                 <div className="flex flex-col md:flex-row">
-                                  {/* Heading 1 */}
                                   <div className="md:w-1/3 pt-2">
                                     <h2 className="text-xl font-bold text-primary">
                                       Digital Engineering
@@ -190,7 +196,6 @@ const Navbar = () => {
                                     </div>
                                   </div>
 
-                                  {/* Heading 2 */}
                                   <div className="md:w-1/3 pt-2">
                                     <h2 className="text-xl font-bold text-primary">
                                       AI / ML
@@ -209,7 +214,6 @@ const Navbar = () => {
                                     </div>
                                   </div>
 
-                                  {/* Heading 3 */}
                                   <div className="md:w-1/3 pt-2">
                                     <h2 className="text-xl font-bold text-primary">
                                       Experience
@@ -231,15 +235,15 @@ const Navbar = () => {
 
                         <li>
                           <span>3.</span>
-                          <a href="projects/index.html">
-                            <span data-hover="Projects">Projects</span>
-                          </a>
+                          <Link href="/portfolio">
+                            <span data-hover="Projects">Portfolio</span>
+                          </Link>
                         </li>
                         <li>
                           <span>4.</span>
-                          <a href="clients/index.html">
-                            <span data-hover="Clients">Clients</span>
-                          </a>
+                          <Link href="/careers">
+                            <span data-hover="Clients">Careers</span>
+                          </Link>
                         </li>
                         <li>
                           <span>5.</span>
