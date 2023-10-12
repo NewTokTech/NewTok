@@ -21,6 +21,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleRouteChange = () => {
+      alert("changed")
       setIsOpen(false);
     };
 
