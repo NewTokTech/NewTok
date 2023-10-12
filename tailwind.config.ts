@@ -14,7 +14,9 @@ const config: Config = {
       'primary': '#7DC242',
       'secondary': '#706D6E',
       'info': '#2194F3',
-      "white": "#FFFF"
+      "white": "#FFFF",
+      "backgound" : "#F5F7FA",
+
 
 
     },
