@@ -20,16 +20,16 @@ const SingleContainer = (props: ServiceContent) => {
   const { img, color, HOne, HTwo, text, position } = props;
   return (
     <>
-      <div className="relative py-10 my-16 lg:mx-52 ">
+      <div className="relative py-10 lg:mx-52 ">
         <div className="lg:mx-10 rounded-xl bg-white about min-w-[519px] text-secondary" style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}>
           <div className="m-auto px-6 md:px-12 xl:px-6">
             <div className={`space-y-6 md:space-y-0 lg:flex  ${position === 'left' ? 'lg:justify-end' : 'lg:justify-start'} md:gap-6 lg:items-center lg:gap-12`}>
               <Image
                 src={img}
                 alt="about 1"
-                width={734}
-                height={591}
-                className={`absolute bottom-0 z-40 overflow-visible ${position === 'left' ? 'left-0' : 'right-0'}`}
+                width={687}
+                height={498}
+                className={`absolute bottom-0 z-40 scale-75 opacity-50 lg:opacity-100 lg:scale-100 overflow-visible ${position === 'left' ? 'left-0' : 'right-0'}`}
               />
 
               <div className="md:7/12 lg:w-6/12 p-10">
