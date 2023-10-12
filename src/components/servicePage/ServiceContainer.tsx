@@ -4,7 +4,7 @@ import SingleContainer from './SingleContainer'
 const ServiceContainer = () => {
   return (
     <>
-      <SingleContainer/>
+      <SingleContainer />
     </>
   )
 }
