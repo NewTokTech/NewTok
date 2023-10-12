@@ -3,8 +3,6 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import BannerImg from "../../../public/svg/Group 239.svg";
-import BannerImgone from "../../../public/svg/undraw_web_devices_re_m8sc.svg";
 import "./banner.css";
 import {
   RiTwitterXFill,
@@ -18,7 +16,7 @@ const Baneer = () => {
 
   const images = [
     {
-      img: BannerImg,
+      img: '/svg/Group 239.svg',
       color: "bg-white",
       textOne: "TECHNOLOGY FOR ",
       textTwo: "SMART",
@@ -30,7 +28,7 @@ const Baneer = () => {
       copyright_social: "text-dark"
     },
     {
-      img: BannerImgone,
+      img: '/svg/undraw_web_devices_re_m8sc.svg',
       color: "bg-primary",
       textOne: "TECHNOLOGY FOR ",
       textTwo: "SMART",
@@ -267,7 +265,8 @@ const Baneer = () => {
                 className={`col-span-2 p-4 h-screen lg:mt-10 mt-0 flex justify-start items-center`}
               >
                 <Image
-                  // width={10}
+                  width={10}
+                  height={10}
                   src={data.img}
                   alt={`Slide ${index + 1}`}
                   className="object-cover lg:w-[411px] h-auto opacity-10 lg:opacity-100"

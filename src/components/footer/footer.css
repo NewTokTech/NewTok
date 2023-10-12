@@ -259,7 +259,7 @@ footer .list-item::before {
 }
 
 .social li a.twitter:hover {
-  color: #ffffff;
+  color: #010101;
 }
 .social li a:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
@@ -274,23 +274,17 @@ footer .list-item::before {
 .social li a.facebook:focus {
   color: #3b5998;
 }
-.social li a.g-plus:hover,
+.social li a.twitter:hover,
 .social li a.g-plus:active,
 .social li a.g-plus:focus {
   transition: 0.1s;
-  color: #e53935;
+  color: #000000;
 }
 .social li a.instagram:hover,
 .social li a.instagram:active,
 .social li a.instagram:focus {
   transition: 0.1s;
   color: #d82c7d;
-}
-.social li a.twitter:hover,
-.social li a.twitter:active,
-.social li a.twitter:focus {
-  transition: 0.1s;
-  color: #1da1f2;
 }
 .social li a.linkedin:hover,
 .social li a.linkedin:active,
@@ -299,12 +293,7 @@ footer .list-item::before {
   color: #0077b5;
   background-color: transparent;
 }
-.social li a.youtube:hover,
-.social li a.youtube:active,
-.social li a.youtube:focus {
-  transition: 0.1s;
-  color: #ff0000;
-}
+
 .social.side {
   position: fixed;
   left: 0px;
