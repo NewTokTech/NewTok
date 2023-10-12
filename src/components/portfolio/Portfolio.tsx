@@ -5,7 +5,7 @@ import hello from '../../../public/client/client2.png'
 
 const Portfolio = () => {
     return (
-        <div className="p-0 text-secondary">
+        <div className="lg:p-10 text-secondary">
             <div className="m-auto px-6 text-gray-600 md:px-12 xl:px-6">
                 <div className="space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 lg:items-center lg:gap-12">
                     {/* <ImageContainer /> */}
@@ -46,16 +46,16 @@ const Portfolio = () => {
                         </div>
                     </div>
 
-                    <div className="md:7/12 lg:w-6/12 xl:p-20 ">
+                    <div className="md:7/12 lg:w-6/12 xl:p-20 p-10">
                         <h2 className="text-[18px] md:text-[24px] lg:text-[30px] font-semibold xl:mt-10 mt-0 lg:block flex justify-center">
                             LOGO DESIGN <br />
                             <span className="text-primary">STUDIO </span>
 
                         </h2>
-                        <h2 className='mt-5'>
+                        <h2 className='mt-0'>
 
                             <span className='lg:block hidden'> Client</span>
-                            <br />
+                            {/* <br className='lg:block hidden' /> */}
                             <span className='text-lg lg:block flex justify-center '> SummitSoftCorp, USA</span>
 
                         </h2>

@@ -8,7 +8,7 @@ import icon2 from "../../../public/svg/services/iconTwo.svg";
 function Service() {
   return (
     <div className=" mx-auto mt-10 mb-10">
-      
+
       <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
         Service
       </h1>
@@ -108,7 +108,6 @@ function Service() {
               </div>
             </div>
           </div>
-
 
         </div>
       </div>
