@@ -11,14 +11,14 @@ const Contact = () => {
       {/* component */}
 
       <div className="mx-auto mt-36 mb-10">
-        <h4 className="text-secondary lg:text-[18px] mt-5 text-center font-inter font-semibold">
+        <h4 className="text-secondary lg:text-[18px] mt-5 text-center  font-semibold">
           CONTACT US
         </h4>
-        <h1 className="text-secondary text-[30px] mt-5 text-center font-inter font-semibold">
+        <h1 className="text-secondary text-[30px] mt-5 text-center  font-semibold">
           GET IN <span className="text-primary">TOUCH</span>
         </h1>
         <div className="flex justify-center">
-          <p className="px-10 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center font-inter ">
+          <p className="px-10 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center  ">
             Don’t worry about it getting too long. We know your awesome ideas
             take time to explain; the more we learn about it the better we can
             help you out. We would love to hear all about your project. Connect

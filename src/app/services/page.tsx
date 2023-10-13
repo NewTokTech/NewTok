@@ -1,7 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-
 "use client";
 import ServiceContainer from "@/components/servicePage/ServiceContainer";
+import { Metadata } from "next";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -87,9 +86,9 @@ const Services = () => {
             </h1>
             <div className="flex justify-center">
               <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center font-light max-w-screen-sm">
-                At Newtok, we understand that in today's fast-paced digital
+                At Newtok, we understand that in today{"'"}s fast-paced digital
                 world, the ability to develop and deploy applications quickly
-                can mean the difference between success and stagnation. That's
+                can mean the difference between success and stagnation. That{"'"}s
                 why we offer a wide range of application development solutions
                 to cater to your diverse needs. Whether you prefer the speed and
                 simplicity of Low-Code/No-Code development or require the

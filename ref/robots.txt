@@ -1,3 +1,0 @@
-Sitemap: https://ewokesoft.com/sitemap.xml
-User-agent: *
-Disallow:

@@ -18,20 +18,6 @@ const Navbar = () => {
   const [showServices, setShowServices] = useState(false);
   const [logoColorChange, setLogoColorChange] = useState(false);
 
-
-  useEffect(() => {
-    const handleRouteChange = () => {
-      alert("changed")
-      setIsOpen(false);
-    };
-
-    window.addEventListener('routeChange', handleRouteChange);
-
-    return () => {
-      window.removeEventListener('routeChange', handleRouteChange);
-    };
-  }, []);
-
   const handleService = () => {
     setShowServices(!showServices);
   };
@@ -69,10 +55,8 @@ const Navbar = () => {
       }
     };
 
-    // Add the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -170,7 +154,7 @@ const Navbar = () => {
                             <span data-hover="About Us">About Us</span>
                           </Link>
                         </li>
-                        <li className="relative">
+                        <li className="relative font-sen">
                           <span>2.</span>
                           <a className="" onClick={handleService}>
                             <span data-hover="Services">Services</span>

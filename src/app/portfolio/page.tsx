@@ -30,11 +30,11 @@ const page = () => {
 
     return (
         <section className='w-screen mx-auto mt-36 mb-10'>
-            <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
+            <h1 className="text-secondary lg:text-[40px] mt-5 text-center  font-semibold">
                 <span className=''>Prot</span><span className='text-primary'>folio</span>
             </h1>
             <div className='flex justify-center'>
-                <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center font-inter font-semibold max-w-screen-sm">
+                <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center  font-semibold max-w-screen-sm">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the   an unknown printer took a galley
                 </p>
             </div>

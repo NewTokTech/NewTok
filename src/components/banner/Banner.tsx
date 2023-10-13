@@ -93,7 +93,7 @@ const Baneer = () => {
           >
             <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
-                <h1 className="text-dark xl:text-[76px] lg:text-[50px]  font-inter font-semibold text">
+                <h1 className="text-dark xl:text-[76px] lg:text-[50px] font-semibold text">
                   <span className={`${data.textColor} mt-0`}>
                     {data.textOne}{" "}
                   </span>
@@ -168,7 +168,7 @@ const Baneer = () => {
                 />
 
                 <div className=" col-span-3 p-10 flex justify-center absolute lg:hidden ">
-                  <h1 className="text-dark text-3xl text-center font-inter font-semibold">
+                  <h1 className="text-dark text-3xl text-center font-semibold">
                     <span className={`${data.textColor} mt-0`}>
                       {data.textOne}{" "}
                     </span>

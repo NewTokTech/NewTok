@@ -16,10 +16,10 @@ import Link from "next/link";
 const OurClients = () => {
   return (
     <div className=" mx-auto mt-10">
-      <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
+      <h1 className="text-secondary lg:text-[40px] mt-5 text-center  font-semibold">
         Our Clients
       </h1>
-      <p className="text-secondary lg:text-[18px]  mt-5 text-center font-inter font-semibold">
+      <p className="text-secondary lg:text-[18px]  mt-5 text-center  font-semibold">
         We have been working with  some Fortune <br className="lg:hidden block"/> 500+ clients
       </p>
       <div className="flex flex-wrap mx-auto justify-center items-center">

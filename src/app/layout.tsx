@@ -1,16 +1,18 @@
 import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Footer from "@/components/footer/Footer";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "NewTok Technologies",
+  title: "Newtok Technologies",
   description: "Technology for smart Inventions",
+  icons: {
+    icon: ['/favicon/favicon.svg'],
+    apple: ['/favicon/apple-touch-icon.png?v=4'],
+    shortcut: ['/favicon/apple-touch-icon.png']
+  },
+  manifest: '/favicon/site.webmanifest'
 };
 
 export default function RootLayout({
@@ -21,8 +23,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head></head>
-      <body className={inter.className + " bg-backgound"}>
+      <head>
+      </head>
+      <body className={" bg-backgound"}>
         <Navbar />
         {children}
         <Footer />

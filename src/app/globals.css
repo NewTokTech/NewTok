@@ -27,7 +27,7 @@ body {
   overflow-y: auto;
   background-color: #ffffff;
   scroll-behavior: smooth;
-  font-family: "Sen", sans-serif;
+  font-family: 'Sen' sans-serif;
 }
 body::-webkit-scrollbar {
   width: 10px;
@@ -115,7 +115,6 @@ strong {
   cursor: pointer;
   text-transform: none;
   letter-spacing: 0px;
-  font-family: "Sen", sans-serif;
   font-weight: 400;
 }
 .btn:hover {
@@ -268,7 +267,6 @@ strong {
   font-weight: 400;
   letter-spacing: 0em;
   font-size: 18px;
-  font-family: "Sen", sans-serif;
 }
 .input-text.large {
   height: 45px;
@@ -282,7 +280,6 @@ strong {
 }
 .input-text::placeholder {
   font-size: 18px;
-  font-family: "Sen", sans-serif;
   text-transform: capitalize;
   color: #3c3c3c;
 }

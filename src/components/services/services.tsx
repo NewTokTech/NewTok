@@ -9,10 +9,10 @@ function Service() {
   return (
     <div className=" mx-auto mt-10 mb-10">
 
-      <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
+      <h1 className="text-secondary lg:text-[40px] mt-5 text-center  font-semibold">
         Service
       </h1>
-      <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-inter font-semibold">
+      <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center  font-semibold">
         We have been working with  some Fortune <br className="lg:hidden block" /> 500+ clients
       </p>
       <div className=" mx-auto flex justify-center mt-5 ">

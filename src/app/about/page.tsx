@@ -1,5 +1,17 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description: "Technology for smart Inventions",
+  icons: {
+    icon: ['/favicon/favicon.svg'],
+    apple: ['/favicon/apple-touch-icon.png?v=4'],
+    shortcut: ['/favicon/apple-touch-icon.png']
+  },
+  manifest: '/favicon/site.webmanifest'
+};
 
 const About = () => {
   return (
