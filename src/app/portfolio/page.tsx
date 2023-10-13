@@ -114,18 +114,18 @@ const page = () => {
             ],
         },
 
-        {
-            title: ["IQ", " TEASER"],
-            description:
-                "Mac Fonts is a font management software for MAC OS X.",
-            client: "AminSoft, USA",
-            images: [
-                "/portfolio/iQTeaser/pic1.png",
-                "/portfolio/iQTeaser/pic2.png",
-                "/portfolio/iQTeaser/pic3.png",
-                "/portfolio/iQTeaser/pic1.png",
-            ],
-        },
+        // {
+        //     title: ["IQ", " TEASER"],
+        //     description:
+        //         "Mac Fonts is a font management software for MAC OS X.",
+        //     client: "AminSoft, USA",
+        //     images: [
+        //         "/portfolio/iQTeaser/pic1.png",
+        //         "/portfolio/iQTeaser/pic2.png",
+        //         "/portfolio/iQTeaser/pic3.png",
+        //         "/portfolio/iQTeaser/pic1.png",
+        //     ],
+        // },
     ];
 
     return (
