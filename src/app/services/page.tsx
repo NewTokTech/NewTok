@@ -1,6 +1,6 @@
 "use client";
 import ServiceContainer from "@/components/servicePage/ServiceContainer";
-import { Metadata } from "next";
+import ServiceSecondPage from "@/components/servicePage/ServiceSecondPage";
 import Image from "next/image";
 import React, { useState } from "react";
 
@@ -101,6 +101,7 @@ const Services = () => {
               <span className="">Low-Code/No-</span>
               <span className="text-primary">Code Development</span>
             </h1>
+            <ServiceSecondPage/>
           </>
         )}
       </section>
