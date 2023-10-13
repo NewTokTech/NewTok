@@ -22,7 +22,7 @@ const ServiceFullWidthImage = () => {
               />
 
               <div className="w-full p-10 md:pt-48">
-             
+
                 <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative lg:pt-32 lg:px-5">
                   <div className="">
                     At Newtok, our core focus is process automation. We believe

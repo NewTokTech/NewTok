@@ -99,7 +99,7 @@ const page = () => {
             ],
         },
 
-       
+
 
         {
             title: ["FONT", " MANAGER"],

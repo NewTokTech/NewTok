@@ -1,6 +1,6 @@
 import React from 'react'
-import SingleContainer from '../servicePage/SingleContainer'
-import ServiceWhyUs from '../servicePage/ServiceWhyUs';
+import SingleContainer from '../../servicePage/SingleContainer'
+import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 
 const servicesontent = [
   {
@@ -106,20 +106,17 @@ const servicesontent = [
   },
 ];
 
-
-
-const ServiceContainer = () => {
-
+const ServicesAiTwo = () => {
   return (
     <>
-      {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
-      {servicesontent.map((value, index) => {
-        return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
-      })}
-      <ServiceWhyUs />
-      {/* </div> */}
-    </>
+    {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
+    {servicesontent.map((value, index) => {
+      return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+    })}
+    <ServiceWhyUs />
+    {/* </div> */}
+  </>
   )
 }
 
-export default ServiceContainer
+export default ServicesAiTwo

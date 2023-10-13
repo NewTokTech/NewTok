@@ -1,6 +1,7 @@
 import React from 'react'
-import SingleContainer from '../servicePage/SingleContainer'
-import ServiceWhyUs from '../servicePage/ServiceWhyUs';
+import SingleContainer from '../../servicePage/SingleContainer'
+import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+
 
 const servicesontent = [
   {

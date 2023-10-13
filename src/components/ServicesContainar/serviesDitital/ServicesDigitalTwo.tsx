@@ -1,6 +1,7 @@
 import React from 'react'
-import SingleContainer from '../servicePage/SingleContainer'
-import ServiceWhyUs from '../servicePage/ServiceWhyUs';
+import SingleContainer from '../../servicePage/SingleContainer'
+import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+import ServiceSecondPage from '@/components/servicePage/ServiceSecondPage';
 
 
 const servicesontent = [
@@ -107,19 +108,13 @@ const servicesontent = [
     },
 ];
 
-const ServiceDigitalContainar = () => {
+const ServiceTwo = () => {
     return (
         <>
-            <>
-                {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
-                {servicesontent.map((value, index) => {
-                    return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
-                })}
-                <ServiceWhyUs />
-                {/* </div> */}
-            </>
+            <ServiceSecondPage />
+            <ServiceWhyUs />
         </>
     )
 }
 
-export default ServiceDigitalContainar
+export default ServiceTwo
