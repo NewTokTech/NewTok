@@ -175,12 +175,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/digital-engineering"}>
+                                        <Link href={"/services/digital-engineering"}>
                                           Enterprise Solutions
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/digital-engineering"}>
+                                        <Link href={"/services/digital-engineering"}>
                                           Application Developement
                                         </Link>
                                       </p>
@@ -193,12 +193,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/data-ai"}>
+                                        <Link href={"/services/data-ai"}>
                                           Advanced Analytics
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/data-ai"}>
+                                        <Link href={"/services/data-ai"}>
                                           Data Visualization
                                         </Link>
                                       </p>
@@ -211,12 +211,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p className="hover:text-primary">
-                                        <Link href={"/digital-commerce"}>
+                                        <Link href={"/services/digital-commerce"}>
                                           UI/UX
                                         </Link>
                                       </p>
                                       <p className="hover:text-primary">
-                                        <Link href={"/digital-commerce"}>
+                                        <Link href={"/services/digital-commerce"}>
                                           Digital Commerce
                                         </Link>
                                       </p>
