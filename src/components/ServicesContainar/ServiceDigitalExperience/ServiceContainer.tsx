@@ -108,20 +108,8 @@ const servicesontent = [
 ];
 
 
-interface ServiceContentItem {
-  position: "left" | "right";
-  img: string;
-  color: string;
-  HOne: string;
-  HTwo: string;
-  text: {
-    H1: string;
-    P: string;
-  }[];
-}
 
-
-const ServiceContainer = (props: ServiceContentItem) => {
+const ServiceContainer = () => {
 
   return (
     <>
