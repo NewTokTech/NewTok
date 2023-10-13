@@ -10,22 +10,20 @@ import ServiceFullWidthImage from "../servicePage/ServiceFullWidthImage";
 function Service() {
   return (
     <>
-      <div className=" mx-auto">
-        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-inter font-semibold">
+      <div className=" mx-auto mt-16">
+        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
           Service
         </h1>
-        <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-inter font-semibold">
+        <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-semibold">
           We have been working with some Fortune{" "}
           <br className="lg:hidden block" /> 500+ clients
         </p>
-        <div className=" mx-auto flex justify-center mt-5 ">
+        <div className=" mx-auto flex justify-center md:my-16">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
-            {/* one */}
-
-            <div className="w-full max-w-sm bg-white  shadow-md ps-10 pe-10 pt-2 pb-2">
-              <div className="flex flex-col items-center  pt-10">
+            <div className="w-full max-w-xs bg-white shadow-md px-10 pt-2 pb-2 rounded-lg">
+              <div className="flex flex-col items-center pt-10">
                 <Image className="w-24 h-24 mb-3 " src={icon} alt="🙏 IMAGE" />
-                <h5 className="mb-1  text-xl font-medium text-center">
+                <h5 className="text-xl font-medium text-center">
                   <span className="text-secondary text-[28px]"> DIGITAL</span>
                   <br />
                   <span className=" text-primary text-center text-[28px]">
@@ -38,19 +36,17 @@ function Service() {
                   and app development.
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary    hover:border  hover:bg-primary  hover:text-white  hover:duration-75"
+                  <Link
+                    href="/digital-engineering"
+                    className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* two */}
-
-            <div className="w-full  bg-white  shadow-md ps-10 pe-10 pt-2 pb-2">
+            <div className="w-full max-w-xs bg-white shadow-md px-10 pt-2 pb-2 rounded-lg">
               <div className="flex flex-col items-center pt-10">
                 <Image className="w-24 h-24 mb-3 " src={icon1} alt="🙏 IMAGE" />
                 <h5 className="text-xl font-medium text-[28px] text-center">
@@ -62,22 +58,21 @@ function Service() {
                   <span className=" text-primary text-[28px]">AI/ML</span>
                 </h5>
                 <span className="text-sm text-secondary text-center">
-                  Turn data into insights with our Data <br /> Engineering and
-                  Advanced Analytics.
+                  Turn data into insights with our Data Engineering and Advanced
+                  Analytics.
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
-                  <a
-                    href="#"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary  hover:border  hover:bg-primary  hover:text-white  hover:duration-75"
+                  <Link
+                    href="/data-ai"
+                    className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            {/* three */}
-            <div className="w-full  bg-white shadow-md ps-10 pe-10 pt-2 pb-2">
+            <div className="w-full max-w-xs bg-white shadow-md px-10 pt-2 pb-2 rounded-lg">
               <div className="flex flex-col items-center pb-5 pt-10">
                 <Image className="w-24 h-24 mb-3 " src={icon2} alt="🙏 IMAGE" />
                 <h5 className="text-xl font-medium text-center">
@@ -88,13 +83,13 @@ function Service() {
                   <span className=" text-primary text-[28px]">EXPERIENCE</span>
                 </h5>
                 <span className="text-sm text-secondary text-center">
-                  Enhance user experiences with our <br /> UI/UX and e-commerce
-                  solutions.
+                  Elevate user experiences with UI/UX design and digital
+                  commerce solutions.
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
                   <Link
-                    href="#"
-                    className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-primary transition-colors duration-300 ease-in-out hover:bg-primary hover:text-white"
+                    href="/digital-commerce"
+                    className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE
                   </Link>
@@ -104,8 +99,6 @@ function Service() {
           </div>
         </div>
       </div>
-
-      <ServiceFullWidthImage />
     </>
   );
 }

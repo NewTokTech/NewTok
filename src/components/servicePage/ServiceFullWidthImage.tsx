@@ -6,10 +6,10 @@ const ServiceFullWidthImage = () => {
     <>
       <div className="relative py-10 lg:mx-52 ">
         <div
-          className="lg:mx-32 rounded-xl bg-white about min-w-[519px] text-secondary"
+          className="lg:mx-32 rounded-xl bg-white about text-secondary"
           style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
         >
-          <div className="m-auto px-6 md:px-12 xl:px-6">
+          <div className="m-auto lg:px-6 md:px-12 xl:px-6">
             <div
               className={`space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 lg:items-center lg:gap-12`}
             >
@@ -18,12 +18,12 @@ const ServiceFullWidthImage = () => {
                 alt="about 1"
                 width={940}
                 height={485}
-                className={`absolute top-0 left-0 z-40 scale-75 opacity-50 lg:opacity-100 lg:scale-100 overflow-visible `}
+                className={`absolute bottom-0 md:top-0 md:left-0 z-40 scale-75 opacity-50 lg:opacity-100 lg:scale-100 overflow-visible `}
               />
 
-              <div className="md:7/12 lg:w-6/12 p-10">
+              <div className="w-full p-10 md:pt-48">
              
-                <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative lg:mt-">
+                <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative lg:pt-32 lg:px-5">
                   <div className="">
                     At Newtok, our core focus is process automation. We believe
                     in the power of automation to transform how businesses

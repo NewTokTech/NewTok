@@ -49,9 +49,9 @@ const Testimonials = () => {
         </div>
         <div className="z-10 relative block mt-52 mb-9">
           <>
-            <h1 className="text-secondary lg:text-[40px] lg:ms-36 ms-10 mt-5  mb-5 text-start  font-semibold">
+            <h1 className="text-secondary text-[28px] md:text-[40px] lg:ms-36 ms-10 mt-5 mb-5 text-start font-semibold">
               <span> What Our</span>
-              <span className="text-primary">Clients Say About Us</span>
+              <span className="text-primary"> Clients Say About Us</span>
             </h1>
             <div className="flex justify-center">
               <div className="w-11/12 lg:w-10/12 bg-white shadow-lg ps-2 pe-2 pt-2 ">

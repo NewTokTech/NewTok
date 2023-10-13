@@ -22,11 +22,6 @@ const Baneer = () => {
       textTwo: "SMART",
       textThree: "INVENTIONS",
       textP: "SOFTWARE APPLICATION AND PRODUCT DEVELOPMENT SERVICES",
-
-      // textOne: "TECHNOLOGY FOR ",
-      // textTwo: "SMART",
-      // textThree: "LIVING",
-      // textP: "TURN KEY SOLUTIONS FOR HOME AND BUILDING AUTOMATION",
       textColor: " text-secondary",
       textColorOne: "text-secondary",
       textColorTwo: "text-primary",
@@ -53,7 +48,7 @@ const Baneer = () => {
   };
 
   const scrollToTop = () => {
-    const scrollDuration = 1000; // Duration of the scroll animation in milliseconds
+    const scrollDuration = 1000;
     const start = window.scrollY;
     const startTime = performance.now();
 
@@ -73,10 +68,10 @@ const Baneer = () => {
   };
 
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    const slideInterval = setInterval(nextSlide, 3000); 
 
     return () => {
-      clearInterval(slideInterval); // Clean up the interval on component unmount
+      clearInterval(slideInterval); 
     };
   }, []);
 
@@ -148,7 +143,7 @@ const Baneer = () => {
 
                 <li>
                   <a
-                    href="https://in.pinterest.com/newtoksoft/_created/"
+                    href="https://x.com/"
                     className="twitter"
                     target="_blank"
                   >

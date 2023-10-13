@@ -175,12 +175,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/"}>
+                                        <Link href={"/digital-engineering"}>
                                           Enterprise Solutions
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/"}>
+                                        <Link href={"/digital-engineering"}>
                                           Application Developement
                                         </Link>
                                       </p>
@@ -193,12 +193,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/"}>
+                                        <Link href={"/data-ai"}>
                                           Advanced Analytics
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/"}>
+                                        <Link href={"/data-ai"}>
                                           Data Visualization
                                         </Link>
                                       </p>
@@ -211,10 +211,14 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p className="hover:text-primary">
-                                        <Link href={"/"}>UI/UX</Link>
+                                        <Link href={"/digital-commerce"}>
+                                          UI/UX
+                                        </Link>
                                       </p>
                                       <p className="hover:text-primary">
-                                        <Link href={"/"}>Digital Commerce</Link>
+                                        <Link href={"/digital-commerce"}>
+                                          Digital Commerce
+                                        </Link>
                                       </p>
                                     </div>
                                   </div>
@@ -255,14 +259,7 @@ const Navbar = () => {
                         <h6>India</h6>
                         <a href="tel:+917012935874">+91 701 293 5874</a>
                       </div>
-                      {/* <div className="phone">
-                        <h6>Canada</h6>
-                        <a href="tel:+12049607672">+1 204 960 7672</a>
-                      </div>
-                      <div className="phone">
-                        <h6>Middle East</h6>
-                        <a href="tel:+96893861384">+968 93 861 384</a>
-                      </div> */}
+                 
                       <div className="mail">
                         <h6>Projects</h6>
                         <a href="mailto:info@newtoktech.com">
