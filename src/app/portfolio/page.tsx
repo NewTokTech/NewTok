@@ -35,15 +35,15 @@ const page = () => {
     },
 
     {
-        title: ["PST", "SYNC"],
+        title: ["CHARTS", " AND GRAPHS"],
         description:
-          "PSTSync is the ultimate solution for all of your PST file management problems. PSTSync can handle all types of Outlook mail folders. PSTSync will help you keep your mobile laptop in sync with your desktop at all times. Just select the PST files from the PSTSync screen and check off which folders to synchronize and click the synchronize button. That’s it! It has tons of other features that you wont find in other Outlook synchronization tools.",
-        client: "AminSoft, USA",
+          "Charts & Graphs is an Add-In which Works with Microsoft Word, Excel and PowerPoint. The program allows you to create and edit stunning 3-D charts and graphs without having to switch back and forth from your data files.",
+        client: "SummitSoftCorp, USA",
         images: [
-          "/portfolio/pstsync/pic1.jpg",
-          "/portfolio/pstsync/pic2.jpg",
-          "/portfolio/pstsync/pic3.jpg",
-          "/portfolio/pstsync/pic4.jpg",
+          "/portfolio/chart/pic1.png",
+          "/portfolio/chart/pic2.png",
+          "/portfolio/chart/pic3.png",
+          "/portfolio/chart/pic4.png",
         ],
       },
 

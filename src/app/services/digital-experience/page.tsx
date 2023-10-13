@@ -114,7 +114,7 @@ const digitalExperience = () => {
                 <span className="">Low-Code/No-</span>
                 <span className="text-primary">Code Development</span>
               </h1>
-              <ServiceSecondPage />
+              <ServiceContainer />
             </>
           )}
         </section>
