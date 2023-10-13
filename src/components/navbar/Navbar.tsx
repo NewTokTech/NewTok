@@ -103,7 +103,7 @@ const Navbar = () => {
               <ul className="social">
                 <li>
                   <a
-                    href="https://www.facebook.com/newtoksoft/"
+                    href="https://www.facebook.com/newtoktech/"
                     className="facebook"
                     target="_blank"
                   >
@@ -131,7 +131,7 @@ const Navbar = () => {
 
                 <li>
                   <a
-                    href="https://in.pinterest.com/newtoksoft/_created/"
+                    href="https://twitter.com/newtoktech"
                     className="twitter"
                     target="_blank"
                   >
@@ -150,7 +150,7 @@ const Navbar = () => {
                       <ul className="menu-list">
                         <li>
                           <span>1.</span>
-                          <Link href="/about">
+                          <Link onClick={toggleMenu} href="/about">
                             <span data-hover="About Us">About Us</span>
                           </Link>
                         </li>
@@ -175,12 +175,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/services/digital-engineering"}>
+                                        <Link onClick={toggleMenu} href={"/services/digital-engineering"}>
                                           Enterprise Solutions
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/services/digital-engineering"}>
+                                        <Link onClick={toggleMenu} href={"/services/digital-engineering"}>
                                           Application Developement
                                         </Link>
                                       </p>
@@ -193,12 +193,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link href={"/services/data-ai"}>
+                                        <Link onClick={toggleMenu} href={"/services/data-ai"}>
                                           Advanced Analytics
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link href={"/services/data-ai"}>
+                                        <Link onClick={toggleMenu} href={"/services/data-ai"}>
                                           Data Visualization
                                         </Link>
                                       </p>
@@ -211,12 +211,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p className="hover:text-primary">
-                                        <Link href={"/services/digital-experience"}>
+                                        <Link onClick={toggleMenu} href={"/services/digital-experience"}>
                                           UI/UX
                                         </Link>
                                       </p>
                                       <p className="hover:text-primary">
-                                        <Link href={"/services/digital-experience"}>
+                                        <Link onClick={toggleMenu} href={"/services/digital-experience"}>
                                           Digital Commerce
                                         </Link>
                                       </p>
@@ -230,19 +230,19 @@ const Navbar = () => {
 
                         <li>
                           <span>3.</span>
-                          <Link href="/portfolio">
+                          <Link onClick={toggleMenu} href="/portfolio">
                             <span data-hover="Projects">Portfolio</span>
                           </Link>
                         </li>
                         <li>
                           <span>4.</span>
-                          <Link href="/careers">
+                          <Link onClick={toggleMenu} href="/careers">
                             <span data-hover="Clients">Careers</span>
                           </Link>
                         </li>
                         <li>
                           <span>5.</span>
-                          <Link href="/contact-us">
+                          <Link onClick={toggleMenu} href="/contact-us">
                             <span data-hover="Contact Us">Contact Us</span>
                           </Link>
                         </li>

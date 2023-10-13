@@ -1,15 +1,18 @@
-"use client";
-
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Don't worry about it getting too long. We know your awesome ideas take time to explain; the more we learn about it the better we can help you out. We would love to hear all about your project. Connect with us through the contact form for a free initial project consultation. Contact us and see what",
+}
+
 const Contact = () => {
   return (
     <>
-      {/* component */}
-
+    
       <div className="mx-auto mt-36 mb-10">
         <h4 className="text-secondary lg:text-[18px] mt-5 text-center  font-semibold">
           CONTACT US

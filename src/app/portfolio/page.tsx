@@ -1,25 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Portfolio from "@/components/portfolio/Portfolio";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Portfolio",
+    description: "Newtok Technologies has excellent and long-lasting solutions to all your IT needs.",
+  };
 const page = () => {
-    // const imgArray = [
-    //     test,
-    //     hello,
-    //     test
-    // ];
-
-    // const [currentIndex, setCurrentIndex] = useState(0)
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         setCurrentIndex((prevIndex) => (prevIndex + 1) % imgArray.length);
-    //     }, 2000);
-    //     return () => {
-    //         clearInterval(intervalId);
-    //     };
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, [imgArray, 2000]);
-
     const portfolioData = [
         {
             title: ["PST", "SYNC"],
@@ -47,18 +34,17 @@ const page = () => {
             ],
         },
 
-        // {
-        //     title: ["LOGO", " DESIGN IOS"],
-        //     description:
-        //         "Mac Fonts is a font management software for MAC OS X.",
-        //     client: "SummitSoftCorp, USA",
-        //     images: [
-        //         "/portfolio/logo-designios/pic1.jpg",
-        //         "/portfolio/logo-designios/pic2.jpg",
-        //         "/portfolio/logo-designios/pic3.jpg",
-        //         "/portfolio/logo-designios/pic4.jpg",
-        //     ],
-        // },
+        {
+            title: ["LOGO", " DESIGN IOS"],
+            description:
+                "Mac Fonts is a font management software for MAC OS X.",
+            client: "SummitSoftCorp, USA",
+            images: [
+                "/portfolio/logo-designios/pic1.jpg",
+                "/portfolio/logo-designios/pic2.jpg",
+                "/portfolio/logo-designios/pic3.jpg",
+            ],
+        },
 
         {
             title: ["IN", " CONTACT"],
@@ -82,7 +68,6 @@ const page = () => {
                 "/portfolio/business-card/pic1.jpg",
                 "/portfolio/business-card/pic2.jpg",
                 "/portfolio/business-card/pic3.jpg",
-                "/portfolio/business-card/pic1.jpg",
             ],
         },
 
@@ -110,22 +95,35 @@ const page = () => {
                 "/portfolio/font-manager/pic1.png",
                 "/portfolio/font-manager/pic2.png",
                 "/portfolio/font-manager/pic3.png",
-                "/portfolio/font-manager/pic1.png",
             ],
         },
 
-        // {
-        //     title: ["IQ", " TEASER"],
-        //     description:
-        //         "Mac Fonts is a font management software for MAC OS X.",
-        //     client: "AminSoft, USA",
-        //     images: [
-        //         "/portfolio/iQTeaser/pic1.png",
-        //         "/portfolio/iQTeaser/pic2.png",
-        //         "/portfolio/iQTeaser/pic3.png",
-        //         "/portfolio/iQTeaser/pic1.png",
-        //     ],
-        // },
+        {
+            title: ["IQ", " TEASER"],
+            description:
+                "Mac Fonts is a font management software for MAC OS X.",
+            client: "AminSoft, USA",
+            images: [
+                "/portfolio/iQTeaser/pic1.png",
+                "/portfolio/iQTeaser/pic2.png",
+                "/portfolio/iQTeaser/pic3.png",
+            ],
+        },
+
+        {
+            title: ["LOGO", " DESIGN STUDIO"],
+            description:
+                "Logo Design Studio's new vector drawing and editable vector graphics software. Using this vector design software you can create razor sharp graphics from business cards to billboards!",
+            client: "SummitSoftCorp, USA",
+            images: [
+                "/portfolio/logo-design/pic1.png",
+                "/portfolio/logo-design/pic2.png",
+                "/portfolio/logo-design/pic3.png",
+                "/portfolio/logo-design/pic4.png",
+                "/portfolio/logo-design/pic5.png",
+
+            ],
+        },
     ];
 
     return (
@@ -142,7 +140,7 @@ const page = () => {
 
             {portfolioData.map((data, index) => (
                 <>
-                    <Portfolio props={data} />
+                    <Portfolio key={index} index={index} props={data} />
                 </>
             ))}
         </section>

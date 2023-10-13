@@ -164,7 +164,7 @@ const Footer = () => {
         <ul className="social">
           <li>
             <a
-              href="https://www.facebook.com/newtoksoft/"
+              href="https://www.facebook.com/newtoktech/"
               className="facebook"
               target="_blank"
             >
@@ -192,7 +192,7 @@ const Footer = () => {
 
           <li>
             <a
-              href="https://in.pinterest.com/newtoksoft/_created/"
+              href="https://twitter.com/newtoktech"
               className="twitter"
               target="_blank"
             >
