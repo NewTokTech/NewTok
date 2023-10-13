@@ -4,9 +4,7 @@ const ServiceWhyUs = () => {
     return (
         <>
 
-            <section>
-
-
+            <section className=''>
                 <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
                     <span className="">Digital </span>
                     <span className="text-primary">engineering</span>

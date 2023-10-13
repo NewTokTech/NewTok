@@ -211,12 +211,12 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p className="hover:text-primary">
-                                        <Link href={"/services/digital-commerce"}>
+                                        <Link href={"/services/digital-experience"}>
                                           UI/UX
                                         </Link>
                                       </p>
                                       <p className="hover:text-primary">
-                                        <Link href={"/services/digital-commerce"}>
+                                        <Link href={"/services/digital-experience"}>
                                           Digital Commerce
                                         </Link>
                                       </p>

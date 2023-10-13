@@ -82,7 +82,48 @@ const page = () => {
                 "/portfolio/business-card/pic1.jpg",
                 "/portfolio/business-card/pic2.jpg",
                 "/portfolio/business-card/pic3.jpg",
-                "/portfolio/contact/pic5.jpg",
+                "/portfolio/business-card/pic1.jpg",
+            ],
+        },
+
+        {
+            title: ["MAC", " FONTS"],
+            description:
+                "Mac Fonts is a font management software for MAC OS X.",
+            client: "SummitSoftCorp, USA",
+            images: [
+                "/portfolio/mac-fonts/pic1.jpg",
+                "/portfolio/mac-fonts/pic2.jpg",
+                "/portfolio/mac-fonts/pic3.jpg",
+                "/portfolio/mac-fonts/pic4.jpg",
+            ],
+        },
+
+       
+
+        {
+            title: ["FONT", " MANAGER"],
+            description:
+                "A font managment software for windows.",
+            client: "SummitSoftCorp, USA",
+            images: [
+                "/portfolio/font-manager/pic1.png",
+                "/portfolio/font-manager/pic2.png",
+                "/portfolio/font-manager/pic3.png",
+                "/portfolio/font-manager/pic1.png",
+            ],
+        },
+
+        {
+            title: ["IQ", " TEASER"],
+            description:
+                "Mac Fonts is a font management software for MAC OS X.",
+            client: "AminSoft, USA",
+            images: [
+                "/portfolio/iQTeaser/pic1.png",
+                "/portfolio/iQTeaser/pic2.png",
+                "/portfolio/iQTeaser/pic3.png",
+                "/portfolio/iQTeaser/pic1.png",
             ],
         },
     ];

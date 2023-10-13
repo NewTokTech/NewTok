@@ -23,8 +23,9 @@ const About = () => {
         </h1>
         <div className="flex justify-center">
           <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the an unknown printer took a galley
+            We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.
+
+
           </p>
         </div>
 
