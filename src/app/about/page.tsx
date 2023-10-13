@@ -3,14 +3,8 @@ import Image from "next/image";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Services",
-  description: "Technology for smart Inventions",
-  icons: {
-    icon: ['/favicon/favicon.svg'],
-    apple: ['/favicon/apple-touch-icon.png?v=4'],
-    shortcut: ['/favicon/apple-touch-icon.png']
-  },
-  manifest: '/favicon/site.webmanifest'
+  title: "About",
+  description: " We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.",
 };
 
 const About = () => {
