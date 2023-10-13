@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0px;
   padding: 0px;
@@ -27,7 +28,6 @@ body {
   overflow-y: auto;
   background-color: #ffffff;
   scroll-behavior: smooth;
-  font-family: 'Sen' sans-serif;
 }
 body::-webkit-scrollbar {
   width: 10px;

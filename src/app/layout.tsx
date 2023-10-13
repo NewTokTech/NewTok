@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/footer/Footer";
+import { Sen } from 'next/font/google'
 
 
 export const metadata: Metadata = {
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
   manifest: '/favicon/site.webmanifest'
 };
 
+const sen = Sen({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 export default function RootLayout({
   children,
 }: {
@@ -25,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
       </head>
-      <body className={" bg-backgound"}>
+      <body className={ sen.className + " bg-backgound "}>
         <Navbar />
         {children}
         <Footer />

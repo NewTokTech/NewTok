@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./about.css";
 import ImageContainer from "./ImageContainer";
 import Image from "next/image";
+import Button from "../common/Button";
 
 const About = () => {
   return (
@@ -37,12 +38,7 @@ const About = () => {
                 Newtok Technologies, where digital excellence awaits.
               </p>
 
-              <button
-                type="button"
-                className="mt-10 py-2.5 px-12 mr-2 mb-5 text-sm font-medium text-primary focus:outline-none bg-white  border border-primary border-5 hover:bg-primary  hover:text-white transform transition-colors duration-300 ease-in-out"
-              >
-                MORE ABOUT US
-              </button>
+             <Button link="/about" text="MORE ABOUT US"/>
             </div>
           </div>
         </div>
