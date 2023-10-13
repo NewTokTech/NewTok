@@ -1,11 +1,6 @@
-"use client";
-import ServiceContainer from "@/components/ServicesContainar/ServiceDataAiContainar";
-import ServiceMain from "@/components/servicePage/ServiceMain";
-import ServiceSecondPage from "@/components/servicePage/ServiceSecondPage";
-// import ServiceContainer from "@/components/servicePage/ServiceContainer";
-import Image from "next/image";
-import React, { useState } from "react";
-
+import React from 'react'
+import SingleContainer from '../servicePage/SingleContainer'
+import ServiceWhyUs from '../servicePage/ServiceWhyUs';
 
 const servicesontent = [
   {
@@ -113,21 +108,18 @@ const servicesontent = [
 
 
 
-const DataAI = () => {
-  const [pageShow, setPageShow] = useState(0);
-
-  const changePage = () => {
-    setPageShow(0);
-  };
-  const changePageSecont = () => {
-    setPageShow(1);
-  };
+const ServiceContainer = () => {
 
   return (
     <>
-      {/* <ServiceMain componentA={} componentB={ } /> */}
+      {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
+      {servicesontent.map((value, index) => {
+        return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+      })}
+      <ServiceWhyUs />
+      {/* </div> */}
     </>
   )
 }
 
-export default DataAI
+export default ServiceContainer

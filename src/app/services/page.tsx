@@ -1,5 +1,5 @@
 "use client";
-import ServiceContainer from "@/components/servicePage/ServiceContainer";
+import ServiceContainer from "@/components/ServicesContainar/ServiceContainer";
 import ServiceSecondPage from "@/components/servicePage/ServiceSecondPage";
 import Image from "next/image";
 import React, { useState } from "react";
