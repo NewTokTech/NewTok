@@ -3,111 +3,96 @@ import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 
 
+
+
+
 const servicesontent = [
   {
-    position: "left",
-    img: '/services/service1.svg',
-    Hthree: "bg-white",
-    HOne: " Heathcare",
-    HTwo: "Solutions",
-    text: [
-      {
-        H1: "Patient Management",
-        P: 'Seamlessly manage patient information and appointments to improve the quality of care.'
-      },
-      {
-        H1: "Clinical Trials Management",
-        P: 'Efficiently oversee and streamline the entire clinical trials process.'
-      },
-      {
-        H1: "Clinician Management",
-        P: "Optimize the management of healthcare professionals for better patient outcomes."
-      },
-      {
-        H1: " Operations Management",
-        P: "Enhance the overall operational efficiency of healthcare facilities."
-      }
-    ]
+      position: "left",
+      img: '/services/DigitalExperience/DEG1.svg',
+      Hthree: `User-Centric Design At the heart of our UI/UX design philosophy is a commitment to user-centric solutions. We understand your users' needs and behaviors, ensuring our designs enhance their experiences.`,
+      HOne: " Data Collection ",
+      HTwo: "and Ingestion",
+      text: [
+          {
+              H1: "User Research",
+              P: 'In-depth research to uncover user preferences, pain points, and expectations.'
+          },
+          {
+              H1: " User Personas",
+              P: 'Crafting detailed user personas to guide design decisions.'
+          },
+          {
+              H1: " User Journey Mapping",
+              P: "Mapping out the user's interactions and experiences to optimize each touchpoint."
+          },
+      ]
   },
   {
-    position: "right",
-    img: '/services/service2.svg',
-    Hthree: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
-    text: [{
-      H1: "Projects Management",
-      P: 'Control and monitor every aspect of your construction projects with ease.'
-    },
-    {
-      H1: "Vendor Management",
-      P: 'Streamline vendor relations and procurement for better project execution'
-    },
-    {
-      H1: "Contracts Management",
-      P: 'Ensure the seamless management of contracts and agreements.'
-    },
-    {
-      H1: " Purchase to Pay Management",
-      P: 'Simplify the procurement process from purchase to payment.'
-    },
-    ]
+      position: "right",
+      img: '/services/DigitalExperience/DEG2.svg',
+      Hthree: "In an era where users access content across various devices and screen sizes, responsive design is crucial. ",
+      HOne: "Responsive",
+      HTwo: "  Design",
+      text: [{
+          H1: " Responsive Web Design",
+          P: 'Creating web experiences that adapt to different screen sizes and orientations.'
+      },
+      {
+          H1: "  Mobile App Design",
+          P: 'Designing mobile apps that provide an exceptional experience on smartphones and tablets.'
+      },
+      {
+          H1: "Cross-Platform Compatibility",
+          P: 'Ensuring a consistent and engaging experience across multiple platforms.'
+      },
+      ]
   },
   {
-    position: "left",
-    img: '/services/service3.svg',
-    Hthree: "bg-white",
-    HOne: " Education",
-    HTwo: " Solutions",
-    text: [{
-      H1: "Student Enrollment & Engagement",
-      P: 'Enhance the student experience from enrollment to engagement.'
-    },
-    {
-      H1: "Operational Excellence",
-      P: 'Optimize educational processes and workflows for better outcomes.'
-    },
-    {
-      H1: "Innovations Management",
-      P: 'Foster innovation in educational practices.'
-    },
-    ]
+      position: "left",
+      img: '/services/DigitalExperience/DEG3.svg',
+      Hthree: "To visualize and refine your design concepts",
+      HOne: " Wireframing",
+      HTwo: "  and Prototyping",
+      text: [{
+          H1: "Wireframing",
+          P: 'Creating basic structures and layouts to outline the content and user flow.'
+      },
+      {
+          H1: "  Prototyping",
+          P: ' Building interactive prototypes for user testing and validation.Visual Design Our visual designers are skilled in crafting captivating, on-brand experiences. Our services encompass'
+      },
+      {
+          H1: " UI Style Guide",
+          P: ' Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
+      },
+      {
+          H1: "Graphic Design",
+          P: ' Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
+      },
+      {
+          H1: " Animation and Microinteractions",
+          P: '  Incorporating subtle animations and microinteractions to improve user engagement.'
+      },
+      ]
   },
   {
-    position: "right",
-    img: '/services/service4.svg',
-    Hthree: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
-    text: [{
-      H1: "Accelerate Product Research",
-      P: 'Enhance product development and research.'
-    },
-    {
-      H1: "Innovations Management",
-      P: 'Facilitate the management of innovation and creativity.'
-    },
-    {
-      H1: "Logistics Management",
-      P: 'Optimize the movement of goods and materials.'
-    },
-    {
-      H1: "Assets Purchase and Management",
-      P: 'Efficiently handle assets procurement and lifecycle management.'
-    },
-    {
-      H1: "Field Service Management",
-      P: 'Streamline field operations for manufacturing facilities.'
-    },
-    {
-      H1: "Contracts Management",
-      P: 'Simplify contract management processes.'
-    },
-    ]
+      position: "right",
+      img: '/services/DigitalExperience/DEG4.svg',
+      Hthree: "We believe in iterative design",
+      HOne: "User Testing ",
+      HTwo: "  and Feedback",
+      text: [{
+          H1: "Usability Testing",
+          P: 'Running tests to gather user feedback and refine the design.'
+      },
+      {
+          H1: "A/B Testing",
+          P: 'Comparing variations of your design to determine which performs better.'
+      },
+      ]
   },
 ];
-
-
 
 
 

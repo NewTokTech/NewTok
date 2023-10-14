@@ -15,6 +15,19 @@ const Baneer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
+ 
+    {
+      img: '/svg/undraw_web_devices_re_m8sc.svg',
+      color: "bg-primary",
+      textOne: "TECHNOLOGY FOR ",
+      textTwo: "SMART",
+      textThree: "LIVING",
+      textP: "TURN KEY SOLUTIONS FOR HOME AND BUILDING AUTOMATION",
+      textColor: "text-white",
+      textColorOne: "text-dark",
+      textColorTwo: "text-dark",
+      copyright_social: "text-white",
+    },
     {
       img: '/svg/Group 239.svg',
       color: "bg-white",
@@ -29,7 +42,7 @@ const Baneer = () => {
     },
     {
       img: '/svg/undraw_web_devices_re_m8sc.svg',
-      color: "bg-primary",
+      color: "bg-secondary",
       textOne: "TECHNOLOGY FOR ",
       textTwo: "SMART",
       textThree: "LIVING",
@@ -41,39 +54,21 @@ const Baneer = () => {
     },
   ];
 
+
   const nextSlide = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
-  const scrollToTop = () => {
-    const scrollDuration = 1000;
-    const start = window.scrollY;
-    const startTime = performance.now();
-
-    const scroll = (currentTime: number) => {
-      const elapsedTime = currentTime - startTime;
-      const t = Math.min(1, elapsedTime / scrollDuration);
-      const scrollTo = start - start * t;
-
-      window.scrollTo(0, scrollTo);
-
-      if (t < 1) {
-        requestAnimationFrame(scroll);
-      }
-    };
-
-    requestAnimationFrame(scroll);
-  };
-
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000); 
+    const slideInterval = setInterval(nextSlide, 3000);
 
     return () => {
-      clearInterval(slideInterval); 
+      clearInterval(slideInterval);
     };
   }, []);
+
 
   return (
     <div className="relative w-full h-screen banner">
