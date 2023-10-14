@@ -5,102 +5,114 @@ import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 const servicesontent = [
   {
     position: "left",
-    img: '/services/service1.svg',
-    color: "bg-white",
-    HOne: " Heathcare",
-    HTwo: "Solutions",
+    img: '/services/DataAI/DA6.svg',
+    Hthree: "Leverage the power of Machine Learning to extract valuable insights and automate tasks.Our services encompass",
+    HOne: " Machine Lea",
+    HTwo: "rning Solutions",
     text: [
       {
-        H1: "Patient Management",
-        P: 'Seamlessly manage patient information and appointments to improve the quality of care.'
+        H1: "Predictive Modeling",
+        P: 'Develop predictive models to anticipate trends, make recommendations, and optimize processes.'
       },
       {
-        H1: "Clinical Trials Management",
-        P: 'Efficiently oversee and streamline the entire clinical trials process.'
+        H1: " Natural Language Processing (NLP)",
+        P: 'Enable machines to understand, interpret, and generate human language for text analysis and more.'
       },
       {
-        H1: "Clinician Management",
-        P: "Optimize the management of healthcare professionals for better patient outcomes."
+        H1: "Image and Video Analysis",
+        P: "Extract information and insights from images and videos through computer vision."
       },
       {
-        H1: " Operations Management",
-        P: "Enhance the overall operational efficiency of healthcare facilities."
+        H1: " Recommendation Systems",
+        P: " Enhance user experiences with personalized recommendations."
+      },
+      {
+        H1: " Anomaly Detection",
+        P: "Identify unusual patterns or anomalies in your data, crucial for fraud detection and quality control."
       }
     ]
   },
   {
     position: "right",
-    img: '/services/service2.svg',
-    color: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA7.svg',
+    Hthree: "Artificial Intelligence takes your data to the next level, offering intelligent automation and decision support",
+    HOne: " Artificial Intel",
+    HTwo: " ligence Services",
     text: [{
-      H1: "Projects Management",
-      P: 'Control and monitor every aspect of your construction projects with ease.'
+      H1: "AI Chatbots and Virtual Assistants",
+      P: 'Enhance customer service and streamline interactions with AI-powered chatbots'
     },
     {
-      H1: "Vendor Management",
-      P: 'Streamline vendor relations and procurement for better project execution'
+      H1: " AI-Driven Automation",
+      P: 'Automate routine tasks and workflows to increase efficiency.'
     },
     {
-      H1: "Contracts Management",
-      P: 'Ensure the seamless management of contracts and agreements.'
+      H1: "Cognitive Computing",
+      P: ' Develop AI systems that can understand, reason, and learn to solve complex problems.'
     },
     {
-      H1: " Purchase to Pay Management",
-      P: 'Simplify the procurement process from purchase to payment.'
+      H1: " AI Strategy Development",
+      P: 'Collaborate with our experts to define your AI vision and strategy.'
     },
     ]
   },
   {
     position: "left",
-    img: '/services/service3.svg',
-    color: "bg-white",
-    HOne: " Education",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA8.svg',
+    Hthree: "Uncover hidden patterns, insights, and knowledge from your data with our data science services",
+    HOne: " Data Science ",
+    HTwo: " and Analytics",
     text: [{
-      H1: "Student Enrollment & Engagement",
-      P: 'Enhance the student experience from enrollment to engagement.'
+      H1: "Data Exploration and Visualization",
+      P: 'Understand your data with compelling visualizations and exploratory analysis.'
     },
     {
-      H1: "Operational Excellence",
-      P: 'Optimize educational processes and workflows for better outcomes.'
+      H1: "Descriptive and Prescriptive Analytics",
+      P: 'Derive actionable insights and make informed decisions.'
     },
     {
-      H1: "Innovations Management",
-      P: 'Foster innovation in educational practices.'
+      H1: "Big Data Analytics",
+      P: 'Handle and analyze large datasets to extract valuable information.'
     },
     ]
   },
   {
     position: "right",
-    img: '/services/service4.svg',
-    color: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA9.svg',
+    Hthree: "Uncover hidden patterns, insights, and knowledge from your data with our data science services",
+    HOne: " Data Science",
+    HTwo: "  and Analytics",
     text: [{
-      H1: "Accelerate Product Research",
-      P: 'Enhance product development and research.'
+      H1: " Data Exploration and Visualization",
+      P: 'Understand your data with compelling visualizations and exploratory analysis.'
     },
     {
-      H1: "Innovations Management",
-      P: 'Facilitate the management of innovation and creativity.'
+      H1: "Descriptive and Prescriptive Analytics",
+      P: ' Derive actionable insights and make informed decisions.'
     },
     {
-      H1: "Logistics Management",
-      P: 'Optimize the movement of goods and materials.'
+      H1: "Big Data Analytics",
+      P: 'Handle and analyze large datasets to extract valuable information.'
+    },
+    ]
+  },
+  {
+    position: "right",
+    img: '/services/DataAI/DA10.svg',
+    Hthree: "Our team can create customized ML and AI models that address your specific business challenges",
+    HOne: " Custom Model ",
+    HTwo: " Development",
+    text: [{
+      H1: " Custom Algorithm Development",
+      P: 'Develop algorithms tailored to your unique needs.'
     },
     {
-      H1: "Assets Purchase and Management",
-      P: 'Efficiently handle assets procurement and lifecycle management.'
+      H1: "Model Training and Deployment",
+      P: ' Train and deploy ML/AI models that continuously improve.'
     },
     {
-      H1: "Field Service Management",
-      P: 'Streamline field operations for manufacturing facilities.'
-    },
-    {
-      H1: "Contracts Management",
-      P: 'Simplify contract management processes.'
+      H1: "Continuous Model Monitoring",
+      P: ' Ensure your models remain effective and accurate over time.'
     },
     ]
   },
@@ -109,13 +121,13 @@ const servicesontent = [
 const ServicesAiTwo = () => {
   return (
     <>
-    {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
-    {servicesontent.map((value, index) => {
-      return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
-    })}
-    <ServiceWhyUs />
-    {/* </div> */}
-  </>
+      {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
+      {servicesontent.map((value, index) => {
+        return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+      })}
+      <ServiceWhyUs />
+      {/* </div> */}
+    </>
   )
 }
 

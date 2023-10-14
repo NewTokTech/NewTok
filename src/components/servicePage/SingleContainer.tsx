@@ -6,7 +6,7 @@ import React from "react";
 interface ServiceContent {
   position: string;
   img: string;
-  color: string;
+  Hthree: string;
   HOne: string;
   HTwo: string;
   text: Array<{
@@ -17,7 +17,7 @@ interface ServiceContent {
 
 
 const SingleContainer = (props: ServiceContent) => {
-  const { img, color, HOne, HTwo, text, position } = props;
+  const { img, Hthree, HOne, HTwo, text, position } = props;
   return (
     <>
       <div className="relative py-10 lg:mx-52 ">

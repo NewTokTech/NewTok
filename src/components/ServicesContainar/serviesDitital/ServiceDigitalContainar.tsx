@@ -7,77 +7,71 @@ const servicesontent = [
     {
         position: "left",
         img: '/services/service1.svg',
-        color: "bg-white",
-        HOne: " Heathcare",
-        HTwo: "Solutions",
+        Hthree: `User-Centric Design At the heart of our UI/UX design philosophy is a commitment to user-centric solutions. We understand your users' needs and behaviors, ensuring our designs enhance their experiences.`,
+        HOne: " Data Collection ",
+        HTwo: "and Ingestion",
         text: [
             {
-                H1: "Patient Management",
-                P: 'Seamlessly manage patient information and appointments to improve the quality of care.'
+                H1: "User Research",
+                P: 'In-depth research to uncover user preferences, pain points, and expectations.'
             },
             {
-                H1: "Clinical Trials Management",
-                P: 'Efficiently oversee and streamline the entire clinical trials process.'
+                H1: " User Personas",
+                P: 'Crafting detailed user personas to guide design decisions.'
             },
             {
-                H1: "Clinician Management",
-                P: "Optimize the management of healthcare professionals for better patient outcomes."
+                H1: " User Journey Mapping",
+                P: "Mapping out the user's interactions and experiences to optimize each touchpoint."
             },
-            {
-                H1: " Operations Management",
-                P: "Enhance the overall operational efficiency of healthcare facilities."
-            }
         ]
     },
     {
         position: "right",
         img: '/services/service2.svg',
-        color: "bg-white",
-        HOne: " Construction",
-        HTwo: " Solutions",
+        Hthree: "In an era where users access content across various devices and screen sizes, responsive design is crucial. ",
+        HOne: "Responsive",
+        HTwo: "  Design",
         text: [{
-            H1: "Projects Management",
-            P: 'Control and monitor every aspect of your construction projects with ease.'
+            H1: " Responsive Web Design",
+            P: 'Creating web experiences that adapt to different screen sizes and orientations.'
         },
         {
-            H1: "Vendor Management",
-            P: 'Streamline vendor relations and procurement for better project execution'
+            H1: "  Mobile App Design",
+            P: 'Designing mobile apps that provide an exceptional experience on smartphones and tablets.'
         },
         {
-            H1: "Contracts Management",
-            P: 'Ensure the seamless management of contracts and agreements.'
-        },
-        {
-            H1: " Purchase to Pay Management",
-            P: 'Simplify the procurement process from purchase to payment.'
+            H1: "Cross-Platform Compatibility",
+            P: 'Ensuring a consistent and engaging experience across multiple platforms.'
         },
         ]
     },
+
     {
         position: "left",
         img: '/services/service3.svg',
-        color: "bg-white",
-        HOne: " Education",
-        HTwo: " Solutions",
+        Hthree: "In an era where users access content across various devices and screen sizes, responsive design is crucial.",
+        HOne: " Wireframing",
+        HTwo: "  and Prototyping",
         text: [{
-            H1: "Student Enrollment & Engagement",
-            P: 'Enhance the student experience from enrollment to engagement.'
+            H1: "Responsive Web Design",
+            P: 'Creating web experiences that adapt to different screen sizes and orientations.'
         },
         {
-            H1: "Operational Excellence",
-            P: 'Optimize educational processes and workflows for better outcomes.'
+            H1: "  Mobile App Design",
+            P: 'Designing mobile apps that provide an exceptional experience on smartphones and tablets.'
         },
         {
-            H1: "Innovations Management",
-            P: 'Foster innovation in educational practices.'
+            H1: "Cross-Platform Compatibility",
+            P: 'Ensuring a consistent and engaging experience across multiple platforms.'
         },
         ]
     },
+
     {
         position: "right",
         img: '/services/service4.svg',
-        color: "bg-white",
-        HOne: " Construction",
+        Hthree: "bg-white",
+        HOne: " Wireframing and Prototyping",
         HTwo: " Solutions",
         text: [{
             H1: "Accelerate Product Research",
@@ -110,14 +104,10 @@ const servicesontent = [
 const ServiceDigitalContainar = () => {
     return (
         <>
-            <>
-                {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
-                {servicesontent.map((value, index) => {
-                    return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
-                })}
-                <ServiceWhyUs />
-                {/* </div> */}
-            </>
+            {servicesontent.map((value, index) => {
+                return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+            })}
+            <ServiceWhyUs />
         </>
     )
 }

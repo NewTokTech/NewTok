@@ -7,7 +7,7 @@ const servicesontent = [
   {
     position: "left",
     img: '/services/service1.svg',
-    color: "bg-white",
+    Hthree: "bg-white",
     HOne: " Heathcare",
     HTwo: "Solutions",
     text: [
@@ -32,7 +32,7 @@ const servicesontent = [
   {
     position: "right",
     img: '/services/service2.svg',
-    color: "bg-white",
+    Hthree: "bg-white",
     HOne: " Construction",
     HTwo: " Solutions",
     text: [{
@@ -56,7 +56,7 @@ const servicesontent = [
   {
     position: "left",
     img: '/services/service3.svg',
-    color: "bg-white",
+    Hthree: "bg-white",
     HOne: " Education",
     HTwo: " Solutions",
     text: [{
@@ -76,7 +76,7 @@ const servicesontent = [
   {
     position: "right",
     img: '/services/service4.svg',
-    color: "bg-white",
+    Hthree: "bg-white",
     HOne: " Construction",
     HTwo: " Solutions",
     text: [{
@@ -109,13 +109,15 @@ const servicesontent = [
 
 
 
+
+
 const ServiceContainer = () => {
 
   return (
     <>
       {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
       {servicesontent.map((value, index) => {
-        return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+        return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
       <ServiceWhyUs />
       {/* </div> */}

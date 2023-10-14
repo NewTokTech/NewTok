@@ -6,102 +6,99 @@ import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 const servicesontent = [
   {
     position: "left",
-    img: '/services/service1.svg',
-    color: "bg-white",
-    HOne: " Heathcare",
-    HTwo: "Solutions",
+    img: '/services/DataAI/DA1.svg',
+    Hthree: "Collecting data from various sources is the first step in making data-driven decisions.",
+    HOne: " Data Collection ",
+    HTwo: "and Ingestion",
     text: [
       {
-        H1: "Patient Management",
-        P: 'Seamlessly manage patient information and appointments to improve the quality of care.'
+        H1: "Data Sourcing",
+        P: 'Identifying and collecting data from diverse sources, including databases, APIs, sensors, and more.'
       },
       {
-        H1: "Clinical Trials Management",
-        P: 'Efficiently oversee and streamline the entire clinical trials process.'
+        H1: " Data Ingestion",
+        P: ' Streamlining the process of importing data into your systems efficiently and securely'
       },
-      {
-        H1: "Clinician Management",
-        P: "Optimize the management of healthcare professionals for better patient outcomes."
-      },
-      {
-        H1: " Operations Management",
-        P: "Enhance the overall operational efficiency of healthcare facilities."
-      }
     ]
   },
   {
     position: "right",
-    img: '/services/service2.svg',
-    color: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA2.svg',
+    Hthree: "Raw data often requires refining to be usable.",
+    HOne: " Data Transfor",
+    HTwo: " mation and Cleaning",
     text: [{
-      H1: "Projects Management",
-      P: 'Control and monitor every aspect of your construction projects with ease.'
+      H1: "Data Cleaning",
+      P: 'Removing inconsistencies, duplicates, and errors from datasets.'
     },
     {
-      H1: "Vendor Management",
-      P: 'Streamline vendor relations and procurement for better project execution'
-    },
-    {
-      H1: "Contracts Management",
-      P: 'Ensure the seamless management of contracts and agreements.'
-    },
-    {
-      H1: " Purchase to Pay Management",
-      P: 'Simplify the procurement process from purchase to payment.'
+      H1: "Data Transformation",
+      P: 'Converting data into a structured format that is suitable for analysis.'
     },
     ]
   },
   {
     position: "left",
-    img: '/services/service3.svg',
-    color: "bg-white",
-    HOne: " Education",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA3.svg',
+    Hthree: "Efficient data storage is essential for data accessibility and scalability. ",
+    HOne: " Data Storage ",
+    HTwo: " and Warehousing",
     text: [{
-      H1: "Student Enrollment & Engagement",
-      P: 'Enhance the student experience from enrollment to engagement.'
+      H1: "Data Warehousing",
+      P: 'Designing, implementing, and managing data warehouses for structured and unstructured data.'
     },
     {
-      H1: "Operational Excellence",
-      P: 'Optimize educational processes and workflows for better outcomes.'
-    },
-    {
-      H1: "Innovations Management",
-      P: 'Foster innovation in educational practices.'
+      H1: "Cloud-Based Storage",
+      P: 'Leveraging cloud platforms for scalable and cost-effective data storage solutions.'
     },
     ]
   },
   {
     position: "right",
-    img: '/services/service4.svg',
-    color: "bg-white",
-    HOne: " Construction",
-    HTwo: " Solutions",
+    img: '/services/DataAI/DA4.svg',
+    Hthree: "Connect and integrate data from different sources and applications.  ",
+    HOne: " Data Integration ",
+    HTwo: " and API Development",
     text: [{
-      H1: "Accelerate Product Research",
-      P: 'Enhance product development and research.'
+      H1: " API Development",
+      P: 'Building custom APIs to enable data exchange between systems.'
     },
     {
-      H1: "Innovations Management",
-      P: 'Facilitate the management of innovation and creativity.'
+      H1: " Integration Services",
+      P: 'Ensuring data integration across platforms and applications for seamless operations.'
+    },
+    ]
+  },
+
+  {
+    position: "left",
+    img: '/services/DataAI/DA5.svg',
+    Hthree: "Processing and transforming data is crucial for analysis and reporting. ",
+    HOne: " Data Proce",
+    HTwo: " ssing and ETL",
+    text: [{
+      H1: "  ETL (Extract, Transform, Load)",
+      P: 'Automating the extraction, transformation, and loading of data for analysis.'
     },
     {
-      H1: "Logistics Management",
-      P: 'Optimize the movement of goods and materials.'
+      H1: "  Data Pipelines",
+      P: 'Creating robust data pipelines to ensure continuous and reliable data flow.'
+    },
+    ]
+  },
+  {
+    position: "right",
+    img: '/services/DataAI/DA6.svg',
+    Hthree: "Handle vast amounts of data and process it in real-time. ",
+    HOne: " Big Data and ",
+    HTwo: " Real-time Processing",
+    text: [{
+      H1: "  Big Data Solutions",
+      P: 'Leveraging technologies like Hadoop, Spark, and NoSQL databases.'
     },
     {
-      H1: "Assets Purchase and Management",
-      P: 'Efficiently handle assets procurement and lifecycle management.'
-    },
-    {
-      H1: "Field Service Management",
-      P: 'Streamline field operations for manufacturing facilities.'
-    },
-    {
-      H1: "Contracts Management",
-      P: 'Simplify contract management processes.'
+      H1: " Real-time Data Processing",
+      P: 'Analyzing and acting on data as it is generated.'
     },
     ]
   },
@@ -109,16 +106,16 @@ const servicesontent = [
 
 
 const ServiceDataAiContainar = () => {
-  return(
-  <>
-    {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
-    {servicesontent.map((value, index) => {
-      return <SingleContainer position={value.position} color={value.color} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
-    })}
-    <ServiceWhyUs />
-    {/* </div> */}
-  </>
-)
+  return (
+    <>
+      {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
+      {servicesontent.map((value, index) => {
+        return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
+      })}
+      <ServiceWhyUs />
+      {/* </div> */}
+    </>
+  )
 }
 
 export default ServiceDataAiContainar
