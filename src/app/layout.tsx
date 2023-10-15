@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Footer from "@/components/footer/Footer";
 import { Sen } from 'next/font/google'
+import FooterTest from "@/components/footer/FooterTest";
 
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function RootLayout({
       <body className={ sen.className + " bg-backgound "}>
         <Navbar />
         {children}
-        <Footer />
+        <FooterTest />
       </body>
     </html>
   );

@@ -21,8 +21,8 @@ const Portfolio = (props: Props) => {
     <div className="lg:p-10 text-secondary pt-10">
       <div className="m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div
-          className={`space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 lg:items-center lg:gap-12 ${
-            index % 2 == 1 ? "lg:flex-row-reverse" : ""
+          className={`space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 rounded-lg lg:items-center lg:gap-12 ${
+            index % 2 == 1 ? "lg:flex-row-reverse" : "bg-white"
           }`}
         >
           <div className="md:w-7/12 lg:w-6/12 p-10 flex justify-center relative">

@@ -3,7 +3,7 @@
     font-size: 10px;
     position: absolute;
     left: calc(7% - 50px);
-    bottom: 150px;
+    bottom: 59px;
     transform: rotate(-90deg);
     -webkit-transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
     transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);

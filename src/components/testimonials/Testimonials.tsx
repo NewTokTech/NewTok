@@ -5,28 +5,33 @@ import test from "../../../public/svg/testmonials.svg";
 import "./testimonials.css";
 import Image from "next/image";
 import Button from "../common/Button";
+import { BiSolidChevronRight } from "react-icons/bi";
 
 const Testimonials = () => {
   const textArray = [
     {
       text1:
-        "  “Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.”",
-      text2: "Bruce H. Lowry, President and CEO,Summitsoft Corporation, USA ",
+        "Summitsoft has used Newtok Technologies for over 10 years to develop numerous titles for us. We have enjoyed this long relationship because of their quality, costs and onetime delivery of our products. They are extremely talented and easy to communicate with. I highly recommend them.",
+      designation: "President and CEO,Summitsoft Corporation, USA ",
+      author: "Bruce H. Lowry",
     },
     {
       text1:
-        " “I am very pleased with your Project Management capability. Your team has excellent communication skills and a fast response, highest work quality and turnaround time. I can say that Newtok is a honest and decent group of people with the highest work ethic I have seen for development team.”",
-      text2: "CEO, Straight Path International School",
+        "I am very pleased with your Project Management capability. Your team has excellent communication skills and a fast response, highest work quality and turnaround time. I can say that Newtok is a honest and decent group of people with the highest work ethic I have seen for development team.",
+      designation: "Straight Path International School",
+      author: "CEO",
     },
     {
       text1:
-        "  “I also wanted to tell you how pleased we are with your company’s development services. It is wonderful to work with your team and not have to worry anything”",
-      text2: "MD, Micaza Holidays",
+        " I also wanted to tell you how pleased we are with your company’s development services. It is wonderful to work with your team and not have to worry anything",
+      designation: "Micaza Holidays",
+      author: "CEO",
     },
     {
       text1:
-        " “I never have trouble with your services and the people I talk to always have good information. I’ll highly recommend Newtok to my other business friends!”",
-      text2: "CEO, CIUDAD BUILDERS",
+        "I never have trouble with your services and the people I talk to always have good information. I’ll highly recommend Newtok to my other business friends!",
+      designation: "CIUDAD BUILDERS",
+      author: "CEO",
     },
   ];
 
@@ -35,15 +40,15 @@ const Testimonials = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-    }, 2000);
+    }, 5000);
     return () => {
       clearInterval(intervalId);
     };
-  }, [textArray, 2000]);
+  }, [textArray, 5000]);
 
   return (
     <>
-      <section id="section" className="w-screen h-full m-0 p-0 relative">
+      {/* <section id="section" className="w-screen h-full m-0 p-0 relative">
         <div className="flex justify-center ">
           <Button link="/services" text="EXPLORE ALL OUR SERVICES" />
         </div>
@@ -97,7 +102,79 @@ const Testimonials = () => {
         <div className="absolute top-32 right-16 lg:opacity-75 opacity-10">
           <Image src={test} alt=""></Image>
         </div>
-      </section>
+      </section> */}
+
+      <div className="h-screen flex flex-col justify-center">
+        <div className="lg:mx-32 lg:flex justify-center lg:h-[420px] h-[600px] text-secondary">
+          <div className="lg:w-2/5 w-full h-full hidden lg:block">
+            <div className="flex flex-col justify-center p-5 h-full w-full">
+              <h1 className="text-[28px] font-semibold w-1/2 pt-5">
+                What Our{" "}
+                <span className="text-primary">Clients Say About Us</span>{" "}
+              </h1>
+
+              <p className="text-[16px] text-secondary pt-7">
+                Quis commodo odio aenean sed adipiscing diam. A erat nam at
+                lectus urna duis convallis. Dictum sit amet justo donec enim
+                diam vulputate ut.
+              </p>
+
+              <div className="flex items-center justify-items-center pt-16">
+                <button
+                  onClick={() =>
+                    setCurrentIndex((prev) => (prev + 1) % textArray.length)
+                  }
+                  className="text-black font-semibold"
+                >
+                  NEXT{" "}
+                </button>
+                <span className="text-primary pl-3">
+                  <BiSolidChevronRight />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:rounded-lg lg:w-3/5 w-full bg-primary/50 h-full relative flex flex-col justify-center align-middle items-start lg:p-10">
+            <Image
+              src={"/testimonials/rightQuote.svg"}
+              height={57}
+              width={63}
+              alt="right quote"
+              className="absolute left-[40px] top-[55px]"
+            />
+
+            <Image
+              src={"/testimonials/leftQuote.svg"}
+              height={57}
+              width={63}
+              alt="left quote"
+              className="absolute right-[40px] bottom-[55px]"
+            />
+
+            <div className="my-auto mx-10 pl-10">
+              <div className="says border-l border-l-primary px-7 py-4">
+                <p className="text-[#263238] font-semibold">
+                  {textArray[currentIndex].text1}
+                </p>
+              </div>
+
+              <div className="names pl-7 pt-5 text-black">
+                <div className="author">
+                  <h1 className="font-bold">
+                    {textArray[currentIndex].author}
+                  </h1>
+                </div>
+                <div className="designation">
+                  <h4 className="font-semibold">
+                    {textArray[currentIndex].designation}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

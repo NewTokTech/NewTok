@@ -296,7 +296,7 @@ const Footer = () => {
 
               {/* Single Column on Smaller Screens */}
               <div className="mt-4 md:hidden">
-                <ul className="space-y-2">
+                <ul className="space-y-2 space-x-5">
                   <li className="hover:text-primary list-item">
                     <Link href="/">Mobile Application Development</Link>
                   </li>

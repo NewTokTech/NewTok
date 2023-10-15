@@ -27,9 +27,9 @@ const PortfolioImages = ({ images }: Props) => {
             src={img}
             key={idx}
             alt={"portfolio" + idx}
-            height={200}
-            width={200}
-            className={`absolute max-w-[120px] lg:max-w-[none] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white p-4 lg:w-5/12 transition-all duration-1000 ease-in-out ${idx === currentIndex ? 'opacity-100 ': 'opacity-0'}`}
+            height={400}
+            width={400}
+            className={`absolute max-w-[120px] lg:max-w-[400px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white p-4 lg:w-5/12 transition-all duration-1000 ease-in-out ${idx === currentIndex ? 'opacity-100 ': 'opacity-0'}`}
           />
         ))
     }
