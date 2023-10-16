@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Sen } from "next/font/google";
 import FooterTest from "@/components/footer/FooterTest";
 import Document from "./_document";
+import Preloader from "@/components/preloader/Preloader";
 
 export const metadata: Metadata = {
   title: "Newtok Technologies",
@@ -30,11 +31,12 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body className={sen.className + " bg-backgound relative"}>
+        <Preloader>
           <Navbar />
           {children}
           <FooterTest />
-
           <Document />
+        </Preloader>
       </body>
     </html>
   );

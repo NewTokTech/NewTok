@@ -114,7 +114,8 @@ const Testimonials = () => {
               </h1>
 
               <p className="text-[16px] text-secondary pt-7">
-              Our success is built on the success of our clients. Your satisfaction is our measure of achievement.
+                Our success is built on the success of our clients. Your
+                satisfaction is our measure of achievement.
               </p>
 
               <div className="flex items-center justify-items-center pt-16">
@@ -122,13 +123,10 @@ const Testimonials = () => {
                   onClick={() =>
                     setCurrentIndex((prev) => (prev + 1) % textArray.length)
                   }
-                  className="text-black font-semibold"
+                  className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                 >
-                  NEXT{" "}
+                <span className="flex justify-between align-middle items-center">  NEXT <BiSolidChevronRight /></span>
                 </button>
-                <span className="text-primary pl-3">
-                  <BiSolidChevronRight />
-                </span>
               </div>
             </div>
           </div>

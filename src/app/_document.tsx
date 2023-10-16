@@ -15,7 +15,14 @@ s1.src='https://embed.tawk.to/652cdac8eb150b3fb9a1b700/1hcrjd84r';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
-})();`}
+})();
+
+let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+window.addEventListener('load', function(){
+  spinnerWrapper.style.display= 'none';
+});
+`}
       </Script>
     </>
   );

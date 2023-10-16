@@ -4,25 +4,26 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "About",
-  description: " We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.",
+  description:
+    " We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.",
 };
 
 const About = () => {
   return (
     <>
       <section className="w-screen mx-auto mt-36 mb-10">
-        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
-          <span className="">About </span>
-          <span className="text-primary">us</span>
-        </h1>
-        <div className="flex justify-center">
-          <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
-            We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.
-
-
-          </p>
-        </div>
-
+      
+          <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
+            <span className="">About </span>
+            <span className="text-primary">us</span>
+          </h1>
+          <div className="flex justify-center">
+            <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
+              We are committed to 100% customer satisfaction. We measure our
+              success in terms of the success of our customers.
+            </p>
+          </div>
+   
         <div className="relative py-10 my-16 lg:mx-52 ">
           <div
             className="lg:mx-10 rounded-xl bg-white about text-secondary"
