@@ -2,6 +2,7 @@ import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 import ServiceHeader from '@/components/servicePage/ServiceHeader';
+import ServiceLastHeading from '@/components/servicePage/ServiceLastHeading';
 
 const servicesontent = [
   {
@@ -125,18 +126,29 @@ const headingTwo = "Our Advanced Analytics"
 const OneHeadingTwo = "and AI Expertise"
 const Paragraph = "In today's data-driven landscape, advanced analytics, machine learning (ML), and artificial intelligence (AI) are the driving forces behind data-driven decision-making, automation, and innovation. At Newtok, we offer cutting-edge Advanced Analytics, ML, and AI services to help organizations harness the full potential of their data, driving efficiency and unlocking insights."
 
+const whyUsArray = [
+  { head: "Expertise", p: "Our team consists of experienced data scientists and AI/ML engineers." },
+  { head: "Customization", p: "Tailor our ML/AI solutions to meet your specific business requirements." },
+  { head: " Scalability", p: " Our solutions are designed to scale with your data and business growth." },
+  { head: " Data Security", p: " We prioritize data security and compliance, ensuring the privacy and protection of your data." },
+  { head: "Collaboration", p: "Work closely with our experts to develop data strategies that align with your business objectives." },
+];
 
+
+const h = "Unlock the Potential of Advanced Analytics - ML/AI"
+const para = "Discover new possibilities and optimize your operations with Newtok's Advanced Analytics - ML/AI services. Whether you need predictive modeling, AI-driven automation, or customized ML models, our team is ready to empower your organization."
 
 const ServicesAiTwo = () => {
   return (
     <>
-     <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
+      <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
       {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
-      <ServiceWhyUs />
+      <ServiceWhyUs whyUsArray={whyUsArray} />
       {/* </div> */}
+      <ServiceLastHeading h={h} para={para} />
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 import ServiceHeader from '@/components/servicePage/ServiceHeader';
+import ServiceLastHeading from '@/components/servicePage/ServiceLastHeading';
 
 
 const servicesontent = [
@@ -68,7 +69,7 @@ const servicesontent = [
   },
   {
     position: "right",
-    img: '/services/DigitalExperience/DEG8.svg',
+    img: '/services/DigitalExperience/DEG9.svg',
     Hthree: "We prioritize the security and compliance of your online store",
     HOne: " Security ",
     HTwo: " and Compliance",
@@ -87,8 +88,8 @@ const servicesontent = [
     ]
   }, 
   {
-    position: "right",
-    img: '/services/DigitalExperience/DEG9.svg',
+    position: "left",
+    img: '/services/DigitalExperience/DEG8.svg',
     Hthree: "Attract and retain customers with targeted digital marketing strategies",
     HOne: " Digital Marketing ",
     HTwo: " for E-commerce",
@@ -108,7 +109,14 @@ const servicesontent = [
   },
 ];
 
-
+const whyUsArray = [
+  { head: "Expertise", p: " Our team consists of e-commerce specialists who are experienced in a wide range of industries." },
+  { head: " Customization", p: "Our solutions are customized to meet your brand and business requirements." },
+  { head: " Scalability", p: " We design solutions that can grow with your business." },
+  { head: " Data Security", p: "We prioritize data security, ensuring the privacy and protection of customer data." },
+  { head: "User-Centered Approach", p: "Our designs and strategies are focused on providing an excellent user experience" },
+];
+ 
 
 const heading = "Digital Com"
 const OneHeading = "merce Solutions"
@@ -116,6 +124,9 @@ const headingTwo = null
 const OneHeadingTwo = null
 const Paragraph = "In the fast-evolving world of digital commerce, it's imperative for businesses to provide seamless, engaging, and secure online shopping experiences. At Newtok, we specialize in creating innovative digital commerce solutions that help businesses thrive in the ever-growing e-commerce landscape."
 
+
+const h = "Take Your Business to New Heights with Newtok"
+const para = "Empower your online business with cutting-edge digital commerce solutions from Newtok. Whether you need assistance with platform selection, user-centric design, e-commerce development, or digital marketing, our team is ready to help you succeed in the world of online commerce."
 
 const ServiceContainer = () => {
 
@@ -125,7 +136,8 @@ const ServiceContainer = () => {
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
-      <ServiceWhyUs />
+      <ServiceWhyUs whyUsArray={whyUsArray} />
+      <ServiceLastHeading h={h} para={para} />
     </>
   )
 }

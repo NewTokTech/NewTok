@@ -9,11 +9,21 @@ const ServiceSecondPage = () => {
                 <section className="w-screen mx-auto mt-10 mb-10">
 
                     <div className="relative py-10 my-16 lg:mx-52 ">
+                        <div className='flex justify-center'>
+                        {/* <Image
+                            src={"/services/DigitalEngineering/service5.png"}
+                            alt="about 1"
+                            width={100}
+                            height={100}
+                            className=" 0 overflow-visible lg:hidden block"
+                        /> */}
+                        </div>
+                      
                         <div
-                            className="lg:mx-10 rounded-xl bg-white about text-secondary"
+                            className="lg:mx-10 rounded-xl bg-white about text-secondary mx-5"
                             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
                         >
-                            <div className="flex justify-center ">
+                            <div className="flex justify-center px-5">
                                 <p className="text-secondary lg:text-[15px] mt-20 mb-5 text-center max-w-screen-sm">
                                     The Future of Application Development Simplified In a world where speed and agility are paramount, Low-Code/No-Code development empowers organizations to create applications without the need for extensive coding expertise. This approach accelerates development timelines and empowers those closest to the business problem to participate in application development.
                                 </p>
@@ -87,11 +97,20 @@ const ServiceSecondPage = () => {
                     </div>
 
                     <div className="relative py-10 my-16 lg:mx-52 ">
+                    <div className='flex justify-center'>
+                        <Image
+                            src={"/services/DigitalEngineering/service6.svg"}
+                            alt="about 1"
+                            width={200}
+                            height={200}
+                            className=" 0 overflow-visible lg:hidden block"
+                        />
+                        </div>
                         <div
-                            className="lg:mx-10 rounded-xl bg-white about text-secondary"
+                            className="lg:mx-10 rounded-xl bg-white about text-secondary mx-5"
                             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
                         >
-                            <div className="flex justify-center ">
+                            <div className="flex justify-center px-5 ">
                                 <p className="text-secondary lg:text-[15px] mt-20 mb-5 text-center max-w-screen-sm">
                                     The Future of Application Development Simplified In a world where speed and agility are paramount, Low-Code/No-Code development empowers organizations to create applications without the need for extensive coding expertise. This approach accelerates development timelines and empowers those closest to the business problem to participate in application development.
                                 </p>
@@ -103,7 +122,7 @@ const ServiceSecondPage = () => {
                                         alt="about 1"
                                         width={500}
                                         height={500}
-                                        className="absolute right-0 bottom-0 lg:z-40 overflow-visible  z-10 lg:opacity-100 opacity-20"
+                                        className="absolute right-0 bottom-0 lg:z-40 overflow-visible lg:block hidden z-10 lg:opacity-100 opacity-20"
                                     />
 
                                     <div className="md:7/12 lg:w-7/12 p-10">

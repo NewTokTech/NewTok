@@ -2,6 +2,7 @@ import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 import ServiceHeader from '@/components/servicePage/ServiceHeader';
+import ServiceLastHeading from '@/components/servicePage/ServiceLastHeading';
 
 
 const servicesontent = [
@@ -112,7 +113,20 @@ const OneHeadingTwo =" Expertise"
 const Paragraph = "In today's data-driven world, managing and harnessing data effectively is the key to gaining a competitive edge. At Newtok, we offer comprehensive Data Engineering services to help organizations structure, process, and utilize their data for insights, decision-making, and innovation."
 
 
+const whyUsArray = [
+  { head: "Expertise", p: " Our team of data engineers boasts extensive experience in handling diverse data sources and technologies." },
+  { head: " Scalability", p: " Our solutions are designed to scale with your growing data requirements." },
+  { head: "Data Security", p: "We prioritize data security and compliance, implementing best practices to protect your data." },
+  { head: "Customization", p: " Tailor our data engineering solutions to your specific business needs." },
+  { head: "Optimization", p: "We optimize data workflows to ensure the highest performance and efficiency." },
+  { head: "Data Strategy", p: "Collaborate with our experts to develop data strategies that align with your business goals."
+ },
+];
 
+const h = "Get the Most from Your Data"
+const para = "At Newtok, we are at the forefront of revolutionizing enterprise solutions across a multitude of industries, including health, construction,"
+
+ 
 const ServiceDataAiContainar = () => {
   return (
     <>
@@ -121,8 +135,8 @@ const ServiceDataAiContainar = () => {
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
-      <ServiceWhyUs />
-      {/* </div> */}
+    <ServiceWhyUs whyUsArray={whyUsArray} />
+    <ServiceLastHeading h={h} para={para} />
     </>
   )
 }

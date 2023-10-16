@@ -2,6 +2,7 @@ import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
 import ServiceHeader from '@/components/servicePage/ServiceHeader';
+import ServiceLastHeading from '@/components/servicePage/ServiceLastHeading';
 
 
 
@@ -102,6 +103,17 @@ const OneHeadingTwo = null
 const Paragraph = "In a digital world where user experience is paramount, having a well-crafted User Interface (UI) and User Experience (UX) can make the difference between a successful and an underperforming application or website. At Newtok, we are passionate about creating intuitive, visually appealing, and user-friendly designs that captivate users and drive engagement."
 
 
+const whyUsArray = [
+    { head: " Expertise", p: " Our development teams bring years of experience to your projects." },
+    { head: " Flexibility", p: "Choose the development approach that best aligns with your project's needs." },
+    { head: " Quality", p: " We take pride in delivering high-quality, robust applications." },
+    { head: " Collaboration", p: " We work closely with you at every stage to ensure the project aligns with your vision." },
+    { head: " Support", p: "Our commitment to your success doesn't end with the project delivery." },
+];
+
+const h = "Transform Your User    Experience with Newtok"
+const para = "Empower your digital presence with world-class UI/UX designs from Newtok. Whether you need responsive web design, mobile app design, wireframing, or prototyping, our team is ready to make your user experiences exceptional."
+
 const ServiceContainer = () => {
     return (
         <>
@@ -109,7 +121,8 @@ const ServiceContainer = () => {
             {servicesontent.map((value, index) => {
                 return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
             })}
-            <ServiceWhyUs />
+            <ServiceWhyUs whyUsArray={whyUsArray} />
+            <ServiceLastHeading h={h} para={para} />
         </>
     )
 }
