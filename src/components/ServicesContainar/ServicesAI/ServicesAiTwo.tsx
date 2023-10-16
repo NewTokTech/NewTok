@@ -1,11 +1,12 @@
 import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+import ServiceHeader from '@/components/servicePage/ServiceHeader';
 
 const servicesontent = [
   {
     position: "left",
-    img: '/services/DataAI/DA6.svg',
+    img: '/services/DataAI/DA7.svg',
     Hthree: "Leverage the power of Machine Learning to extract valuable insights and automate tasks.Our services encompass",
     HOne: " Machine Lea",
     HTwo: "rning Solutions",
@@ -34,7 +35,7 @@ const servicesontent = [
   },
   {
     position: "right",
-    img: '/services/DataAI/DA7.svg',
+    img: '/services/DataAI/DA8.svg',
     Hthree: "Artificial Intelligence takes your data to the next level, offering intelligent automation and decision support",
     HOne: " Artificial Intel",
     HTwo: " ligence Services",
@@ -58,7 +59,7 @@ const servicesontent = [
   },
   {
     position: "left",
-    img: '/services/DataAI/DA8.svg',
+    img: '/services/DataAI/DA9.svg',
     Hthree: "Uncover hidden patterns, insights, and knowledge from your data with our data science services",
     HOne: " Data Science ",
     HTwo: " and Analytics",
@@ -76,26 +77,26 @@ const servicesontent = [
     },
     ]
   },
-  {
-    position: "right",
-    img: '/services/DataAI/DA9.svg',
-    Hthree: "Uncover hidden patterns, insights, and knowledge from your data with our data science services",
-    HOne: " Data Science",
-    HTwo: "  and Analytics",
-    text: [{
-      H1: " Data Exploration and Visualization",
-      P: 'Understand your data with compelling visualizations and exploratory analysis.'
-    },
-    {
-      H1: "Descriptive and Prescriptive Analytics",
-      P: ' Derive actionable insights and make informed decisions.'
-    },
-    {
-      H1: "Big Data Analytics",
-      P: 'Handle and analyze large datasets to extract valuable information.'
-    },
-    ]
-  },
+  // {
+  //   position: "right",
+  //   img: '/services/DataAI/DA9.svg',
+  //   Hthree: "Uncover hidden patterns, insights, and knowledge from your data with our data science services",
+  //   HOne: " Data Science",
+  //   HTwo: "  and Analytics",
+  //   text: [{
+  //     H1: " Data Exploration and Visualization",
+  //     P: 'Understand your data with compelling visualizations and exploratory analysis.'
+  //   },
+  //   {
+  //     H1: "Descriptive and Prescriptive Analytics",
+  //     P: ' Derive actionable insights and make informed decisions.'
+  //   },
+  //   {
+  //     H1: "Big Data Analytics",
+  //     P: 'Handle and analyze large datasets to extract valuable information.'
+  //   },
+  //   ]
+  // },
   {
     position: "right",
     img: '/services/DataAI/DA10.svg',
@@ -118,9 +119,18 @@ const servicesontent = [
   },
 ];
 
+const heading = "Unleash the Power "
+const OneHeading = "of Data with Newtok"
+const headingTwo = "Our Advanced Analytics"
+const OneHeadingTwo = "and AI Expertise"
+const Paragraph = "In today's data-driven landscape, advanced analytics, machine learning (ML), and artificial intelligence (AI) are the driving forces behind data-driven decision-making, automation, and innovation. At Newtok, we offer cutting-edge Advanced Analytics, ML, and AI services to help organizations harness the full potential of their data, driving efficiency and unlocking insights."
+
+
+
 const ServicesAiTwo = () => {
   return (
     <>
+     <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
       {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />

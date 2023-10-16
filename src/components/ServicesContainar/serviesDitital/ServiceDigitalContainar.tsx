@@ -1,11 +1,12 @@
 import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+import ServiceHeader from '@/components/servicePage/ServiceHeader';
 
 const servicesontent = [
     {
       position: "left",
-      img: '/services/service1.svg',
+      img: '/services/DigitalEngineering/service1.svg',
       Hthree: "bg-white",
       HOne: " Heathcare",
       HTwo: "Solutions",
@@ -30,7 +31,7 @@ const servicesontent = [
     },
     {
       position: "right",
-      img: '/services/service2.svg',
+      img: '/services/DigitalEngineering/service2.svg',
       Hthree: "bg-white",
       HOne: " Construction",
       HTwo: " Solutions",
@@ -54,7 +55,7 @@ const servicesontent = [
     },
     {
       position: "left",
-      img: '/services/service3.svg',
+      img: '/services/DigitalEngineering/service3.svg',
       Hthree: "bg-white",
       HOne: " Education",
       HTwo: " Solutions",
@@ -74,7 +75,7 @@ const servicesontent = [
     },
     {
       position: "right",
-      img: '/services/service4.svg',
+      img: '/services/DigitalEngineering/service4.svg',
       Hthree: "bg-white",
       HOne: " Construction",
       HTwo: " Solutions",
@@ -106,9 +107,18 @@ const servicesontent = [
     },
   ];
 
+const heading = "On Time, Every Solution,"
+const OneHeading = "Every Enterprise"
+const headingTwo = "Major "
+const OneHeadingTwo = "Industries"
+const Paragraph = "At Newtok, we are at the forefront of revolutionizing enterprise solutions across a multitude of industries, including health, construction, education, manufacturing, and banking. Our mission is to empower organizations by providing cutting-edge software that streamlines operations, enhances productivity, and fosters innovation.  Our Comprehensive Enterprise Solutions"
+
+
+
 const ServiceDigitalContainar = () => {
     return (
         <>
+         <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
             {servicesontent.map((value, index) => {
                 return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
             })}

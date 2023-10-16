@@ -21,7 +21,7 @@ const ServiceSecondPage = () => {
                             <div className="m-auto px-6 md:px-12 xl:px-6">
                                 <div className="space-y-6 md:space-y-0 lg:flex lg:justify-end md:gap-6 lg:items-center lg:gap-12">
                                     <Image
-                                        src={"/services/service5.png"}
+                                        src={"/services/DigitalEngineering/service5.png"}
                                         alt="about 1"
                                         width={250}
                                         height={250}
@@ -99,7 +99,7 @@ const ServiceSecondPage = () => {
                             <div className="m-auto px-6 md:px-12 xl:px-6">
                                 <div className="space-y-6 md:space-y-0 lg:flex lg:justify-start md:gap-6 lg:items-center lg:gap-12">
                                     <Image
-                                        src={"/services/service6.svg"}
+                                        src={"/services/DigitalEngineering/service6.svg"}
                                         alt="about 1"
                                         width={500}
                                         height={500}
@@ -163,9 +163,6 @@ const ServiceSecondPage = () => {
                             </div>
                         </div>
                     </div>
-
-                    <ServiceWhyUs />
-
                 </section>
             </>
         </>
