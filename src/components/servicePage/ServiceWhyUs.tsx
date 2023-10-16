@@ -34,7 +34,7 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
             {firstArray.map((value, index) => {
               return (
                 <>
-                  <div className="lg:w-4/12 w-full h-24  flex justify-center">
+                  <div className="lg:w-4/12 w-full h-24  flex justify-center my-5">
                     <div className="flex flex-col items-center">
                       <h5 className="mb-1  text-xl font-medium text-gray-900 text-center ">
                         <span className="text-secondary ">
@@ -51,7 +51,7 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
                   </div>
 
                   <div className="flex justify-center">
-                    <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7  border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
+                    <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
                   </div>
                 </>
               );
