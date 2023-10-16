@@ -43,7 +43,7 @@ const ServiceMain: React.FC<ParentComponentProps> = (props) => {
         <div className="flex justify-center h-20 mx-1">
           <div className="lg:w-6/12 w-full sm:ms-2 sm:me-2 h-11  bg-white rounded-lg shadow-md flex items-end justify-center mb-40">
             <div className="w-6/12 h-full " onClick={changePage}>
-              <h1 className="text-secondary text-center mt-3 ">
+              <h1 className="text-secondary text-center mt-3 lg:text-[16px] text-[12px] ">
                 {props.btnOne}
               </h1>
               {pageShow == 0 && (
@@ -54,11 +54,11 @@ const ServiceMain: React.FC<ParentComponentProps> = (props) => {
             </div>
 
             <div className="w-6/12 h-full" onClick={changePageSecont}>
-              <h1 className="text-secondary  text-center mt-3">
+              <h1 className="text-secondary  text-center mt-3  lg:text-[16px] text-[12px]">
                 {props.btnTwo}
               </h1>
               {pageShow == 1 && (
-                <div className="w-11/12 h-1 bg-primary rounded-xl mt-1"></div>
+                <div className="w-11/12 h-1 bg-primary rounded-xl mt-1 "></div>
               )}
             </div>
           </div>
