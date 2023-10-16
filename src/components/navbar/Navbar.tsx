@@ -12,7 +12,7 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
-import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai'
+import { AiOutlineCaretDown, AiOutlineCaretUp } from "react-icons/ai";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -157,8 +157,19 @@ const Navbar = () => {
                         </li>
                         <li className="relative font-sen">
                           <span>2.</span>
-                          <a className="" onClick={handleService}>
-                            <span data-hover="Services">Services</span>
+                          <a className="relative" onClick={handleService}>
+                            <span data-hover="Services" className="">
+                              Services{" "}
+                             
+                            </span>
+
+                            <span className="absolute left-0 top-[-7px]">
+                                {showServices ? (
+                                  <AiOutlineCaretDown />
+                                ) : (
+                                  <AiOutlineCaretUp />
+                                )}
+                              </span>
                           </a>
                           <div className="w-full">
                             <div
@@ -176,12 +187,18 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link onClick={toggleMenu} href={"/services/digital-engineering"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/digital-engineering"}
+                                        >
                                           Enterprise Solutions
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link onClick={toggleMenu} href={"/services/digital-engineering"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/digital-engineering"}
+                                        >
                                           Application Developement
                                         </Link>
                                       </p>
@@ -194,12 +211,18 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p>
-                                        <Link onClick={toggleMenu} href={"/services/data-ai"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/data-ai"}
+                                        >
                                           Advanced Analytics
                                         </Link>
                                       </p>
                                       <p>
-                                        <Link onClick={toggleMenu} href={"/services/data-ai"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/data-ai"}
+                                        >
                                           Data Visualization
                                         </Link>
                                       </p>
@@ -212,12 +235,18 @@ const Navbar = () => {
                                     </h2>
                                     <div className="list-service">
                                       <p className="hover:text-primary">
-                                        <Link onClick={toggleMenu} href={"/services/digital-experience"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/digital-experience"}
+                                        >
                                           UI/UX
                                         </Link>
                                       </p>
                                       <p className="hover:text-primary">
-                                        <Link onClick={toggleMenu} href={"/services/digital-experience"}>
+                                        <Link
+                                          onClick={toggleMenu}
+                                          href={"/services/digital-experience"}
+                                        >
                                           Digital Commerce
                                         </Link>
                                       </p>
@@ -260,7 +289,7 @@ const Navbar = () => {
                         <h6>India</h6>
                         <a href="tel:+917012935874">+91 701 293 5874</a>
                       </div>
-                 
+
                       <div className="mail">
                         <h6>Projects</h6>
                         <a href="mailto:info@newtoktech.com">
