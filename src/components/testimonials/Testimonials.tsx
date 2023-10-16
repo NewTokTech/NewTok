@@ -114,9 +114,7 @@ const Testimonials = () => {
               </h1>
 
               <p className="text-[16px] text-secondary pt-7">
-                Quis commodo odio aenean sed adipiscing diam. A erat nam at
-                lectus urna duis convallis. Dictum sit amet justo donec enim
-                diam vulputate ut.
+              Our success is built on the success of our clients. Your satisfaction is our measure of achievement.
               </p>
 
               <div className="flex items-center justify-items-center pt-16">

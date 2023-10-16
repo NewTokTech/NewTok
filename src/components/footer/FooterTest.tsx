@@ -76,35 +76,35 @@ const FooterTest = () => {
 
             <div className="flex-col justify-between gap-3 hidden lg:flex">
               <h1 className="text-[30px]">
-                Newtok <span className="text-primary">India</span>
+                Newtok <span className="text-primary">Dubai</span>
               </h1>
               <p className="text-white">
                 Newtok Technologies Pvt Ltd.
                 <br />
-                Malappuram
+                Dubain
                 <br />
-                Kerala, India
+                <br />
               </p>
               <span className="flex phone-number gap-2 text-[20px] text-primary hover:text-white">
                 <BiSolidPhoneCall />{" "}
-                <a href="tel:+917012935874"> +91 7012935874</a>
+                <a href="tel:+971-555962093"> +971-555962093</a>
               </span>
             </div>
 
             <div className="flex-col justify-between gap-3 hidden lg:flex">
               <h1 className="text-[30px]">
-                Newtok <span className="text-primary">India</span>
+                Newtok <span className="text-primary">Bahrain</span>
               </h1>
               <p className="text-white">
                 Newtok Technologies Pvt Ltd.
                 <br />
-                Malappuram
+                Bahrain
                 <br />
-                Kerala, India
+              <br />
               </p>
               <span className="flex phone-number gap-2 text-[20px] text-primary hover:text-white">
                 <BiSolidPhoneCall />{" "}
-                <a href="tel:+917012935874"> +91 7012935874</a>
+                <a href="tel:+973-33451333"> +973-33451333</a>
               </span>
             </div>
           </div>

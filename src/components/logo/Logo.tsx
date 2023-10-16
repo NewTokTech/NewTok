@@ -12,6 +12,7 @@ const Logo = (props: Props) => {
         width={140}
         height={59}
         viewBox="0 0 140 59"
+        className="scale-75 md:scale-100"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -59,14 +59,14 @@ const About = () => {
                         for Building Automation, complete with end-to-end
                         services including design, supply, installation and
                         maintenance.
-                        <br />
+                        {/* <br />
                         <br />
                         Newtok mainly provides turnkey services for residential
                         and commercial projects. The company is in charge of
                         Automation solutions & systems for Home Automation,
                         Building Management, Hotel room Management, Building
                         Security & Access Control, Pro Audio, Lighting Control
-                        and other related Extra Low Voltage Systems.
+                        and other related Extra Low Voltage Systems. */}
                       </p>
                     </div>
                   </div>
