@@ -11,7 +11,7 @@ interface HeaderProps {
 const ServiceHeader = (props: HeaderProps) => {
     return (
         <div>
-            <h1 className="text-secondary lg:text-[40px] mt-4 text-center font-semibold">
+            <h1 className="text-secondary lg:text-[40px] text-[20px] mt-4 text-center font-semibold">
                 <span className="">{props.heading}</span>
                 <span className="text-primary">{props.OneHeading}</span>
             </h1>
@@ -21,7 +21,7 @@ const ServiceHeader = (props: HeaderProps) => {
                 </p>
             </div>
             {props.headingTwo &&
-                (<h1 className="text-secondary lg:text-[40px] lg:mt-4 text-center font-semibold">
+                (<h1 className="text-secondary lg:text-[40px] text-[20px] lg:mt-4 text-center font-semibold">
                     <span className="">{props.headingTwo}</span>
                     <span className="text-primary"> {props.OneHeadingTwo}</span>
                 </h1>)}

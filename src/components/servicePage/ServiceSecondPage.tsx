@@ -5,8 +5,8 @@ const ServiceSecondPage = () => {
   return (
     <>
       <>
-        <section className="w-screen mx-auto mt-10 mb-10">
-          <div className="relative py-10 my-16 lg:mx-52 ">
+        <section className="w-screen ">
+          <div className="relative  my-10 lg:mx-52 ">
             <div className="flex justify-center">
               {/* <Image
                             src={"/services/DigitalEngineering/service5.png"}
@@ -104,7 +104,15 @@ const ServiceSecondPage = () => {
             </div>
           </div>
 
-          <div className="relative py-10 my-16 lg:mx-52 ">
+          <h1 className="text-secondary lg:text-[40px] mt-4 text-center font-semibold">
+                <span className="">Custom Appli</span>
+                <span className="text-primary">cation Development</span>
+            </h1>
+
+          <div className="relative py-10 my-5 lg:mx-52 ">
+
+        
+
             <div className="flex justify-center">
               <Image
                 src={"/services/DigitalEngineering/service6.svg"}

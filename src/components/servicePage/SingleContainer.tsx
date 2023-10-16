@@ -21,7 +21,7 @@ const SingleContainer = (props: ServiceContent) => {
   return (
     <>
     
-      <div className="relative xl:py-10 xl:mx-52 ">
+      <div className="relative  xl:mx-52 ">
         <Image
           src={img}
           alt="about 1"
