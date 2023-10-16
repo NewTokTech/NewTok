@@ -42,7 +42,7 @@ const page = () => {
             images: [
                 "/portfolio/logo-designios/pic1.jpg",
                 "/portfolio/logo-designios/pic2.jpg",
-                // "/portfolio/logo-designios/pic3.jpg",
+                "/portfolio/logo-designios/pic3.jpg",
             ],
         },
 
