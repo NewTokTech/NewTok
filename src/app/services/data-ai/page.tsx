@@ -5,14 +5,18 @@ import React from "react";
 
 
 
-const Heding = ""
-const Paragraph = ""
+const Heading = "Data"
+const HeadingTwo = "& AI"
+const Paragraph = "At Newtok, we are at the forefront of revolutionizing enterprise solutions across a multitude of industries, including health, construction,"
+const BtnOne = "Data engineering"
+const BtnTwo = "Advanced Analytics - AI/ML"
+
 const DataAI = () => {
 
     return (
         <>
             <>
-                <ServiceMain heading={Heding} Paragraph={Paragraph} componentA={<ServiceDataAiContainar />} componentB={<ServicesAiTwo />} />
+                <ServiceMain btnOne={BtnOne} btnTwo={BtnTwo} heading={Heading}  headingTwo={HeadingTwo} Paragraph={Paragraph} componentA={<ServiceDataAiContainar />} componentB={<ServicesAiTwo />} />
             </>
         </>
     );

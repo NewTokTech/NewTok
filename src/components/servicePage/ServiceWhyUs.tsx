@@ -30,7 +30,7 @@ const ServiceWhyUs = () => {
                         </div>
 
                         <div className='flex justify-center'>
-                            <hr className="w-52 h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7  border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
+                            <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7  border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
                         </div>
                         <div className="lg:w-4/12 w-full h-24 flex justify-center">
                             <div className="flex flex-col items-center  ">
@@ -48,7 +48,7 @@ const ServiceWhyUs = () => {
                             </div>
                         </div>
                         <div className='flex justify-center'>
-                            <hr className="w-52 h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
+                            <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
                         </div>
                         <div className="lg:w-4/12 w-full  flex justify-center">
                             <div className="flex flex-col items-center  ">
@@ -69,11 +69,11 @@ const ServiceWhyUs = () => {
                 </div>
 
                 <div className='flex justify-center'>
-                    <hr className="w-52 h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded dark:bg-gray-700 lg:hidden block "></hr>
+                    <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded lg:hidden block "></hr>
                 </div>
 
 
-                <div className="flex justify-center lg:mt-60">
+                <div className="flex justify-center lg:mt-20">
                     <div className='w-10/12 lg:flex block justify-center'>
                         <div className="lg:w-4/12 w-full h-24  flex justify-center">
                             <div className="flex flex-col items-center  ">
@@ -93,7 +93,7 @@ const ServiceWhyUs = () => {
                         </div>
 
                         <div className='flex justify-center'>
-                            <hr className="w-52 h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
+                            <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
                         </div>
                         <div className="lg:w-4/12 w-full h-full  flex justify-center">
                             <div className="flex flex-col ">

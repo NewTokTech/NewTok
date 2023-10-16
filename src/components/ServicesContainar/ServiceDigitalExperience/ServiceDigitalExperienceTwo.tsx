@@ -1,6 +1,7 @@
 import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+import ServiceHeader from '@/components/servicePage/ServiceHeader';
 
 
 const servicesontent = [
@@ -109,11 +110,18 @@ const servicesontent = [
 
 
 
+const heading = "Digital Com"
+const OneHeading = "merce Solutions"
+const headingTwo = null
+const OneHeadingTwo = null
+const Paragraph = "In the fast-evolving world of digital commerce, it's imperative for businesses to provide seamless, engaging, and secure online shopping experiences. At Newtok, we specialize in creating innovative digital commerce solutions that help businesses thrive in the ever-growing e-commerce landscape."
+
 
 const ServiceContainer = () => {
 
   return (
     <>
+     <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}

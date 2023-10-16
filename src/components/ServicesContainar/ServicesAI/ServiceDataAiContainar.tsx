@@ -1,6 +1,7 @@
 import React from 'react'
 import SingleContainer from '../../servicePage/SingleContainer'
 import ServiceWhyUs from '../../servicePage/ServiceWhyUs';
+import ServiceHeader from '@/components/servicePage/ServiceHeader';
 
 
 const servicesontent = [
@@ -104,11 +105,19 @@ const servicesontent = [
   },
 ];
 
+const heading = "Unlock the Power "
+const OneHeading = "of Data with Newtok"
+const headingTwo = "Our Data Engineering"
+const OneHeadingTwo =" Expertise"
+const Paragraph = "In today's data-driven world, managing and harnessing data effectively is the key to gaining a competitive edge. At Newtok, we offer comprehensive Data Engineering services to help organizations structure, process, and utilize their data for insights, decision-making, and innovation."
+
+
 
 const ServiceDataAiContainar = () => {
   return (
     <>
       {/* <div className='space-y- xl:mt-0 lg:mt-52'> */}
+      <ServiceHeader OneHeading={OneHeading} OneHeadingTwo={OneHeadingTwo} heading={heading} headingTwo={headingTwo} Paragraph={Paragraph} />
       {servicesontent.map((value, index) => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
