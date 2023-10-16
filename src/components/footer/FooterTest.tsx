@@ -51,8 +51,10 @@ const FooterTest = () => {
   return (
     <>
       <div className="h-screen bg-[#090b0a] flex flex-col justify-end text-white pt-10">
-        <div className="py-24 px-2 xl:px-24 border-b-[1px] border-[#171919] lg:w-4/5 lg:mx-auto">
-          <div className="p-16"></div>
+        <div className="py-24 px-2 xl:px-24 border-b-[1px] border-[#171919] lg:mx-auto">
+          <div className="p-16">
+            
+          </div>
 
           <div className="flex justify-between align-baseline gap-36">
             <div className="flex flex-col justify-between gap-3 mx-auto ">

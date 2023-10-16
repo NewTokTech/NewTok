@@ -12,6 +12,7 @@ import {
   RiInstagramFill,
   RiLinkedinFill,
 } from "react-icons/ri";
+import { AiOutlineCaretDown, AiOutlineCaretUp } from 'react-icons/ai'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

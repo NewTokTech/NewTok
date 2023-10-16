@@ -255,7 +255,7 @@ footer .col-container {
 }
 
 .social li a.twitter:hover {
-  color: #010101;
+  color: #ffffff;
 }
 .social li a:hover {
   -webkit-transition: all 0.3s cubic-bezier(0.1, 0.1, 0.25, 0.9);
@@ -274,7 +274,7 @@ footer .col-container {
 .social li a.g-plus:active,
 .social li a.g-plus:focus {
   transition: 0.1s;
-  color: #000000;
+  color: #ffffff;
 }
 .social li a.instagram:hover,
 .social li a.instagram:active,

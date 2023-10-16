@@ -11,8 +11,8 @@ function Service() {
   return (
     <>
       <div className=" mx-auto mt-16">
-        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
-          Service
+        <h1 className="text-secondary text-[40px] mt-5 text-center font-semibold">
+          Services
         </h1>
         <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-semibold">
           We have been working with some Fortune{" "}
@@ -37,7 +37,7 @@ function Service() {
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
                   <Link
-                    href="/digital-engineering"
+                    href="/services/digital-engineering"
                     className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE
@@ -63,7 +63,7 @@ function Service() {
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
                   <Link
-                    href="/data-ai"
+                    href="/services/data-ai"
                     className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE
@@ -88,7 +88,7 @@ function Service() {
                 </span>
                 <div className="flex mt-4 space-x-3 md:mt-6">
                   <Link
-                    href="/digital-commerce"
+                    href="/services/digital-commerce"
                     className="px-4 py-2 text-sm font-medium text-center text-primary hover:shadow-primary hover:shadow-sm hover:scale-105 transform ease-in-out transition-all duration-300"
                   >
                     LEARN MORE

@@ -15,24 +15,24 @@ const Baneer = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
- 
     {
-      img: '/svg/undraw_web_devices_re_m8sc.svg',
+      img: "/svg/undraw_web_devices_re_m8sc.svg",
       color: "bg-primary",
       textOne: "TECHNOLOGY FOR ",
-      textTwo: "SMART",
-      textThree: "LIVING",
-      textP: "TURN KEY SOLUTIONS FOR HOME AND BUILDING AUTOMATION",
+      textTwo: "ENTERPRISE ",
+      textThree: "SOLUTIONS",
+      textP: "BUSINESS PROCESS AUTOMATION AND SOLUTIONS",
       textColor: "text-white",
       textColorOne: "text-dark",
       textColorTwo: "text-dark",
       copyright_social: "text-white",
     },
+
     {
-      img: '/svg/Group 239.svg',
+      img: "/svg/Group 239.svg",
       color: "bg-white",
       textOne: "TECHNOLOGY FOR ",
-      textTwo: "SMART",
+      textTwo: "SMART ",
       textThree: "INVENTIONS",
       textP: "SOFTWARE APPLICATION AND PRODUCT DEVELOPMENT SERVICES",
       textColor: " text-secondary",
@@ -40,13 +40,14 @@ const Baneer = () => {
       textColorTwo: "text-primary",
       copyright_social: "text-primary",
     },
+
     {
-      img: '/svg/undraw_web_devices_re_m8sc.svg',
+      img: "/svg/undraw_web_devices_re_m8sc.svg",
       color: "bg-secondary",
-      textOne: "TECHNOLOGY FOR ",
-      textTwo: "SMART",
-      textThree: "LIVING",
-      textP: "TURN KEY SOLUTIONS FOR HOME AND BUILDING AUTOMATION",
+      textOne: "TECHNOLOGY FOR",
+      textTwo: "USER ",
+      textThree: "EXPERIENCES",
+      textP: "EXPERIENCE THROUGH INNOVATIVE DESIGN THAT CAPTIVATES",
       textColor: "text-white",
       textColorOne: "text-dark",
       textColorTwo: "text-dark",
@@ -54,98 +55,51 @@ const Baneer = () => {
     },
   ];
 
-
-  const nextSlide = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   useEffect(() => {
-    const slideInterval = setInterval(nextSlide, 3000);
+    const slideInterval = setInterval(() => {
+      setActiveIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000);
 
     return () => {
       clearInterval(slideInterval);
     };
   }, []);
 
-
   return (
     <div className="relative w-full h-screen banner">
-      {/* Carousel wrapper */}
       <div className="relative h-screen overflow-hidden">
         {images.map((data, index) => (
           <div
             key={index}
-            className={`${data.color
-              } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${index === activeIndex ? "opacity-0" : "opacity-100"
-              }`}
+            className={`${
+              data.color
+            } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${
+              index === activeIndex ? "opacity-100" : "opacity-0"
+            }`}
           >
-            <div className=" grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 grid h-screen ">
+            <div className=" flex justify-between h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
                 <h1 className="text-dark xl:text-[76px] lg:text-[50px] font-semibold text">
                   <span className={`${data.textColor} mt-0`}>
-                    {data.textOne}{" "}
+                    {data.textOne}
                   </span>
                   <br />
                   <span className={`${data.textColorOne} mt-0`}>
                     {data.textTwo}
                   </span>
-                  <span className="mr-2">{/* Add space here */}</span>
+                  <span className="mr-2"></span>
                   <span className={`${data.textColorTwo} mt-0 `}>
                     {data.textThree}
                   </span>
                   <br />
                   <span className={`${data.textColor} mt-0 lg:text-[24px]`}>
-                    {" "}
                     {data.textP}
-                  </span>{" "}
+                  </span>
                 </h1>
               </div>
-              <div className={`copyright`}>
-                <h1 className={`${data.copyright_social}`}> © 2003 - 2023</h1>
 
-              </div>
-              <ul className="social">
-                <li >
-                  <a
-                    href="https://www.facebook.com/newtoksoft/"
-                    className="facebook"
-                    target="_blank"
-
-                  >
-                    <RiFacebookFill />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://instagram.com/newtoktech"
-                    className="instagram"
-                    target="_blank"
-                  >
-                    <RiInstagramFill />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
-                    className="linkedin"
-                    target="_blank"
-                  >
-                    <RiLinkedinFill />
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://x.com/"
-                    className="twitter"
-                    target="_blank"
-                  >
-                    <RiTwitterXFill />
-                  </a>
-                </li>
-              </ul>
               <div
                 className={`col-span-2 p-4 h-screen lg:mt-10 mt-0 flex justify-start items-center`}
               >
@@ -179,12 +133,50 @@ const Baneer = () => {
                     </span>{" "}
                   </h1>
                 </div>
-
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      <div className={`copyright`}>
+        <h1> © 2003 - 2023</h1>
+      </div>
+      <ul className="social text-white">
+        <li>
+          <a
+            href="https://www.facebook.com/newtoksoft/"
+            className="facebook"
+            target="_blank"
+          >
+            <RiFacebookFill />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/newtoktech"
+            className="instagram"
+            target="_blank"
+          >
+            <RiInstagramFill />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/newtok-technologies-pvt-ltd-india/"
+            className="linkedin"
+            target="_blank"
+          >
+            <RiLinkedinFill />
+          </a>
+        </li>
+
+        <li>
+          <a href="https://x.com/" className="twitter" target="_blank">
+            <RiTwitterXFill />
+          </a>
+        </li>
+      </ul>
     </div>
   );
 };
