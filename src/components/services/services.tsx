@@ -1,11 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
-import icon from "../../../public/svg/services/icon.svg";
-import icon1 from "../../../public/svg/services/IconOne.svg";
-import icon2 from "../../../public/svg/services/iconTwo.svg";
+import icon from "../../../public/services/services/icon.svg";
+import icon1 from "../../../public/services/services/IconOne.svg";
+import icon2 from "../../../public/services/services/iconTwo.svg";
 import Link from "next/link";
-import ServiceFullWidthImage from "../servicePage/ServiceFullWidthImage";
 
 function Service() {
   return (
