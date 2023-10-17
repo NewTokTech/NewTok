@@ -9,8 +9,8 @@ const servicesontent = [
     position: "left",
     img: '/services/DataAI/DA7.svg',
     Hthree: "Leverage the power of Machine Learning to extract valuable insights and automate tasks.Our services encompass",
-    HOne: " Machine Lea",
-    HTwo: "rning Solutions",
+    HOne: " Machine Learning",
+    HTwo: " Solutions",
     text: [
       {
         H1: "Predictive Modeling",
@@ -38,8 +38,8 @@ const servicesontent = [
     position: "right",
     img: '/services/DataAI/DA8.svg',
     Hthree: "Artificial Intelligence takes your data to the next level, offering intelligent automation and decision support",
-    HOne: " Artificial Intel",
-    HTwo: " ligence Services",
+    HOne: " Artificial Intelligence",
+    HTwo: " Services",
     text: [{
       H1: "AI Chatbots and Virtual Assistants",
       P: 'Enhance customer service and streamline interactions with AI-powered chatbots'

@@ -41,7 +41,7 @@ const ServiceSecondPage = () => {
                     alt="about 1"
                     width={250}
                     height={250}
-                    className="absolute left-24 xl:left-64 bottom-0   lg:z-40 overflow-visible z-10 lg:opacity-100 opacity-20"
+                    className="absolute left-16 xl:left-36 bottom-0   lg:z-40 overflow-visible z-10 lg:opacity-100 opacity-20"
                   />
 
                   <div className="md:7/12 lg:w-7/12 p-10 space-y-5">

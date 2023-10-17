@@ -27,8 +27,8 @@ const servicesontent = [
     position: "right",
     img: '/services/DataAI/DA2.svg',
     Hthree: "Raw data often requires refining to be usable.",
-    HOne: " Data Transfor",
-    HTwo: " mation and Cleaning",
+    HOne: "Data Transformation",
+    HTwo: " and Cleaning",
     text: [{
       H1: "Data Cleaning",
       P: 'Removing inconsistencies, duplicates, and errors from datasets.'
@@ -76,8 +76,8 @@ const servicesontent = [
     position: "left",
     img: '/services/DataAI/DA5.svg',
     Hthree: "Processing and transforming data is crucial for analysis and reporting. ",
-    HOne: " Data Proce",
-    HTwo: " ssing and ETL",
+    HOne: " Data Processing",
+    HTwo: " and ETL",
     text: [{
       H1: "  ETL (Extract, Transform, Load)",
       P: 'Automating the extraction, transformation, and loading of data for analysis.'
