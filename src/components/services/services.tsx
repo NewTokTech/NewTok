@@ -14,7 +14,7 @@ function Service() {
           <span className="text-secondary">Our</span> <span className="text-primary"> Services</span>
           
         </h1>
-        <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-semibold">
+        <p className="text-secondary lg:text-[18px] text-[15px] mt-5 mb-5 text-center font-semibold">
         Driving Innovation and Efficiency in Every Project.
         </p>
         <div className=" mx-auto flex justify-center md:my-16">
