@@ -136,7 +136,7 @@ const About = () => {
                 <div className="md:7/12 lg:w-7/12 p-10">
                   <div className="">
                     <h2 className="text-[30px] font-semibold pb-5">
-                      Vis <span className="text-primary">ion</span>
+                      Vis<span className="text-primary">ion</span>
                     </h2>
 
                     <div className="text-secondary z-50 relative">
@@ -151,7 +151,7 @@ const About = () => {
                     </div>
                     <div className="">
                       <h2 className="text-[30px] font-semibold pb-5">
-                        Miss <span className="text-primary">ion</span>
+                        Miss<span className="text-primary">ion</span>
                       </h2>
 
                       <div className="text-secondary z-50 relative">

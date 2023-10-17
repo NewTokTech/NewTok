@@ -13,15 +13,15 @@ const servicesontent = [
         position: "left",
         img: '/services/DigitalExperience/DEG1.svg',
         Hthree: `User-Centric Design At the heart of our UI/UX design philosophy is a commitment to user-centric solutions. We understand your users' needs and behaviors, ensuring our designs enhance their experiences.`,
-        HOne: " Data Collection ",
-        HTwo: "and Ingestion",
+        HOne: " User-Centric",
+        HTwo: "Design",
         text: [
             {
                 H1: "User Research",
                 P: 'In-depth research to uncover user preferences, pain points, and expectations.'
             },
             {
-                H1: " User Personas",
+                H1: "User Personas",
                 P: 'Crafting detailed user personas to guide design decisions.'
             },
             {
@@ -37,11 +37,11 @@ const servicesontent = [
         HOne: "Responsive",
         HTwo: "  Design",
         text: [{
-            H1: " Responsive Web Design",
+            H1: "Responsive Web Design",
             P: 'Creating web experiences that adapt to different screen sizes and orientations.'
         },
         {
-            H1: "  Mobile App Design",
+            H1: "Mobile App Design",
             P: 'Designing mobile apps that provide an exceptional experience on smartphones and tablets.'
         },
         {
@@ -61,20 +61,20 @@ const servicesontent = [
             P: 'Creating basic structures and layouts to outline the content and user flow.'
         },
         {
-            H1: "  Prototyping",
-            P: ' Building interactive prototypes for user testing and validation.Visual Design Our visual designers are skilled in crafting captivating, on-brand experiences. Our services encompass'
+            H1: "Prototyping",
+            P: 'Building interactive prototypes for user testing and validation.Visual Design Our visual designers are skilled in crafting captivating, on-brand experiences. Our services encompass'
         },
         {
-            H1: " UI Style Guide",
-            P: ' Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
+            H1: "UI Style Guide",
+            P: 'Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
         },
         {
             H1: "Graphic Design",
-            P: ' Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
+            P: 'Defining a cohesive set of design elements, such as color schemes, typography, and iconography.'
         },
         {
-            H1: " Animation and Microinteractions",
-            P: '  Incorporating subtle animations and microinteractions to improve user engagement.'
+            H1: "Animation and Microinteractions",
+            P: 'Incorporating subtle animations and microinteractions to improve user engagement.'
         },
         ]
     },
@@ -83,7 +83,7 @@ const servicesontent = [
         img: '/services/DigitalExperience/DEG4.svg',
         Hthree: "We believe in iterative design",
         HOne: "User Testing ",
-        HTwo: "  and Feedback",
+        HTwo: " and Feedback",
         text: [{
             H1: "Usability Testing",
             P: 'Running tests to gather user feedback and refine the design.'
@@ -104,11 +104,11 @@ const Paragraph = "In a digital world where user experience is paramount, having
 
 
 const whyUsArray = [
-    { head: " Expertise", p: " Our development teams bring years of experience to your projects." },
-    { head: " Flexibility", p: "Choose the development approach that best aligns with your project's needs." },
-    { head: " Quality", p: " We take pride in delivering high-quality, robust applications." },
-    { head: " Collaboration", p: " We work closely with you at every stage to ensure the project aligns with your vision." },
-    { head: " Support", p: "Our commitment to your success doesn't end with the project delivery." },
+    { head: "Expertise", p: "Our development teams bring years of experience to your projects." },
+    { head: "Flexibility", p: "Choose the development approach that best aligns with your project's needs." },
+    { head: "Quality", p: "We take pride in delivering high-quality, robust applications." },
+    { head: "Collaboration", p: "We work closely with you at every stage to ensure the project aligns with your vision." },
+    { head: "Support", p: "Our commitment to your success doesn't end with the project delivery." },
 ];
 
 const h = "Transform Your User    "

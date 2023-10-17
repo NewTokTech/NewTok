@@ -17,12 +17,12 @@ import Button from "../common/Button";
 const OurClients = () => {
   return (
     <div className=" mx-auto mt-10">
-      <h1 className="text-secondary lg:text-[40px] mt-5 text-center  font-semibold">
-        Our Clients
-      </h1>
+      <h1 className="text-secondary text-[40px] mt-5 text-center font-semibold">
+          <span className="text-secondary">Our</span> <span className="text-primary"> Clients</span>
+          
+        </h1>
       <p className="text-secondary lg:text-[18px]  mt-5 text-center  font-semibold">
-        We have been working with some Fortune{" "}
-        <br className="lg:hidden block" /> 500+ clients
+      An Ecosystem of Trusted Collaborators.
       </p>
       <div className="flex flex-wrap mx-auto justify-center items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  gap-4 ">

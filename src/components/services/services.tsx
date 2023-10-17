@@ -11,7 +11,8 @@ function Service() {
     <>
       <div className=" mx-auto mt-16">
         <h1 className="text-secondary text-[40px] mt-5 text-center font-semibold">
-          Services
+          <span className="text-secondary">Our</span> <span className="text-primary"> Services</span>
+          
         </h1>
         <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-semibold">
           We have been working with some Fortune{" "}
