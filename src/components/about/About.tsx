@@ -27,7 +27,7 @@ const About = () => {
                 <br />
                 Technologies
               </h2>
-              <p className="mt-6 text-[14px] font-[500] leading-5">
+              <p className="mt-6 text-[16px] font-[500] leading-5">
                 Welcome to Newtok Technologies, where we redefine software
                 solutions with innovation. Since our 2003 inception, we{"'"}ve
                 crafted digital transformation for enterprises through custom
