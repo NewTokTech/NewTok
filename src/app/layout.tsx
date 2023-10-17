@@ -5,6 +5,7 @@ import { Sen } from "next/font/google";
 import FooterTest from "@/components/footer/FooterTest";
 import Document from "./_document";
 import Preloader from "@/components/preloader/Preloader";
+import { useRouter } from "next/router";
 
 export const metadata: Metadata = {
   title: "Newtok Technologies",
@@ -27,6 +28,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
+
+
   return (
     <html lang="en">
       <head></head>

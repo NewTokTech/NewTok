@@ -76,7 +76,7 @@ const Baneer = () => {
             className={`${
               data.color
             } absolute w-full h-screen transform transition-all ease-in-out duration-1000 ${
-              index === activeIndex ? "opacity-100" : "opacity-0"
+              index === activeIndex ? "translate-x-0" : "-translate-x-full"
             }`}
           >
             <div className=" flex justify-between h-screen ">

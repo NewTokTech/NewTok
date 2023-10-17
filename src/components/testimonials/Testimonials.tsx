@@ -1,13 +1,12 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import React, { useEffect, useState } from "react";
-import test from "../../../public/svg/testmonials.svg";
 import "./testimonials.css";
 import Image from "next/image";
 import Button from "../common/Button";
 import { BiSolidChevronRight } from "react-icons/bi";
 
 const Testimonials = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const textArray = [
     {
       text1:
