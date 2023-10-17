@@ -23,12 +23,12 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
   return (
     <>
       <section className="my-10">
-        <h1 className="text-secondary text-[40px] mt-5 text-center font-semibold">
+        <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5 text-center font-semibold">
           <span className="">Why </span>
           <span className="text-primary">Us?</span>
         </h1>
 
-        <div className="flex justify-center pt-24">
+        <div className="flex justify-center lg:pt-24 ">
           <div className="w-10/12 lg:flex block">
             {/* <div className="flex justify-center">
               <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded lg:block hidden lg:rotate-90"></hr>

@@ -10,7 +10,7 @@ function Service() {
   return (
     <>
       <div className=" mx-auto mt-16">
-        <h1 className="text-secondary text-[40px] mt-5 text-center font-semibold">
+        <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5 text-center font-semibold">
           <span className="text-secondary">Our</span> <span className="text-primary"> Services</span>
           
         </h1>

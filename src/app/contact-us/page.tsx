@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
@@ -36,7 +37,7 @@ const Contact = () => {
                   Contact Information
                 </h1>
                 <p className="text-[18px]  mt-2 text-white/75">
-                  Say something to start a live chat!
+                We're just a message away – reach out to us for all your inquiries and needs.
                 </p>
               </div>
 
