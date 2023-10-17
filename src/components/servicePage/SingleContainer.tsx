@@ -37,16 +37,16 @@ const SingleContainer = (props: ServiceContent) => {
                 alt="about 1"
                 width={600}
                 height={498}
-                className={`absolute  bottom-0 xl:block hidden z-40 scale-75 xl:scale-100 overflow-visible ${position === 'left' ? '-left-4 ' : 'right-0'}`}
+                className={`absolute  bottom-0 xl:block hidden scale-75 xl:scale-100 overflow-visible ${position === 'left' ? '-left-4 ' : 'right-0'}`}
               />
 
-              <div className="md:7/12 xl:w-6/12 p-10 ">
+              <div className="md:7/12 xl:w-6/12 p-10  z-[999]">
 
                 <h2 className="text-[30px] font-semibold ">
                   {HOne} <span className="text-primary"> {HTwo}</span>
                 </h2>
 
-                <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative">
+                <div className="flex flex-col xl:justify-center xl:align-center xl:items-center text-secondary relative">
                   {text.map((value, index) => {
                     return (
                       <div className="" key={value.H1}>
