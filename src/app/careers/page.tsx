@@ -250,7 +250,7 @@ function Career() {
                     <div className="career-container">
                     <div className='flex justify-center'>
                             <p className="text-secondary lg:text-[18px]  mt-5 text-center  max-w-lg font-semibold">
-                                Send Resume
+                                SEND RESUME TO
                             </p>
                         </div>
                         <h1 className="text-secondary lg:text-[30px] text-[20px]  text-center font-semibold">
