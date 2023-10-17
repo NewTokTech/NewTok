@@ -135,7 +135,8 @@ const whyUsArray = [
 ];
 
 
-const h = "Unlock the Potential of Advanced Analytics - ML/AI"
+const h = "Unlock the Potential of "
+const h2 = "Advanced Analytics - ML/AI"
 const para = "Discover new possibilities and optimize your operations with Newtok's Advanced Analytics - ML/AI services. Whether you need predictive modeling, AI-driven automation, or customized ML models, our team is ready to empower your organization."
 
 const ServicesAiTwo = () => {
@@ -148,7 +149,7 @@ const ServicesAiTwo = () => {
       })}
       <ServiceWhyUs whyUsArray={whyUsArray} />
       {/* </div> */}
-      <ServiceLastHeading h={h} para={para} />
+      <ServiceLastHeading h={h} para={para} h2={h2} />
     </>
   )
 }

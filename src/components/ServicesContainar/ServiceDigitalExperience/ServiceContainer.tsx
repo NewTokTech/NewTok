@@ -111,7 +111,8 @@ const whyUsArray = [
     { head: " Support", p: "Our commitment to your success doesn't end with the project delivery." },
 ];
 
-const h = "Transform Your User    Experience with Newtok"
+const h = "Transform Your User    "
+const h2 = "Experience with Newtok"
 const para = "Empower your digital presence with world-class UI/UX designs from Newtok. Whether you need responsive web design, mobile app design, wireframing, or prototyping, our team is ready to make your user experiences exceptional."
 
 const ServiceContainer = () => {
@@ -122,7 +123,7 @@ const ServiceContainer = () => {
                 return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
             })}
             <ServiceWhyUs whyUsArray={whyUsArray} />
-            <ServiceLastHeading h={h} para={para} />
+            <ServiceLastHeading h={h} para={para} h2={h2} />
         </>
     )
 }

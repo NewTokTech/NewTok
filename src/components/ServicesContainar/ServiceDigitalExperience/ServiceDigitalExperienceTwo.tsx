@@ -125,7 +125,8 @@ const OneHeadingTwo = null
 const Paragraph = "In the fast-evolving world of digital commerce, it's imperative for businesses to provide seamless, engaging, and secure online shopping experiences. At Newtok, we specialize in creating innovative digital commerce solutions that help businesses thrive in the ever-growing e-commerce landscape."
 
 
-const h = "Take Your Business to New Heights with Newtok"
+const h = "Take Your Business "
+const h2 ="to New Heights with Newtok"
 const para = "Empower your online business with cutting-edge digital commerce solutions from Newtok. Whether you need assistance with platform selection, user-centric design, e-commerce development, or digital marketing, our team is ready to help you succeed in the world of online commerce."
 
 const ServiceContainer = () => {
@@ -137,7 +138,7 @@ const ServiceContainer = () => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
       <ServiceWhyUs whyUsArray={whyUsArray} />
-      <ServiceLastHeading h={h} para={para} />
+      <ServiceLastHeading h={h} para={para} h2={h2} />
     </>
   )
 }

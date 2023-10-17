@@ -123,7 +123,8 @@ const whyUsArray = [
  },
 ];
 
-const h = "Get the Most from Your Data"
+const h = "Get the Most"
+const h2 = " from Your Data"
 const para = "At Newtok, we are at the forefront of revolutionizing enterprise solutions across a multitude of industries, including health, construction,"
 
  
@@ -136,7 +137,7 @@ const ServiceDataAiContainar = () => {
         return <SingleContainer position={value.position} Hthree={value.Hthree} img={value.img} HOne={value.HOne} HTwo={value.HTwo} text={value.text} key={index} />
       })}
     <ServiceWhyUs whyUsArray={whyUsArray} />
-    <ServiceLastHeading h={h} para={para} />
+    <ServiceLastHeading h={h} para={para} h2={h2} />
     </>
   )
 }
