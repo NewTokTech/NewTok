@@ -81,7 +81,7 @@ const FooterTest = () => {
               <p className="text-white">
                 Newtok Technologies Pvt Ltd.
                 <br />
-                Dubain
+                Dubai
                 <br />
                 <br />
               </p>
@@ -260,6 +260,9 @@ const FooterTest = () => {
             </li>
           </ul>
 
+
+
+
           <div className="it-service hidden md:block">
             <h2 className="text-primary text-xl font-bold ">IT SERVICES</h2>
 
@@ -267,32 +270,32 @@ const FooterTest = () => {
               <div className="pt-4">
                 <ul className="space-y-5">
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Mobile Application Development</Link>
+                    <Link href="/services/digital-engineering">Mobile Application Development</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Embedded Software Development</Link>
+                    <Link href="/services/digital-engineering">Enterprise Solutions</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Mac OSX Application Development</Link>
+                    <Link href="/services/digital-engineering">Custom Application Development</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Cloud-based Application Development</Link>
+                    <Link href="/services/data-ai"> Advanced Analytics</Link>
                   </li>
                 </ul>
               </div>
               <div className="pt-4 hidden lg:block">
                 <ul className=" list-disc space-y-5">
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Windows Application Development</Link>
+                    <Link href="/services/digital-engineering">Low-code Development</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Cross-Platform Development</Link>
+                    <Link href="/services/digital-experience"> Digital Commerce</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Web-based Application Development</Link>
+                    <Link href="/services/data-ai">Data Visualization</Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/">Internet of Things (IoT)</Link>
+                    <Link href="/digital-experience">UI/UX</Link>
                   </li>
                 </ul>
               </div>
@@ -304,17 +307,17 @@ const FooterTest = () => {
             <div className="mt-4 md:mt-0">
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="hover:text-primary">
+                  <Link href="/services/digital-engineering" className="hover:text-primary">
                     Service
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-primary">
+                  <Link href="/portfolio" className="hover:text-primary">
                     Portfolio
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-primary">
+                  <Link href="/about" className="hover:text-primary">
                     About
                   </Link>
                 </li>
@@ -324,7 +327,7 @@ const FooterTest = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/" className="hover:text-primary">
+                  <Link href="/contact-us" className="hover:text-primary">
                     Contact
                   </Link>
                 </li>

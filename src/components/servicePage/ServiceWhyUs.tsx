@@ -9,9 +9,11 @@ interface Props {
   whyUsArray: WhyUsItem[];
 }
 
+let secontArray;
+
 const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
   const firstArray = whyUsArray.slice(0, 3);
-  let secontArray;
+
   if (whyUsArray.length <= 6) {
     secontArray = whyUsArray.slice(3, 6);
   } else {
@@ -28,13 +30,13 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
 
         <div className="flex justify-center pt-24">
           <div className="w-10/12 lg:flex block">
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded lg:block hidden lg:rotate-90"></hr>
-            </div>
+            </div> */}
             {firstArray.map((value, index) => {
               return (
                 <>
-                  <div className="lg:w-4/12 w-full h-24  flex justify-center my-5">
+                  <div className="lg:w-4/12 w-full h-24  flex justify-center my-5" key={index}>
                     <div className="flex flex-col items-center">
                       <h5 className="mb-1  text-xl font-medium text-gray-900 text-center ">
                         <span className="text-secondary ">
@@ -50,9 +52,18 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
                     </div>
                   </div>
 
-                  <div className="flex justify-center">
-                    <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
-                  </div>
+                  {index !== 2 && (
+                    <div className="flex justify-center lg:mt-16">
+                      <hr className="w-[75px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded opacity-20 block lg:rotate-90"></hr>
+                    </div>
+                  )}
+
+                  {index == 2 && (
+                    <div className="flex justify-center lg:mt-16">
+                      <hr className="w-[75px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded opacity-20 block lg:hidden"></hr>
+                    </div>
+                  )}
+
                 </>
               );
             })}
@@ -65,13 +76,13 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
 
         <div className="flex justify-center lg:mt-20">
           <div className="w-10/12 lg:flex block justify-center">
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7 border-0 rounded lg:block hidden lg:rotate-90"></hr>
-            </div>
+            </div> */}
             {secontArray.map((value, index) => {
               return (
                 <>
-                  <div className="lg:w-4/12 w-full h-24  flex justify-center">
+                  <div className="lg:w-4/12 w-full   flex justify-center " key={index}>
                     <div className="flex flex-col items-center">
                       <h5 className="mb-1  text-xl font-medium text-gray-900 text-center ">
                         <span className="text-secondary ">
@@ -81,15 +92,23 @@ const ServiceWhyUs: React.FC<Props> = ({ whyUsArray }) => {
                           {value.head.substring(4, value.head.length)}
                         </span>
                       </h5>
-                      <span className="text-sm text-secondary text-center mt-4">
+                      <span className="text-sm text-secondary text-center my-4 ">
                         {value.p}
                       </span>
                     </div>
                   </div>
 
-                  <div className="flex justify-center">
-                    <hr className="w-[100px] h-[1px]  bg-secondary mt-10 mb-10 lg:mt-7  border-0 rounded dark:bg-gray-700  block lg:rotate-90"></hr>
-                  </div>
+                  {(index !== 2 && secontArray.length === 3) && (
+                    <div className="flex justify-center lg:mt-16">
+                      <hr className="w-[75px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded opacity-20 block lg:rotate-90"></hr>
+                    </div>
+                  )}
+
+                  {(index == 0 && secontArray.length === 2) && (
+                    <div className="flex justify-center lg:mt-16">
+                      <hr className="w-[75px] h-[1px]  bg-secondary mt-10 mb-10 lg:my-7  my-5 border-0 rounded opacity-20 block lg:rotate-90"></hr>
+                    </div>
+                  )}
                 </>
               );
             })}

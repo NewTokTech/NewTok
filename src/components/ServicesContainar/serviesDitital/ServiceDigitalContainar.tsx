@@ -121,9 +121,8 @@ const whyUsArray = [
   { head: " Innovation", p: "We are committed to staying on the cutting edge of technology, ensuring our solutions are always up-to-date and aligned with the latest industry trends." },
   { head: "Customization", p: " We understand that one size does not fit all. Our solutions are customizable to meet your unique needs." },
   { head: " Dedicated Support", p: "We provide exceptional customer support, ensuring that you get the assistance you need when you need it." },
-  { head: " Proven Track Record", p: " Our track record speaks for itself, with numerous successful implementations and satisfied clients." },
+  { head: " Industry Expertise", p: " Our experience spans a wide range of industries, giving us a deep understanding of industry-specific challenges and opportunities." },
 ];
-
 const ServiceDigitalContainar = () => {
     return (
         <>
