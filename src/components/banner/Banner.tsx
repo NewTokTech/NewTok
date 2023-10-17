@@ -94,7 +94,7 @@ const Baneer = () => {
                     {data.textThree}
                   </span>
                   <br />
-                  <span className={`${data.textColor} mt-0 lg:text-[20px] xl:text-[16px]  `}>
+                  <span className={`${data.textColor} mt-0 lg:text-[20px] xl:text-[18px]  `}>
                     {data.textP}
                   </span>
                 </h1>
