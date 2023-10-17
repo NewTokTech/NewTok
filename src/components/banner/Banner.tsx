@@ -81,7 +81,7 @@ const Baneer = () => {
           >
             <div className=" flex justify-between h-screen ">
               <div className="col-span-3 p-10 lg:flex lg:justify-end lg:items-center hidden">
-                <h1 className="text-dark xl:text-[60px] lg:text-[50px] sxl:text-[70px] font-semibold text">
+                <h1 className="text-dark xl:text-[60px] lg:text-[50px] sxl:text-[70px] 2xl:text-[76px] font-semibold text">
                   <span className={`${data.textColor} mt-0`}>
                     {data.textOne}
                   </span>
