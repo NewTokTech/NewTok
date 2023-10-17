@@ -171,7 +171,7 @@ const Navbar = () => {
                                 )}
                               </span>
                           </a>
-                          <div className="w-full">
+                          <div className="lg:min-w-[700px]">
                             <div
                               className={`${
                                 showServices
@@ -179,7 +179,7 @@ const Navbar = () => {
                                   : "opacity-0 scale-0 -translate-x-72 absolute"
                               } transform transition-all ease-in-out duration-300 w-full`}
                             >
-                              <div className="p-2 mb-10 px-10">
+                              <div className="p-2 mb-10 w-full px-10">
                                 <div className="flex flex-col justify-center xl:flex-row">
                                   <div className="xl:w-1/3 pt-2">
                                     <h2 className="text-xl font-bold text-primary">
