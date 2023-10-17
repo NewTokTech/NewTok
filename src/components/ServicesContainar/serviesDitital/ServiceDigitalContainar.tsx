@@ -77,7 +77,7 @@ const servicesontent = [
       position: "right",
       img: '/services/DigitalEngineering/service4.svg',
       Hthree: "bg-white",
-      HOne: " Construction",
+      HOne: " Manufacturing ",
       HTwo: " Solutions",
       text: [{
         H1: "Accelerate Product Research",

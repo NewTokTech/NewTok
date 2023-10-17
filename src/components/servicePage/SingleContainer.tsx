@@ -17,7 +17,7 @@ interface ServiceContent {
 
 
 const SingleContainer = (props: ServiceContent) => {
-  const { img, Hthree, HOne, HTwo, text, position } = props;
+  const { img, HOne, HTwo, text, position } = props;
   return (
     <>
     
@@ -25,7 +25,7 @@ const SingleContainer = (props: ServiceContent) => {
         <Image
           src={img}
           alt="about 1"
-          width={687}
+          width={500}
           height={498}
           className={`scale-75 lg:hidden block  xl:scale-90 overflow-visible -mb-10`}
         />
