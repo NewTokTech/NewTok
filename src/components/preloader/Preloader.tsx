@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import AnimatedSvg from "./AnimatedSvg";
-import { useRouter } from 'next/navigation';
 
 
 const Preloader = ({ children }: { children: React.ReactNode }) => {

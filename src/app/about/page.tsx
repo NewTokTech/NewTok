@@ -6,7 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About",
   description:
-    " We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.",
+    "We are committed to 100% customer satisfaction. We measure our success in terms of the success of our customers.",
 };
 
 const About = () => {
