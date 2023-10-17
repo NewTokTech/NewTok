@@ -180,8 +180,8 @@ const Navbar = () => {
                               } transform transition-all ease-in-out duration-300 w-full`}
                             >
                               <div className="p-2 mb-10 px-10">
-                                <div className="flex flex-col justify-center lg:flex-row">
-                                  <div className="lg:w-1/3 pt-2">
+                                <div className="flex flex-col justify-center xl:flex-row">
+                                  <div className="xl:w-1/3 pt-2">
                                     <h2 className="text-xl font-bold text-primary">
                                       Digital Engineering
                                     </h2>
@@ -205,7 +205,7 @@ const Navbar = () => {
                                     </div>
                                   </div>
 
-                                  <div className="lg:w-1/3 pt-2 lg:pl-7">
+                                  <div className="xl:w-1/3 pt-2 xl:pl-7">
                                     <h2 className="text-xl font-bold text-primary">
                                       AI / ML
                                     </h2>
@@ -229,7 +229,7 @@ const Navbar = () => {
                                     </div>
                                   </div>
 
-                                  <div className="lg:w-1/3 pt-2 lg:pl-5">
+                                  <div className="xl:w-1/3 pt-2 xl:pl-5">
                                     <h2 className="text-xl font-bold text-primary">
                                       Experience
                                     </h2>

@@ -139,9 +139,7 @@ const Baneer = () => {
         ))}
       </div>
 
-      <div className={`copyright`}>
-        <h1> © 2003 - 2023</h1>
-      </div>
+     
       <ul className="social text-white">
         <li>
           <a

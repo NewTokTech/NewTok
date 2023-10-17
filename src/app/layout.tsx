@@ -16,20 +16,15 @@ export const metadata: Metadata = {
   },
   manifest: "/favicon/site.webmanifest",
 };
-
 const sen = Sen({
   subsets: ["latin"],
   display: "swap",
 });
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
-
-
   return (
     <html lang="en">
       <head></head>
