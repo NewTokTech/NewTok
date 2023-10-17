@@ -34,7 +34,16 @@ const page = () => {
         "/portfolio/pstsync/pic4.jpg",
       ],
     },
-
+    {
+      title: ["LOGO", " DESIGN IOS"],
+      description: "Logo Design IOS presents a cutting-edge vector drawing and editable vector graphics software that empowers you to craft precision graphics, whether it's for business cards or billboards. Unleash your creativity and design prowess with our user-friendly IOS software, making your graphic projects shine with impeccable clarity and precision.",
+      client: "SummitSoftCorp, USA",
+      images: [
+        "/portfolio/logo-designios/pic1.jpg",
+        "/portfolio/logo-designios/pic2.jpg",
+        "/portfolio/logo-designios/pic3.jpg",
+      ],
+    },
     {
       title: ["CHARTS", " AND GRAPHS"],
       description:
@@ -51,7 +60,7 @@ const page = () => {
     {
       title: ["IN", " CONTACT"],
       description:
-        "In Contact is an online marketing application. It is easy to send bulk marketting mails and manage bounce mails with this application.",
+        "In Contact is online marketing solution, making bulk marketing emails and bounce mail management effortless. Send and manage marketing emails with ease, streamlining your online marketing endeavors.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/contact/pic1.jpg",
@@ -64,7 +73,7 @@ const page = () => {
     {
       title: ["BUSINESS", " CARD STUDIO"],
       description:
-        "Business Card Studio is the easiest way to create & print professional business cards.",
+        "Business Card Studio is the easiest solution for designing and printing professional business cards with Business Card Studio. Effortlessly create and print business cards that make a lasting impression. It's your go-to tool for hassle-free business card design",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/business-card/pic1.jpg",
@@ -75,7 +84,7 @@ const page = () => {
 
     {
       title: ["MAC", " FONTS"],
-      description: "Mac Fonts is a font management software for MAC OS X.",
+      description: "Mac Fonts is the ultimate macOS font management solution, streamlining font organization and activation while seamlessly integrating with your Mac OS X environment. Enhancing your font workflow, it's designed for both professionals and font enthusiasts, ensuring easy access to your fonts and boosting your creativity.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/mac-fonts/pic1.jpg",
@@ -87,7 +96,7 @@ const page = () => {
 
     {
       title: ["FONT", " MANAGER"],
-      description: "A font managment software for windows.",
+      description: "A powerful font management software designed for Windows. Organize, activate, and streamline your font library effortlessly with our user-friendly and efficient solution. Enhance your design and creative projects with Font Manager's seamless integration and comprehensive features, ensuring a smooth font management experience for Windows users.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/font-manager/pic1.png",
@@ -98,23 +107,12 @@ const page = () => {
 
     {
       title: ["IQ", " TEASER"],
-      description: "Mac Fonts is a font management software for MAC OS X.",
+      description: "A simple yet engaging puzzle app designed for iPhone users. Put your cognitive skills to the test as you solve a variety of mind-bending puzzles, all while enjoying a user-friendly interface and a seamless mobile gaming experience. Whether you're a casual gamer or a puzzle enthusiast, iQteaser promises a delightful and intellectually stimulating adventure right on your iPhone.",
       client: "AminSoft, USA",
       images: [
         "/portfolio/iQTeaser/pic1.png",
         "/portfolio/iQTeaser/pic2.png",
         "/portfolio/iQTeaser/pic3.png",
-      ],
-    },
-
-    {
-      title: ["LOGO", " DESIGN IOS"],
-      description: "Mac Fonts is a font management software for MAC OS X.",
-      client: "SummitSoftCorp, USA",
-      images: [
-        "/portfolio/logo-designios/pic1.jpg",
-        "/portfolio/logo-designios/pic2.jpg",
-        "/portfolio/logo-designios/pic3.jpg",
       ],
     },
   ];

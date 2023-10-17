@@ -15,8 +15,7 @@ function Service() {
           
         </h1>
         <p className="text-secondary lg:text-[18px] mt-5 mb-5 text-center font-semibold">
-          We have been working with some Fortune{" "}
-          <br className="lg:hidden block" /> 500+ clients
+        Driving Innovation and Efficiency in Every Project.
         </p>
         <div className=" mx-auto flex justify-center md:my-16">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">

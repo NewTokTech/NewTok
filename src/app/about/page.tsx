@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
@@ -12,19 +13,18 @@ const About = () => {
   return (
     <>
       <section className="w-screen mx-auto mt-36 mb-10">
-      
-          <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
-            <span className="">About </span>
-            <span className="text-primary">us</span>
-          </h1>
-          <div className="flex justify-center">
-            <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
-              We are committed to 100% customer satisfaction. We measure our
-              success in terms of the success of our customers.
-            </p>
-          </div>
-   
-        <div className="relative py-10 my-16 lg:mx-52 ">
+
+        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
+          <span className="">About </span>
+          <span className="text-primary">us</span>
+        </h1>
+        <div className="flex justify-center">
+          <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
+            Discover Ours – A Journey of Innovation, Excellence, and the Passion to Transform Ideas into Reality. Learn about the People, Values, and the Vision That Drive Us Forward.
+          </p>
+        </div>
+
+        <div className="relative py-10 my-16 lg:mx-52">
           <div
             className="lg:mx-10 rounded-xl bg-white about text-secondary"
             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
@@ -36,7 +36,7 @@ const About = () => {
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute right-0 bottom-0 z-40 overflow-visible"
+                  className="absolute right-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
                 />
 
                 <div className="md:7/12 lg:w-7/12 p-10">
@@ -47,19 +47,11 @@ const About = () => {
                   <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative">
                     <div className="">
                       <p className="font-semibold text-secondary text-[16px]">
-                        A leading technology specialist company, Newtok
-                        Technologies Pvt Ltd has been offering digital solutions
-                        in software since 2003. The company mainly works on the
-                        design, development and implementation of software
-                        solutions and products.
+                        A leading technology specialist company, Newtok Technologies Pvt Ltd, has been at the forefront of delivering innovative digital solutions since 2003. With a relentless focus on design, development, and implementation, we have pioneered cutting-edge software solutions and products for a wide array of industries.
                         <br />
                         <br />
-                        Over the years, Newtok has emerged as a leader in the
-                        field of turnkey integrated solutions. One of our major
-                        achievements has been the setting up of a new division
-                        for Building Automation, complete with end-to-end
-                        services including design, supply, installation and
-                        maintenance.
+                        We craft user-centric designs that seamlessly blend aesthetics with functionality, ensuring that every software solution we create offers a superior user experience. Our expert team of developers brings ideas to life with the latest technology stacks, turning concepts into robust, high-performance software products.
+                        We're more than just a technology company; we're your partner in digital transformation, committed to driving innovation, efficiency, and success across diverse industries
                         {/* <br />
                         <br />
                         Newtok mainly provides turnkey services for residential
@@ -89,7 +81,7 @@ const About = () => {
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute left-0 bottom-0 z-40 overflow-visible"
+                  className="absolute left-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
                 />
 
                 <div className="md:7/12 lg:w-7/12 p-10">
@@ -100,15 +92,16 @@ const About = () => {
                   <div className="flex flex-col justify-center align-center items-center text-secondary z-50 relative">
                     <div className="">
                       <p className="font-semibold text-secondary text-[16px]">
-                        Newtok Technologies Pvt Ltd was set up in 2003 with the
-                        aim of providing viable and affordable turnkey
-                        solutions. With the passage of time, the company has
-                        adapted to the latest technology and given due
-                        importance to research and development. In 2004, Newtok
-                        began work on developing software for MAC OSX. Keeping
-                        in mind the global interest in automation and control,
-                        the company also recently started a Dedicated Automation
-                        division.
+                        <span>Founded in 2003, Newtok Technologies Pvt Ltd embarked on a mission to provide viable and affordable turnkey solutions. Over the years, we've evolved and adapted to the ever-changing landscape of technology, placing a strong emphasis on research and development.</span>
+                        <br />
+                       <br />
+                        <span>In 2004, Newtok took a significant step forward by initiating software development for MAC OSX. This marked the beginning of our journey into the world of technology.</span>
+                        <br />
+                       <br />
+                        <span>Today, our story encompasses not only our history but also our commitment to innovation and excellence. We've expanded our expertise to offer comprehensive enterprise solutions, empowering organizations to thrive in the digital era. Our dedication to staying ahead has led us to embrace low code development, streamlining software creation and deployment.</span>
+                       <br />
+                       <br />
+                       <span>Additionally, we've harnessed the power of Artificial Intelligence (AI) to propel our clients into a future of intelligent automation and data-driven decision-making. Our origin is a testament to our drive to create a better, more efficient, and technologically advanced world</span>
                       </p>
                     </div>
                   </div>
@@ -130,7 +123,7 @@ const About = () => {
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute right-0 bottom-0 z-40 overflow-visible"
+                  className="absolute right-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
                 />
 
                 <div className="md:7/12 lg:w-7/12 p-10">
@@ -142,10 +135,7 @@ const About = () => {
                     <div className="text-secondary z-50 relative">
                       <div className="">
                         <p className="font-semibold text-secondary text-[16px]">
-                          Our vision is simple and twofold—develop the best
-                          products possible and become the market leader in IT
-                          and Automation technologies by offering the best in
-                          products as well as services.
+                        Our vision is clear and twofold — to create exceptional products and lead the IT industry by delivering unparalleled solutions and services. We aim to be the forefront innovators and the trusted choice for our clients, setting new standards of excellence in technology.
                         </p>
                       </div>
                     </div>
@@ -157,10 +147,7 @@ const About = () => {
                       <div className="text-secondary z-50 relative">
                         <div className="">
                           <p className="font-semibold text-secondary text-[16px]">
-                            The company’s mission is to surpass the client’s
-                            expectations by offering top-class and latest
-                            turnkey integrated solutions in the IT and
-                            Automation fields respectively.
+                          Our mission is to continuously innovate and provide cutting-edge technology solutions that empower our clients to achieve their goals. We're dedicated to exceeding expectations through the delivery of top-tier products and services, setting the standard for excellence in the IT industry. Our commitment is to foster growth, build lasting relationships, and drive positive change through technology.
                           </p>
                         </div>
                       </div>

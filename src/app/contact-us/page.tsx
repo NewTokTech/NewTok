@@ -22,11 +22,7 @@ const Contact = () => {
         </h1>
         <div className="flex justify-center">
           <p className="px-10 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center  ">
-            Don’t worry about it getting too long. We know your awesome ideas
-            take time to explain; the more we learn about it the better we can
-            help you out. We would love to hear all about your project. Connect
-            with us through the contact form for a free initial project
-            consultation. Contact us and see what .
+          We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.
           </p>
         </div>
       </div>
