@@ -111,10 +111,10 @@ const Baneer = () => {
                   className="object-cover lg:w-[411px] h-auto opacity-10 lg:opacity-100"
                 />
 
-                <div className=" col-span-3 p-10 flex justify-center absolute lg:hidden ">
+                <div className="md:p-10 flex justify-center absolute lg:hidden ">
                   <h1 className="text-dark text-3xl text-center font-semibold">
                     <span className={`${data.textColor} mt-0`}>
-                      {data.textOne}{" "}
+                      {data.textOne}
                     </span>
                     <br />
                     <span className={`${data.textColorOne} mt-0`}>
@@ -126,11 +126,11 @@ const Baneer = () => {
                     </span>
                     <br />
                     <span
-                      className={`${data.textColor} mt-0 lg:text-[24px] text-[7px]`}
+                      className={`${data.textColor} mt-0 lg:text-[24px] text-[10px]`}
                     >
-                      {" "}
+                      
                       {data.textP}
-                    </span>{" "}
+                    </span>
                   </h1>
                 </div>
               </div>

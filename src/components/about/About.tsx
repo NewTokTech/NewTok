@@ -17,7 +17,7 @@ const About = () => {
               height={827}
               width={518}
             />
-            <div className="md:7/12 lg:w-6/12 p-10">
+            <div className="md:7/12 lg:w-6/12 p-1 md:p-10">
               <h2 className="text-[18px] md:text-[24px] lg:text-[30px] font-semibold">
                 Navigating Tomo
                 <span className="text-primary">rrow{"'"}s Horizons: </span>
@@ -27,7 +27,7 @@ const About = () => {
                 <br />
                 Technologies
               </h2>
-              <p className="mt-6 text-[16px] font-[500] leading-5">
+              <p className="mt-6 md:text-[16px] leading-5">
                 Welcome to Newtok Technologies, where we redefine software
                 solutions with innovation. Since our 2003 inception, we{"'"}ve
                 crafted digital transformation for enterprises through custom

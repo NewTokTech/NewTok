@@ -87,7 +87,7 @@ const FooterTest = () => {
               </p>
               <span className="flex phone-number gap-2 text-[20px] text-primary hover:text-white">
                 <BiSolidPhoneCall />{" "}
-                <a href="tel:+971-555962093"> +971-555962093</a>
+                <a href="tel:+971-567944354"> +971-567944354</a>
               </span>
             </div>
 
