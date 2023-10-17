@@ -23,7 +23,9 @@ const config: Config = {
       backgroundImage: theme => ({
         'gradient': 'linear-gradient(to right, #4A90E2, #CD2E75)',
       }),
-    
+      screens: {
+        'sxl': '1400px',
+      },
     },
 
     
