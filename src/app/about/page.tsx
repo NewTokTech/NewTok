@@ -53,14 +53,6 @@ const About = () => {
                         <br />
                         We craft user-centric designs that seamlessly blend aesthetics with functionality, ensuring that every software solution we create offers a superior user experience. Our expert team of developers brings ideas to life with the latest technology stacks, turning concepts into robust, high-performance software products.
                         We're more than just a technology company; we're your partner in digital transformation, committed to driving innovation, efficiency, and success across diverse industries
-                        {/* <br />
-                        <br />
-                        Newtok mainly provides turnkey services for residential
-                        and commercial projects. The company is in charge of
-                        Automation solutions & systems for Home Automation,
-                        Building Management, Hotel room Management, Building
-                        Security & Access Control, Pro Audio, Lighting Control
-                        and other related Extra Low Voltage Systems. */}
                       </p>
                     </div>
                   </div>

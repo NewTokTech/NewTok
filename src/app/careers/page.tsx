@@ -40,12 +40,14 @@ function Career() {
 
 
                         {/* Link to close accordion, hidden when closed */}
-                        <a href="#accordion" id="close-accordion1" title="close">
+                        {/* <a href="#accordion" id="close-accordion1" title="close">
                             Java Developer
-                        </a>
+                        </a> */}
 
                         {/* Accordion content goes in this div */}
                         <div className="accordion-content">
+                            <h1 className='text-primary text-2xl'>Java Developer</h1>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Spring Boot, Microservices, MySQL, Kafka</span>
                             <br />
@@ -73,10 +75,12 @@ function Career() {
                         <a href="#accordion2" id="open-accordion2" title="open">
                             Database Architect
                         </a>
-                        <a href="#accordion" id="close-accordion2" title="close">
+                        {/* <a href="#accordion" id="close-accordion2" title="close">
                             Database Architect
-                        </a>
+                        </a> */}
                         <div className="accordion-content">
+                        <h1 className='text-primary text-2xl'>Database Architect</h1>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span>MySQL, PostgreSQL, MongoDB</span>
                             <br />
@@ -104,10 +108,12 @@ function Career() {
                         <a href="#accordion3" id="open-accordion3" title="open">
                             Project Team Lead
                         </a>
-                        <a href="#accordion" id="close-accordion3" title="close">
+                        {/* <a href="#accordion" id="close-accordion3" title="close">
                             Project Team Lead
-                        </a>
+                        </a> */}
                         <div className="accordion-content">
+                        <h1 className='text-primary text-2xl'>Project Team Lead</h1>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Full Stack Web Development</span>
                             <br />
