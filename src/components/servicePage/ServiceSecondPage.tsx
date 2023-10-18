@@ -15,7 +15,7 @@ const ServiceSecondPage = () => {
                             height={100}
                             className=" 0 overflow-visible lg:hidden block"
                         /> */}
-            </div>
+            </div>   
 
             <div
               className="lg:mx-10 rounded-xl bg-white about text-secondary mx-5"
@@ -23,8 +23,8 @@ const ServiceSecondPage = () => {
                 boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset",
               }}
             >
-              <div className="flex justify-center px-5">
-                <p className="text-secondary lg:text-[15px] mt-20 mb-5 text-center max-w-screen-sm">
+              <div className="flex justify-center lg:px-5 px-0">
+                <p className="text-secondary lg:text-[15px] mt-20 mb-5 mx-5 text-center max-w-screen-sm">
                   The Future of Application Development Simplified In a world
                   where speed and agility are paramount, Low-Code/No-Code
                   development empowers organizations to create applications
@@ -44,7 +44,7 @@ const ServiceSecondPage = () => {
                     className="absolute left-16 xl:left-36 bottom-0   lg:z-40 overflow-visible z-10 lg:opacity-100 opacity-20"
                   />
 
-                  <div className="md:7/12 lg:w-7/12 p-10 space-y-5">
+                  <div className="md:7/12 lg:w-7/12 py-10 px-3 space-y-5">
                     <div className="text-secondary z-50 relative">
                       <span className="font-bold"> Rapid Development: </span>
                       <span>
@@ -149,7 +149,7 @@ const ServiceSecondPage = () => {
                     className="absolute right-0 bottom-0 lg:z-40 overflow-visible lg:block hidden z-10 lg:opacity-100 opacity-20"
                   />
 
-                  <div className="md:7/12 lg:w-7/12 p-10 space-y-5">
+                  <div className="md:7/12 lg:w-7/12 py-10 px-3 space-y-5">
                     <div className="">
                       <span className="font-bold">
                         {" "}
