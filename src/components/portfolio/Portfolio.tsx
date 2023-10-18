@@ -29,7 +29,7 @@ const Portfolio = (props: Props) => {
             <PortfolioImages images={images} />
           </div>
 
-          <div className="md:w-7/12 lg:w-6/12 xl:p-20 p-10">
+          <div className="md:w-7/12 lg:w-6/12 xl:p-20 py-10 px-5">
             <h2 className="text-[18px] md:text-[24px] lg:text-[30px] font-semibold xl:mt-10 mt-0 lg:block flex justify-center">
               {title[0]}
               <span className="text-primary">{title[1]} </span>

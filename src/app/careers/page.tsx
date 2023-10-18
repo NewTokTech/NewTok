@@ -34,7 +34,7 @@ function Career() {
 
                         {/* Link to open accordion, hidden when open */}
                         <a href="#accordion1" id="open-accordion1" title="open">
-                        Java Developer
+                            Java Developer
                         </a>
 
 
@@ -46,7 +46,9 @@ function Career() {
 
                         {/* Accordion content goes in this div */}
                         <div className="accordion-content ">
-                            <h1 className='text-primary text-2xl'>Java Developer</h1>
+                            <a href="#accordion">
+                                <h1 className='text-primary py-5 text-2xl'>Java Developer</h1>
+                            </a>
                             <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Spring Boot, Microservices, MySQL, Kafka</span>
@@ -79,7 +81,9 @@ function Career() {
                             Database Architect
                         </a> */}
                         <div className="accordion-content">
-                        <h1 className='text-primary text-2xl'>Database Architect</h1>
+                            <a href="#accordion">
+                                <h1 className='text-primary py-5 text-2xl'>Database Architect</h1>
+                            </a>
                             <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span>MySQL, PostgreSQL, MongoDB</span>
@@ -112,7 +116,9 @@ function Career() {
                             Project Team Lead
                         </a> */}
                         <div className="accordion-content">
-                        <h1 className='text-primary text-2xl'>Project Team Lead</h1>
+                            <a href="#accordion">
+                                <h1 className='text-primary text-2xl py-5'>Project Team Lead</h1>
+                            </a>
                             <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Full Stack Web Development</span>
@@ -254,7 +260,7 @@ function Career() {
                     </div> */}
 
                     <div className="career-container">
-                    <div className='flex justify-center'>
+                        <div className='flex justify-center'>
                             <p className="text-secondary lg:text-[18px]  mt-5 text-center  max-w-lg font-semibold">
                                 SEND RESUME TO
                             </p>
@@ -263,7 +269,7 @@ function Career() {
                             <Link href='mailto:career@newtoktech.com'></Link>
                             <span className="text-primary">career@newtoktech.com</span>
                         </h1>
-                     
+
                     </div>
                 </div>
             </div>

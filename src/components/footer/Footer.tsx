@@ -298,35 +298,35 @@ const Footer = () => {
               <div className="mt-4 md:hidden">
                 <ul className="space-y-2 space-x-5">
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Mobile Application Development</Link>
+                  <Link href="/services/digital-engineering">Mobile Application Development</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Embedded Software Development</Link>
+                  <Link href="/services/digital-engineering">Enterprise Solutions</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Mac OSX Application Development</Link>
+                  <Link href="/services/digital-engineering">Custom Application Development</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Cloud-based Application Development</Link>
+                  <Link href="/services/data-ai"> Advanced Analytics</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Windows Application Development</Link>
+                  <Link href="/services/digital-engineering">Low-code Development</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Cross-Platform Development</Link>
+                  <Link href="/services/digital-experience"> Digital Commerce</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Web-based Application Development</Link>
+                  <Link href="/services/data-ai">Data Visualization</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                    <Link href="/">Internet of Things (IoT)</Link>
+                  <Link href="/digital-experience">UI/UX</Link>
                   </li>
-                  <li className="hover:text-primary list-item">
+                  {/* <li className="hover:text-primary list-item">
                     <Link href="/">VoIP Development Services</Link>
                   </li>
                   <li className="hover:text-primary list-item">
                     <Link href="/">E-commerce Websites and Portals</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -334,33 +334,33 @@ const Footer = () => {
             <div className="links-footer ">
               <h2 className="text-primary text-xl font-bold mb-4">Links</h2>
               <div className="mt-4 md:mt-0">
-                <ul className="space-y-2">
-                  <li>
-                    <Link href="/" className="hover:text-primary">
-                      Service
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className="hover:text-primary">
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className="hover:text-primary">
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className="hover:text-primary">
-                      Careers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className="hover:text-primary">
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
+              <ul className="space-y-2">
+                <li>
+                  <Link href="/services/digital-engineering" className="hover:text-primary">
+                    Service
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/portfolio" className="hover:text-primary">
+                    Portfolio
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="hover:text-primary">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/" className="hover:text-primary">
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact-us" className="hover:text-primary">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
               </div>
             </div>
           </div>
