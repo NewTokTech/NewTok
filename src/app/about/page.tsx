@@ -14,32 +14,32 @@ const About = () => {
     <>
       <section className="w-screen mx-auto mt-36 mb-10">
 
-        <h1 className="text-secondary lg:text-[40px] mt-5 text-center font-semibold">
+        <h1 className="text-secondary xl:text-[40px] mt-5 text-center font-semibold">
           <span className="">About </span>
           <span className="text-primary">us</span>
         </h1>
         <div className="flex justify-center">
-          <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
+          <p className="text-secondary xl:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
             Discover Ours – A Journey of Innovation, Excellence, and the Passion to Transform Ideas into Reality. Learn about the People, Values, and the Vision That Drive Us Forward.
           </p>
         </div>
 
-        <div className="relative py-10 my-16 lg:mx-52">
+        <div className="relative py-10 my-16 xl:mx-52">
           <div
-            className="lg:mx-10 rounded-xl bg-white about text-secondary"
+            className="xl:mx-10 rounded-xl bg-white about text-secondary"
             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
           >
             <div className="m-auto px-6 md:px-12 xl:px-6">
-              <div className="space-y-6 md:space-y-0 lg:flex lg:justify-start md:gap-6 lg:items-center lg:gap-12">
+              <div className="space-y-6 md:space-y-0 xl:flex xl:justify-start md:gap-6 xl:items-center xl:gap-12">
                 <Image
                   src={"/aboutPage/image1.svg"}
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute right-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
+                  className="absolute right-0 bottom-0 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 lg:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-10">
                   <h2 className="text-[30px] font-semibold pb-5">
                     What <span className="text-primary"> we do?</span>
                   </h2>
@@ -69,22 +69,22 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative py-10 my-16 lg:mx-52 ">
+        <div className="relative py-10 my-16 xl:mx-52 ">
           <div
-            className="lg:mx-10 rounded-xl bg-white about text-secondary"
+            className="xl:mx-10 rounded-xl bg-white about text-secondary"
             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
           >
             <div className="m-auto px-6 md:px-12 xl:px-6">
-              <div className="space-y-6 md:space-y-0 lg:flex lg:justify-end md:gap-6 lg:items-center lg:gap-12">
+              <div className="space-y-6 md:space-y-0 xl:flex xl:justify-end md:gap-6 xl:items-center xl:gap-12">
                 <Image
                   src={"/aboutPage/image2.svg"}
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute left-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
+                  className="absolute left-0 bottom-52 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 lg:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-10">
                   <h2 className="text-[30px] font-semibold pb-5">
                     Our <span className="text-primary"> origin</span>
                   </h2>
@@ -111,22 +111,22 @@ const About = () => {
           </div>
         </div>
 
-        <div className="relative py-10 my-16 lg:mx-52 ">
+        <div className="relative py-10 my-16 xl:mx-52 ">
           <div
-            className="lg:mx-10 rounded-xl bg-white about text-secondary"
+            className="xl:mx-10 rounded-xl bg-white about text-secondary"
             style={{ boxShadow: "0px -3px 11px 0px rgba(0, 0, 0, 0.25) inset" }}
           >
             <div className="m-auto px-6 md:px-12 xl:px-6">
-              <div className="space-y-6 md:space-y-0 lg:flex lg:justify-start md:gap-6 lg:items-center lg:gap-12">
+              <div className="space-y-6 md:space-y-0 xl:flex xl:justify-start md:gap-6 xl:items-center xl:gap-12">
                 <Image
                   src={"/aboutPage/image3.svg"}
                   alt="about 1"
                   width={500}
                   height={500}
-                  className="absolute right-0 bottom-0 z-40 overflow-visible lg:opacity-100 opacity-10"
+                  className="absolute right-0 bottom-0 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 lg:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-10">
                   <div className="">
                     <h2 className="text-[30px] font-semibold pb-5">
                       Vis<span className="text-primary">ion</span>
