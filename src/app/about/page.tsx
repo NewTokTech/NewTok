@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import ClientList from "@/components/about/ClientList";
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
@@ -157,6 +158,11 @@ const About = () => {
               </div>
             </div>
           </div>
+        </div>
+
+
+        <div>
+          <ClientList />
         </div>
       </section>
     </>
