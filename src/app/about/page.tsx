@@ -20,7 +20,7 @@ const About = () => {
           <span className="text-primary">us</span>
         </h1>
         <div className="flex justify-center">
-          <p className="text-secondary xl:text-[15px] mt-5 mb-5 text-center max-w-screen-sm">
+          <p className="text-secondary xl:text-[15px] my-5 mx-5 text-center max-w-screen-sm">
             Discover Ours – A Journey of Innovation, Excellence, and the Passion to Transform Ideas into Reality. Learn about the People, Values, and the Vision That Drive Us Forward.
           </p>
         </div>
@@ -40,7 +40,7 @@ const About = () => {
                   className="absolute right-0 bottom-0 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 xl:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-5">
                   <h2 className="text-[30px] font-semibold pb-5">
                     What <span className="text-primary"> we do?</span>
                   </h2>
@@ -77,7 +77,7 @@ const About = () => {
                   className="absolute left-0 bottom-52 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 xl:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-5">
                   <h2 className="text-[30px] font-semibold pb-5">
                     Our <span className="text-primary"> origin</span>
                   </h2>
@@ -119,7 +119,7 @@ const About = () => {
                   className="absolute right-0 bottom-0 z-40 overflow-visible xl:opacity-100 opacity-10"
                 />
 
-                <div className="md:7/12 xl:w-7/12 p-10">
+                <div className="md:7/12 xl:w-7/12 p-5">
                   <div className="">
                     <h2 className="text-[30px] font-semibold pb-5">
                       Vis<span className="text-primary">ion</span>

@@ -14,7 +14,7 @@ const ServiceLastHeading = (props:contect) => {
           <span className="text-primary">{props.h2}</span>
         </h1>
         <div className="flex justify-center">
-          <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center font-light max-w-screen-sm">
+          <p className="text-secondary lg:text-[15px] my-5 mx-5 text-center font-light max-w-screen-sm">
             {props.para}
           </p>
         </div>

@@ -39,7 +39,7 @@ const SingleContainer = (props: ServiceContent) => {
                 className={`absolute  bottom-0 xl:block hidden scale-75 sxl:scale-100 overflow-visible ${position === 'left' ? '-left-4 ' : 'right-0'}`}
               />
 
-              <div className="md:7/12 xl:w-6/12 p-10 z-[60]">
+              <div className="md:7/12 xl:w-6/12 py-10 px-2 z-[60]">
 
                 <h2 className="text-[30px] font-semibold ">
                   {HOne} <span className="text-primary"> {HTwo}</span>

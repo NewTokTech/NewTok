@@ -7,12 +7,12 @@ function Career() {
     return (
         <section className='my-28'>
             <div>
-                <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5 text-center font-semibold">
+                <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5  text-center font-semibold">
                     <span className="text-secondary"></span>Care<span className="text-primary">ers</span>
 
                 </h1>
                 <div className='flex justify-center'>
-                    <p className="text-secondary lg:text-[18px]  mt-5 text-center  max-w-lg font-semibold">
+                    <p className="text-secondary lg:text-[18px] mx-6 mt-5 text-center  max-w-lg font-semibold">
                         We believe our power is our people. We value the employee relationship and understand the importance of a positive work environment where you can develop your life and career in ways that are unique to your own abilities. Our culture is centered on a casual environment, which promotes teamwork, creativity and fun.
                     </p>
                 </div>
@@ -23,7 +23,7 @@ function Career() {
                     <span className="text-secondary"></span> <span className="text-secondary">OPENINGS</span>
 
                 </h1>
-                <div className="accordion ">
+                <div className="accordion xl:w-6/12 w-10/12">
                     {/* Span to target fix closing accordion */}
                     <span className="target-fix" id="accordion"></span>
 
@@ -45,7 +45,7 @@ function Career() {
                         </a> */}
 
                         {/* Accordion content goes in this div */}
-                        <div className="accordion-content">
+                        <div className="accordion-content ">
                             <h1 className='text-primary text-2xl'>Java Developer</h1>
                             <br />
                             <h1 className='text-primary'>Essential skills</h1>
