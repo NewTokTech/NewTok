@@ -321,12 +321,7 @@ const Footer = () => {
                   <li className="hover:text-primary list-item">
                   <Link href="/digital-experience">UI/UX</Link>
                   </li>
-                  {/* <li className="hover:text-primary list-item">
-                    <Link href="/">VoIP Development Services</Link>
-                  </li>
-                  <li className="hover:text-primary list-item">
-                    <Link href="/">E-commerce Websites and Portals</Link>
-                  </li> */}
+               
                 </ul>
               </div>
             </div>
