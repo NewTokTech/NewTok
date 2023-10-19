@@ -19,11 +19,11 @@ const TechnologiesUsed = () => {
     },
     {
       image:
-        "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
+        "https://www.raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg",
       alt: "angularjs",
     },
     {
-      image: "https://avatars.githubusercontent.com/u/2317879?s=280&v=4",
+      image: "/portfolio/tech/activiti.png",
       alt: "activiti",
     },
     {
@@ -244,7 +244,7 @@ const TechnologiesUsed = () => {
             {images.map((item, index) => (
               <div key={index} className="slide">
                 <Image
-                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  className="hover:scale-125 transform ease-in-out transition-all duration-300"
                   key={index}
                   src={item.image}
                   alt={item.alt}
@@ -254,57 +254,7 @@ const TechnologiesUsed = () => {
               </div>
             ))}
 
-            {images.map((item, index) => (
-              <div key={index} className="slide">
-                <Image
-                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
-                  key={index}
-                  src={item.image}
-                  alt={item.alt}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            ))}
-
-            {images.map((item, index) => (
-              <div key={index} className="slide">
-                <Image
-                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
-                  key={index}
-                  src={item.image}
-                  alt={item.alt}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            ))}
-
-            {images.map((item, index) => (
-              <div key={index} className="slide">
-                <Image
-                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
-                  key={index}
-                  src={item.image}
-                  alt={item.alt}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            ))}
-
-            {images.map((item, index) => (
-              <div key={index} className="slide">
-                <Image
-                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
-                  key={index}
-                  src={item.image}
-                  alt={item.alt}
-                  width={40}
-                  height={40}
-                />
-              </div>
-            ))}
+          
           </div>
         </div>
       </div>
