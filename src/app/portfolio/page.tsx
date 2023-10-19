@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Portfolio from "@/components/portfolio/Portfolio";
 import { Metadata } from "next";
+import TechnologiesUsed from "@/components/portfolio/TechnologiesUsed";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -135,6 +136,9 @@ const page = () => {
           <Portfolio key={index} index={index} props={data} />
         </>
       ))}
+
+<TechnologiesUsed/>
+
     </section>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import PortfolioImages from "./PortfolioImages";
 
 interface Props {
@@ -19,6 +18,7 @@ const Portfolio = (props: Props) => {
 
   return (
     <div className="lg:p-10 text-secondary pt-10">
+
       <div className="m-auto px-6 text-gray-600 md:px-12 xl:px-6">
         <div
           className={`space-y-6 md:space-y-0 lg:flex lg:justify-center md:gap-6 rounded-lg lg:items-center lg:gap-12 ${
@@ -48,6 +48,7 @@ const Portfolio = (props: Props) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

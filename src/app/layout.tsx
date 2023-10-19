@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     shortcut: ["/favicon/apple-touch-icon.png"],
   },
   manifest: "/favicon/site.webmanifest",
+  
 };
 const sen = Sen({
   subsets: ["latin"],
