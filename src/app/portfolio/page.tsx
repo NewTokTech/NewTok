@@ -11,6 +11,18 @@ export const metadata: Metadata = {
 const page = () => {
   const portfolioData = [
     {
+      title: ["VISIO", " AMS"],
+      description:
+        "Visio AMS is a comprehensive Academic Management System designed to streamline and enhance the operational efficiency of educational institutions. It offers a one-stop solution for schools, empowering them to manage all aspects of their academic environment effectively. From student enrollment and attendance tracking to curriculum management, grade recording, and communication with parents, Visio AMS simplifies the complex tasks associated with school administration. With user-friendly interfaces and robust features, this system facilitates a seamless and organized educational experience, making it an indispensable tool for educators and administrators alike.",
+      client: "Qobotic innovations, India",
+      images: [
+        "/portfolio/logo-design/erp 1.png",
+        "/portfolio/logo-design/erp 2.png",
+        "/portfolio/logo-design/erp 3.png",
+        "/portfolio/logo-design/erp 4.png",
+      ],
+    },
+    {
       title: ["LOGO", " DESIGN STUDIO"],
       description:
         "Logo Design Studio's new vector drawing and editable vector graphics software. Using this vector design software you can create razor sharp graphics from business cards to billboards!",
@@ -37,7 +49,8 @@ const page = () => {
     },
     {
       title: ["LOGO", " DESIGN IOS"],
-      description: "Logo Design IOS presents a cutting-edge vector drawing and editable vector graphics software that empowers you to craft precision graphics, whether it's for business cards or billboards. Unleash your creativity and design prowess with our user-friendly IOS software, making your graphic projects shine with impeccable clarity and precision.",
+      description:
+        "Logo Design IOS presents a cutting-edge vector drawing and editable vector graphics software that empowers you to craft precision graphics, whether it's for business cards or billboards. Unleash your creativity and design prowess with our user-friendly IOS software, making your graphic projects shine with impeccable clarity and precision.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/logo-designios/pic1.jpg",
@@ -85,7 +98,8 @@ const page = () => {
 
     {
       title: ["MAC", " FONTS"],
-      description: "Mac Fonts is the ultimate macOS font management solution, streamlining font organization and activation while seamlessly integrating with your Mac OS X environment. Enhancing your font workflow, it's designed for both professionals and font enthusiasts, ensuring easy access to your fonts and boosting your creativity.",
+      description:
+        "Mac Fonts is the ultimate macOS font management solution, streamlining font organization and activation while seamlessly integrating with your Mac OS X environment. Enhancing your font workflow, it's designed for both professionals and font enthusiasts, ensuring easy access to your fonts and boosting your creativity.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/mac-fonts/pic1.jpg",
@@ -97,7 +111,8 @@ const page = () => {
 
     {
       title: ["FONT", " MANAGER"],
-      description: "A powerful font management software designed for Windows. Organize, activate, and streamline your font library effortlessly with our user-friendly and efficient solution. Enhance your design and creative projects with Font Manager's seamless integration and comprehensive features, ensuring a smooth font management experience for Windows users.",
+      description:
+        "A powerful font management software designed for Windows. Organize, activate, and streamline your font library effortlessly with our user-friendly and efficient solution. Enhance your design and creative projects with Font Manager's seamless integration and comprehensive features, ensuring a smooth font management experience for Windows users.",
       client: "SummitSoftCorp, USA",
       images: [
         "/portfolio/font-manager/pic1.png",
@@ -108,7 +123,8 @@ const page = () => {
 
     {
       title: ["IQ", " TEASER"],
-      description: "A simple yet engaging puzzle app designed for iPhone users. Put your cognitive skills to the test as you solve a variety of mind-bending puzzles, all while enjoying a user-friendly interface and a seamless mobile gaming experience. Whether you're a casual gamer or a puzzle enthusiast, iQteaser promises a delightful and intellectually stimulating adventure right on your iPhone.",
+      description:
+        "A simple yet engaging puzzle app designed for iPhone users. Put your cognitive skills to the test as you solve a variety of mind-bending puzzles, all while enjoying a user-friendly interface and a seamless mobile gaming experience. Whether you're a casual gamer or a puzzle enthusiast, iQteaser promises a delightful and intellectually stimulating adventure right on your iPhone.",
       client: "AminSoft, USA",
       images: [
         "/portfolio/iQTeaser/pic1.png",
@@ -137,8 +153,7 @@ const page = () => {
         </>
       ))}
 
-<TechnologiesUsed/>
-
+      <TechnologiesUsed />
     </section>
   );
 };
