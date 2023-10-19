@@ -50,7 +50,7 @@ const FooterTest = () => {
   }, []);
   return (
     <>
-      <div className="h-screen bg-[#090b0a] flex flex-col justify-end text-white pt-10">
+      <div className="min-h-screen bg-[#090b0a] flex flex-col justify-end text-white pt-10">
         <div className="py-24 px-2 xl:px-24 border-b-[1px] border-[#171919] lg:mx-auto flex justify-center justify-items-center items-center">
           
 
