@@ -23,8 +23,8 @@ const TechnologiesUsed = () => {
       alt: "angularjs",
     },
     {
-      image: "https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg",
-      alt: "appwrite",
+      image: "https://avatars.githubusercontent.com/u/2317879?s=280&v=4",
+      alt: "activiti",
     },
     {
       image:
