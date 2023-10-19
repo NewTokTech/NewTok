@@ -16,10 +16,10 @@ const page = () => {
         "Visio AMS is a comprehensive Academic Management System designed to streamline and enhance the operational efficiency of educational institutions. It offers a one-stop solution for schools, empowering them to manage all aspects of their academic environment effectively. From student enrollment and attendance tracking to curriculum management, grade recording, and communication with parents, Visio AMS simplifies the complex tasks associated with school administration. With user-friendly interfaces and robust features, this system facilitates a seamless and organized educational experience, making it an indispensable tool for educators and administrators alike.",
       client: "Qobotic innovations, India",
       images: [
-        "/portfolio/logo-design/erp 1.png",
-        "/portfolio/logo-design/erp 2.png",
-        "/portfolio/logo-design/erp 3.png",
-        "/portfolio/logo-design/erp 4.png",
+        "/portfolio/viso/erp 1.png",
+        "/portfolio/viso/erp 2.png",
+        "/portfolio/viso/erp 3.png",
+        "/portfolio/viso/erp 4.png",
       ],
     },
     {
