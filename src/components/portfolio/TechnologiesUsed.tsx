@@ -242,58 +242,68 @@ const TechnologiesUsed = () => {
         <div className="slider">
           <div className="slide-track">
             {images.map((item, index) => (
-              <Image
-                className="slide text-center hover:scale-110 transform ease-in-out transition-all duration-300"
-                key={index}
-                src={item.image}
-                alt={item.alt}
-                width={40}
-                height={40}
-              />
+              <div key={index} className="slide">
+                <Image
+                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                  width={40}
+                  height={40}
+                />
+              </div>
             ))}
 
             {images.map((item, index) => (
-              <Image
-                className="slide text-center hover:scale-110 transform ease-in-out transition-all duration-300"
-                key={index}
-                src={item.image}
-                alt={item.alt}
-                width={40}
-                height={40}
-              />
+              <div key={index} className="slide">
+                <Image
+                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                  width={40}
+                  height={40}
+                />
+              </div>
             ))}
 
             {images.map((item, index) => (
-              <Image
-                className="slide text-center hover:scale-110 transform ease-in-out transition-all duration-300"
-                key={index}
-                src={item.image}
-                alt={item.alt}
-                width={40}
-                height={40}
-              />
+              <div key={index} className="slide">
+                <Image
+                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                  width={40}
+                  height={40}
+                />
+              </div>
             ))}
 
             {images.map((item, index) => (
-              <Image
-                className="slide text-center hover:scale-110 transform ease-in-out transition-all duration-300"
-                key={index}
-                src={item.image}
-                alt={item.alt}
-                width={40}
-                height={40}
-              />
+              <div key={index} className="slide">
+                <Image
+                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                  width={40}
+                  height={40}
+                />
+              </div>
             ))}
 
             {images.map((item, index) => (
-              <Image
-                className="slide text-center hover:scale-110 transform ease-in-out transition-all duration-300"
-                key={index}
-                src={item.image}
-                alt={item.alt}
-                width={40}
-                height={40}
-              />
+              <div key={index} className="slide">
+                <Image
+                  className="hover:scale-105 transform ease-in-out transition-all duration-300"
+                  key={index}
+                  src={item.image}
+                  alt={item.alt}
+                  width={40}
+                  height={40}
+                />
+              </div>
             ))}
           </div>
         </div>
