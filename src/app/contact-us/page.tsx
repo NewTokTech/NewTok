@@ -22,7 +22,7 @@ const Contact = () => {
           GET IN <span className="text-primary">TOUCH</span>
         </h1>
         <div className="flex justify-center">
-          <p className="px-10 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center  ">
+          <p className="lg:px-10 px-5 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center  ">
           We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.
           </p>
         </div>

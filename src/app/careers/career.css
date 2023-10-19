@@ -5,7 +5,7 @@ ________________________________________*/
 .accordion {
   position: relative;
   margin: 30px auto;
-  width: 60%;
+  /* width: 60%; */
 }
 
 [id*="open-accordion"], [id*="close-accordion"] {
@@ -42,7 +42,7 @@ ________________________________________*/
   border-top: 10px solid rgba(107, 103, 103, 0.6);
   position: absolute;
   right: 5px;
-  top: 15px;
+  top: 25px;
   z-index: 999;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -72,7 +72,7 @@ ________________________________________*/
   display: block;
   height: auto;
   padding-bottom: 25px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .accordion span:target ~ [id*="close-accordion"] {
@@ -84,7 +84,7 @@ ________________________________________*/
 }
 
 .accordion span:target ~ [id*="close-accordion"]:after {
-  border-top: 10px solid #333;
+  border-top: 10px solid #ffffff;
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
 }

@@ -7,12 +7,12 @@ function Career() {
     return (
         <section className='my-28'>
             <div>
-                <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5 text-center font-semibold">
+                <h1 className="text-secondary lg:text-[40px] text-[30px] mt-5  text-center font-semibold">
                     <span className="text-secondary"></span>Care<span className="text-primary">ers</span>
 
                 </h1>
                 <div className='flex justify-center'>
-                    <p className="text-secondary lg:text-[18px]  mt-5 text-center  max-w-lg font-semibold">
+                    <p className="text-secondary lg:text-[18px] mx-6 mt-5 text-center  max-w-lg font-semibold">
                         We believe our power is our people. We value the employee relationship and understand the importance of a positive work environment where you can develop your life and career in ways that are unique to your own abilities. Our culture is centered on a casual environment, which promotes teamwork, creativity and fun.
                     </p>
                 </div>
@@ -23,7 +23,7 @@ function Career() {
                     <span className="text-secondary"></span> <span className="text-secondary">OPENINGS</span>
 
                 </h1>
-                <div className="accordion ">
+                <div className="accordion xl:w-6/12 w-10/12">
                     {/* Span to target fix closing accordion */}
                     <span className="target-fix" id="accordion"></span>
 
@@ -34,18 +34,22 @@ function Career() {
 
                         {/* Link to open accordion, hidden when open */}
                         <a href="#accordion1" id="open-accordion1" title="open">
-                        Java Developer
+                            Java Developer
                         </a>
 
 
 
                         {/* Link to close accordion, hidden when closed */}
-                        <a href="#accordion" id="close-accordion1" title="close">
+                        {/* <a href="#accordion" id="close-accordion1" title="close">
                             Java Developer
-                        </a>
+                        </a> */}
 
                         {/* Accordion content goes in this div */}
-                        <div className="accordion-content">
+                        <div className="accordion-content ">
+                            <a href="#accordion">
+                                <h1 className='text-primary py-5 text-2xl'>Java Developer</h1>
+                            </a>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Spring Boot, Microservices, MySQL, Kafka</span>
                             <br />
@@ -73,10 +77,14 @@ function Career() {
                         <a href="#accordion2" id="open-accordion2" title="open">
                             Database Architect
                         </a>
-                        <a href="#accordion" id="close-accordion2" title="close">
+                        {/* <a href="#accordion" id="close-accordion2" title="close">
                             Database Architect
-                        </a>
+                        </a> */}
                         <div className="accordion-content">
+                            <a href="#accordion">
+                                <h1 className='text-primary py-5 text-2xl'>Database Architect</h1>
+                            </a>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span>MySQL, PostgreSQL, MongoDB</span>
                             <br />
@@ -104,10 +112,14 @@ function Career() {
                         <a href="#accordion3" id="open-accordion3" title="open">
                             Project Team Lead
                         </a>
-                        <a href="#accordion" id="close-accordion3" title="close">
+                        {/* <a href="#accordion" id="close-accordion3" title="close">
                             Project Team Lead
-                        </a>
+                        </a> */}
                         <div className="accordion-content">
+                            <a href="#accordion">
+                                <h1 className='text-primary text-2xl py-5'>Project Team Lead</h1>
+                            </a>
+                            <br />
                             <h1 className='text-primary'>Essential skills</h1>
                             <span className='text-secondary'>Full Stack Web Development</span>
                             <br />
@@ -248,7 +260,7 @@ function Career() {
                     </div> */}
 
                     <div className="career-container">
-                    <div className='flex justify-center'>
+                        <div className='flex justify-center'>
                             <p className="text-secondary lg:text-[18px]  mt-5 text-center  max-w-lg font-semibold">
                                 SEND RESUME TO
                             </p>
@@ -257,7 +269,7 @@ function Career() {
                             <Link href='mailto:career@newtoktech.com'></Link>
                             <span className="text-primary">career@newtoktech.com</span>
                         </h1>
-                     
+
                     </div>
                 </div>
             </div>

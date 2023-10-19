@@ -35,7 +35,7 @@ const ServiceMain: React.FC<ParentComponentProps> = (props) => {
           <span className="text-primary">{props.headingTwo}</span>
         </h1>
         <div className="flex justify-center">
-          <p className="text-secondary lg:text-[15px] mt-5 mb-5 text-center font-light max-w-screen-sm">
+          <p className="text-secondary lg:text-[15px] mt-5 mb-5 px-4 text-center font-light max-w-screen-sm">
             {props.Paragraph}
           </p>
         </div>
