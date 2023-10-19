@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     shortcut: ["/favicon/apple-touch-icon.png"],
   },
   manifest: "/favicon/site.webmanifest",
-  
 };
 const sen = Sen({
   subsets: ["latin"],
@@ -28,7 +27,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+
+      <meta property="og:image" content="<generated>" />
+<meta property="og:image:type" content="<generated>" />
+<meta property="og:image:width" content="<generated>" />
+<meta property="og:image:height" content="<generated>" />
+
+      </head>
       <body className={sen.className + " bg-backgound relative"}>
         <Preloader>
           <Navbar />
