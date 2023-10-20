@@ -11,7 +11,6 @@ type Request = {
   message: string;
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export const POST = async (req: any) => {
   try {
     const transporter = nodemailer.createTransport({
@@ -30,18 +29,16 @@ export const POST = async (req: any) => {
 
       const info = await transporter.sendMail({
         from: "newtoktech@gmail.com",
-        to: "mumidlaj@gmail.com",
+        to: "info@newtoktech.com",
         subject: "Newtok Form Submission",
         text: name + companyName + message + email,
       });
 
-      NextResponse.json({
-        status: 200,
-        message: "Form submitted successfully",
-      });
+      return NextResponse.json({ message:"Form submitted successfully" }, { status: 200 })
     }
   } catch (error) {
     console.error("Error sending email:", error);
-    NextResponse.json({ status: 500, message: "Internal Server Error" });
-  }
+   
+    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 })
+}
 };

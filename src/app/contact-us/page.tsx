@@ -3,10 +3,9 @@
 import React, { useState } from "react";
 import { Metadata } from "next";
 import Image from "next/image";
-// import axios from 'axios'
-// import React from "react";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
+import axios from "axios";
 
 // export const metadata: Metadata = {
 //   title: "Contact",
@@ -24,10 +23,10 @@ const Contact = () => {
   };
 
 
-  // const formSubmit = async () => {
-  //   const res: object = await axios.post('/api/mail/contact', { data: formData })
-  //   console.log(res);
-  // }
+  const formSubmit = async () => {
+    const res: object = await axios.post('/api/mail/contact', { data: formData })
+    console.log(res);
+  }
 
   return (
     <>
@@ -176,7 +175,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-end">
                 <button
-                  // onClick={formSubmit}
+                  onClick={formSubmit}
                   type="button"
                   className="md:px-10 bg-primary hover:bg-blue-dark text-white py-3 px-8 mt-3 hover:bg-white hover:text-primary border-primary border transition ease-in-out duration-300"
                 >
