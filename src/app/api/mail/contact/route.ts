@@ -5,10 +5,10 @@ type ResponseData = {
   message: string;
 };
 
-export default async function handler(
+export const POST = async (
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
-) {
+) => {
   if (req.method === "POST") {
     try {
       const transporter = nodemailer.createTransport({
@@ -41,4 +41,4 @@ export default async function handler(
   } else {
     res.status(400).json({ message: "Only POST is allowed!" });
   }
-}
+};
