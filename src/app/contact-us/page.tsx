@@ -1,19 +1,37 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+import React, { useState } from "react";
 import { Metadata } from "next";
 import Image from "next/image";
-import React from "react";
+// import axios from 'axios'
+// import React from "react";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: "We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.",
-}
+// export const metadata: Metadata = {
+//   title: "Contact",
+//   description: "We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.",
+// }
 
 const Contact = () => {
+
+  const [formData, setFormData] = useState({})
+
+  const handleEdit = async (e: { target: { name: string; value: string; }; }) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    console.log(formData);
+  };
+
+
+  // const formSubmit = async () => {
+  //   const res: object = await axios.post('/api/mail/contact', { data: formData })
+  //   console.log(res);
+  // }
+
   return (
     <>
-    
+
       <div className="mx-auto mt-36 mb-10">
         <h4 className="text-secondary lg:text-[18px] mt-5 text-center  font-semibold">
           CONTACT US
@@ -23,7 +41,7 @@ const Contact = () => {
         </h1>
         <div className="flex justify-center">
           <p className="lg:px-10 px-5 lg:mx-64 text-secondary lg:text-[16px] mt-5 mb-5 text-center  ">
-          We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.
+            We're here to assist you with any inquiries, feedback, or assistance you might need. Your questions and comments are important to us, and we're committed to providing a swift and helpful response. Feel free to reach out through the provided contact details or the contact form below. We look forward to hearing from you and are ready to help in any way we can.
           </p>
         </div>
       </div>
@@ -37,7 +55,7 @@ const Contact = () => {
                   Contact Information
                 </h1>
                 <p className="text-[18px]  mt-2 text-white/75">
-                We're just a message away – reach out to us for all your inquiries and needs.
+                  We're just a message away – reach out to us for all your inquiries and needs.
                 </p>
               </div>
 
@@ -90,6 +108,7 @@ const Contact = () => {
               <div className="flex justify-between">
                 <div className="flex flex-col relative z-0 w-full px-1">
                   <input
+                    onChange={handleEdit}
                     name="name"
                     type="name"
                     id="name"
@@ -107,6 +126,7 @@ const Contact = () => {
 
                 <div className="flex flex-col relative z-0 w-full px-1">
                   <input
+                    onChange={handleEdit}
                     type="text"
                     name="companyName"
                     id="companyName"
@@ -124,6 +144,7 @@ const Contact = () => {
 
               <div className="flex flex-col mt-5 relative px-1">
                 <input
+                  onChange={handleEdit}
                   type="email"
                   name="email"
                   id="email"
@@ -139,6 +160,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col mt-5 relative">
                 <textarea
+                  onChange={handleEdit}
                   name="message"
                   rows={5}
                   placeholder="Write your message"
@@ -154,6 +176,7 @@ const Contact = () => {
               </div>
               <div className="flex justify-end">
                 <button
+                  // onClick={formSubmit}
                   type="button"
                   className="md:px-10 bg-primary hover:bg-blue-dark text-white py-3 px-8 mt-3 hover:bg-white hover:text-primary border-primary border transition ease-in-out duration-300"
                 >
