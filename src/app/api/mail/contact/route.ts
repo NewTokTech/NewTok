@@ -4,9 +4,18 @@ import nodemailer from "nodemailer";
 type ResponseData = {
   message: string;
 };
+interface ExtendedNextApiRequest extends NextApiRequest {
+    body: {
+        name: string
+        companyName: string
+        email: string
+        message: string
+    };
+  }
 
-export const POST = async (
-  req: NextApiRequest,
+// eslint-disable-next-line import/no-anonymous-default-export
+export default async (
+  req: ExtendedNextApiRequest,
   res: NextApiResponse<ResponseData>
 ) => {
   if (req.method === "POST") {
@@ -41,4 +50,4 @@ export const POST = async (
   } else {
     res.status(400).json({ message: "Only POST is allowed!" });
   }
-};
+}
