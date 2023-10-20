@@ -71,7 +71,7 @@ const Navbar = () => {
             <div className="logo">
               <h1>
                 E-Commerce Development Company in Kochi, Kerala, India
-                <Link href="/">
+                <Link href="/" onClick={toggleMenu}>
                   <Logo color={logoColorChange || isOpen ? "white" : "black"} />
                 </Link>
               </h1>
