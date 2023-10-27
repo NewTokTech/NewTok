@@ -45,7 +45,7 @@ const SingleContainer = (props: ServiceContent) => {
                   {HOne} <span className="text-primary"> {HTwo}</span>
                 </h2>
 
-                <div className="flex flex-col xl:justify-center xl:align-center xl:items-center text-secondary relative">
+                <div className="flex flex-col xl:justify-center text-secondary relative">
                   {text.map((value, index) => {
                     return (
                       <div className="" key={value.H1}>
