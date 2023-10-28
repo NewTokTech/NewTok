@@ -1,17 +1,9 @@
 import nodemailer from "nodemailer";
 import { NextResponse, NextRequest } from "next/server";
+import * as fs from "fs";
+import path from "path";
 
-type ResponseData = {
-  message: string;
-};
-type Request = {
-  name: string;
-  companyName: string;
-  email: string;
-  message: string;
-};
-
-export const POST = async (req: any) => {
+export const POST = async (req: NextRequest) => {
   try {
     const transporter = nodemailer.createTransport({
       service: "Gmail",
@@ -20,25 +12,56 @@ export const POST = async (req: any) => {
         pass: "bcev zkaw aulc altd",
       },
     });
+    const body = await req.json();
+    
+    const name: string = body.data.name;
+    const companyName: string = body.data.companyName;
+    const email: string = body.data.email;
+    const message: string = body.data.message;
 
-    if (req.body !== null) {
-      const name: string = req.body.name;
-      const companyName: string = req.body.companyName;
-      const email: string = req.body.email;
-      const message: string = req.body.message;
+    const templatePath = path.join(
+      process.cwd(),
+      "public",
+      "mail-template.html"
+    );
 
-      const info = await transporter.sendMail({
-        from: "newtoktech@gmail.com",
-        to: "info@newtoktech.com",
-        subject: "Newtok Form Submission",
-        text: name + companyName + message + email,
-      });
+    const emailTemplate: string = fs.readFileSync(templatePath, "utf8");
 
-      return NextResponse.json({ message:"Form submitted successfully" }, { status: 200 })
-    }
+    const currentDatetime: Date = new Date();
+    const formattedDatetime: string = currentDatetime.toLocaleString();
+
+    const emailData: Record<string, string> = {
+      email_placeholder: email,
+      name_placeholder: name,
+      company_placeholder: companyName,
+      date_placeholder: formattedDatetime,
+      message_placeholder: message,
+    };
+
+    const emailContent: string = emailTemplate.replace(
+      /\{(\w+)\}/g,
+      (match: string, placeholder: string) => {
+        return emailData[placeholder] || match;
+      }
+    );
+
+    const info = await transporter.sendMail({
+      from: "newtoktech@gmail.com",
+      to: "info@newtoktech.com",
+      subject: "Newtok Form Submission",
+      html: emailContent,
+    });
+
+    return NextResponse.json(
+      { message: "Form submitted successfully" },
+      { status: 200 }
+    );
   } catch (error) {
     console.error("Error sending email:", error);
-   
-    return NextResponse.json({ message: 'Internal Server Error' }, { status: 500 })
-}
+
+    return NextResponse.json(
+      { message: "Internal Server Error" },
+      { status: 500 }
+    );
+  }
 };
