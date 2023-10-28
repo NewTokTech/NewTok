@@ -205,7 +205,7 @@ const ContactForm = () => {
                   disabled={loading}
                   className="disabled:opacity-50 md:px-10 bg-primary hover:bg-blue-dark text-white py-3 px-8 mt-3 hover:bg-white hover:text-primary border-primary border transition ease-in-out duration-300"
                 >
-                  {!loading ? 'Send Message' : 'Sending...'}
+                  {!loading ? "Send Message" : "Sending..."}
                 </button>
               </div>
             </form>
