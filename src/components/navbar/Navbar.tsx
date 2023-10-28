@@ -26,6 +26,10 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const closeNav = () => {
+    setIsOpen(false);
+  };
+
   const first = useSpring({
     transform: isOpen
       ? "translate(5px, 32px) rotate(-45deg)"
@@ -71,7 +75,7 @@ const Navbar = () => {
             <div className="logo">
               <h1>
                 E-Commerce Development Company in Kochi, Kerala, India
-                <Link href="/" onClick={toggleMenu}>
+                <Link href="/" onClick={closeNav}>
                   <Logo color={logoColorChange || isOpen ? "white" : "black"} />
                 </Link>
               </h1>
@@ -151,7 +155,7 @@ const Navbar = () => {
                       <ul className="menu-list">
                         <li>
                           <span>1.</span>
-                          <Link onClick={toggleMenu} href="/about">
+                          <Link onClick={closeNav} href="/about">
                             <span data-hover="About Us">About Us</span>
                           </Link>
                         </li>
@@ -188,7 +192,7 @@ const Navbar = () => {
                                     <div className="list-service">
                                       <p>
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/digital-engineering"}
                                         >
                                           Enterprise Solutions
@@ -196,7 +200,7 @@ const Navbar = () => {
                                       </p>
                                       <p>
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/digital-engineering"}
                                         >
                                           Application Developement
@@ -212,7 +216,7 @@ const Navbar = () => {
                                     <div className="list-service">
                                       <p>
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/data-ai"}
                                         >
                                           Advanced Analytics
@@ -220,7 +224,7 @@ const Navbar = () => {
                                       </p>
                                       <p>
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/data-ai"}
                                         >
                                           Data Visualization
@@ -236,7 +240,7 @@ const Navbar = () => {
                                     <div className="list-service">
                                       <p className="hover:text-primary">
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/digital-experience"}
                                         >
                                           UI/UX
@@ -244,7 +248,7 @@ const Navbar = () => {
                                       </p>
                                       <p className="hover:text-primary">
                                         <Link
-                                          onClick={toggleMenu}
+                                          onClick={closeNav}
                                           href={"/services/digital-experience"}
                                         >
                                           Digital Commerce
@@ -260,19 +264,19 @@ const Navbar = () => {
 
                         <li>
                           <span>3.</span>
-                          <Link onClick={toggleMenu} href="/portfolio">
+                          <Link onClick={closeNav} href="/portfolio">
                             <span data-hover="Projects">Portfolio</span>
                           </Link>
                         </li>
                         <li>
                           <span>4.</span>
-                          <Link onClick={toggleMenu} href="/careers">
+                          <Link onClick={closeNav} href="/careers">
                             <span data-hover="Clients">Careers</span>
                           </Link>
                         </li>
                         <li>
                           <span>5.</span>
-                          <Link onClick={toggleMenu} href="/contact-us">
+                          <Link onClick={closeNav} href="/contact-us">
                             <span data-hover="Contact Us">Contact Us</span>
                           </Link>
                         </li>
