@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import './career.css'
 import Link from 'next/link';
@@ -12,7 +11,7 @@ function Career() {
 
                 </h1>
                 <div className='flex justify-center'>
-                    <p className="text-secondary lg:text-[18px] mx-6 mt-5 text-center  max-w-lg font-semibold">
+                    <p className="text-secondary lg:text-[18px] mx-6 mt-5 text-center font-semibold">
                         We believe our power is our people. We value the employee relationship and understand the importance of a positive work environment where you can develop your life and career in ways that are unique to your own abilities. Our culture is centered on a casual environment, which promotes teamwork, creativity and fun.
                     </p>
                 </div>
@@ -24,12 +23,9 @@ function Career() {
 
                 </h1>
                 <div className="accordion xl:w-6/12 w-10/12">
-                    {/* Span to target fix closing accordion */}
-                    <span className="target-fix" id="accordion"></span>
+=                    <span className="target-fix" id="accordion"></span>
 
-                    {/* First Accordion Option */}
                     <div>
-                        {/* Span to target fix accordion */}
                         <span className="target-fix" id="accordion1"></span>
 
                         {/* Link to open accordion, hidden when open */}
@@ -39,10 +35,6 @@ function Career() {
 
 
 
-                        {/* Link to close accordion, hidden when closed */}
-                        {/* <a href="#accordion" id="close-accordion1" title="close">
-                            Java Developer
-                        </a> */}
 
                         {/* Accordion content goes in this div */}
                         <div className="accordion-content ">
