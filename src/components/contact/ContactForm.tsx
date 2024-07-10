@@ -92,7 +92,11 @@ const ContactForm = () => {
                   <div className="ml-4 text-md tracking-wide">
                     Newtok Technologies Pvt Ltd.
                     <br />
-                    Malappuram, Kerala, India
+                    49/116,marine building, 
+                    <br />
+                    ponnurunni, Vytila , Kochi 
+                    <br />
+                     Kerala 682024
                   </div>
                 </div>
               </div>

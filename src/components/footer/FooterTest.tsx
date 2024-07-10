@@ -52,8 +52,6 @@ const FooterTest = () => {
     <>
       <div className="min-h-screen bg-[#090b0a] flex flex-col justify-end text-white pt-10">
         <div className="py-24 px-2 xl:px-24 border-b-[1px] border-[#171919] lg:mx-auto flex justify-center justify-items-center items-center">
-          
-
           <div className="flex justify-between align-baseline gap-36">
             <div className="flex flex-col justify-between gap-3 mx-auto ">
               <h1 className="text-[30px]">
@@ -62,7 +60,7 @@ const FooterTest = () => {
               <p className="text-white">
                 Newtok Technologies Pvt Ltd.
                 <br />
-                Malappuram
+                Kochi
                 <br />
                 Kerala, India
               </p>
@@ -98,11 +96,11 @@ const FooterTest = () => {
                 <br />
                 Bahrain
                 <br />
-              <br />
+                <br />
               </p>
               <span className="flex phone-number gap-2 text-[20px] text-primary hover:text-white">
                 <BiSolidPhoneCall />{" "}
-                <a href="tel:+973-33451333"> +973-33451333</a>
+                <a href="tel:+971554552949"> +971554552949</a>
               </span>
             </div>
           </div>
@@ -258,9 +256,6 @@ const FooterTest = () => {
             </li>
           </ul>
 
-
-
-
           <div className="it-service hidden md:block">
             <h2 className="text-primary text-xl font-bold ">IT SERVICES</h2>
 
@@ -268,13 +263,19 @@ const FooterTest = () => {
               <div className="pt-4">
                 <ul className="space-y-5">
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/services/digital-engineering">Mobile Application Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Mobile Application Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/services/digital-engineering">Enterprise Solutions</Link>
+                    <Link href="/services/digital-engineering">
+                      Enterprise Solutions
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/services/digital-engineering">Custom Application Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Custom Application Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
                     <Link href="/services/data-ai"> Advanced Analytics</Link>
@@ -284,10 +285,15 @@ const FooterTest = () => {
               <div className="pt-4 hidden lg:block">
                 <ul className=" list-disc space-y-5">
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/services/digital-engineering">Low-code Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Low-code Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
-                    <Link href="/services/digital-experience"> Digital Commerce</Link>
+                    <Link href="/services/digital-experience">
+                      {" "}
+                      Digital Commerce
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item list-disc">
                     <Link href="/services/data-ai">Data Visualization</Link>
@@ -305,7 +311,10 @@ const FooterTest = () => {
             <div className="mt-4 md:mt-0">
               <ul className="space-y-2">
                 <li>
-                  <Link href="/services/digital-engineering" className="hover:text-primary">
+                  <Link
+                    href="/services/digital-engineering"
+                    className="hover:text-primary"
+                  >
                     Service
                   </Link>
                 </li>

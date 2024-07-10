@@ -210,7 +210,7 @@ const Footer = () => {
                 <p>
                   Newtok Technologies Pvt Ltd.
                   <br />
-                  Malappuram
+                  Vytila , Kochi
                   <br />
                   Kerala, India
                 </p>
@@ -225,14 +225,17 @@ const Footer = () => {
                 <h5 className="address-title">
                   Newtok <span>India</span>
                 </h5>
-                <p >
+                <p>
                   Newtok Technologies Pvt Ltd.
                   <br />
                   Malappuram
                   <br />
                   Kerala, India
                 </p>
-                <span className="flex phone-number gap-2"><BiSolidPhoneCall />  <a href="tel:+917012935874"> +91 7012935874</a> </span>
+                <span className="flex phone-number gap-2">
+                  <BiSolidPhoneCall />{" "}
+                  <a href="tel:+917012935874"> +91 7012935874</a>{" "}
+                </span>
               </div>
             </div>
             <div className="hidden lg:inline col-3">
@@ -240,14 +243,17 @@ const Footer = () => {
                 <h5 className="address-title">
                   Newtok <span>India</span>
                 </h5>
-                <p >
+                <p>
                   Newtok Technologies Pvt Ltd.
                   <br />
-                  Malappuram
+                  Bharain
                   <br />
-                  Kerala, India
+                  UAE
                 </p>
-                <span className="flex phone-number gap-2"><BiSolidPhoneCall />  <a href="tel:+917012935874"> +91 7012935874</a> </span>
+                <span className="flex phone-number gap-2">
+                  <BiSolidPhoneCall />{" "}
+                  <a href="tel:+971554552949"> +971554552949</a>{" "}
+                </span>
               </div>
             </div>
           </div>
@@ -298,30 +304,40 @@ const Footer = () => {
               <div className="mt-4 md:hidden">
                 <ul className="space-y-2 space-x-5">
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/digital-engineering">Mobile Application Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Mobile Application Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/digital-engineering">Enterprise Solutions</Link>
+                    <Link href="/services/digital-engineering">
+                      Enterprise Solutions
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/digital-engineering">Custom Application Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Custom Application Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/data-ai"> Advanced Analytics</Link>
+                    <Link href="/services/data-ai"> Advanced Analytics</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/digital-engineering">Low-code Development</Link>
+                    <Link href="/services/digital-engineering">
+                      Low-code Development
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/digital-experience"> Digital Commerce</Link>
+                    <Link href="/services/digital-experience">
+                      {" "}
+                      Digital Commerce
+                    </Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/services/data-ai">Data Visualization</Link>
+                    <Link href="/services/data-ai">Data Visualization</Link>
                   </li>
                   <li className="hover:text-primary list-item">
-                  <Link href="/digital-experience">UI/UX</Link>
+                    <Link href="/digital-experience">UI/UX</Link>
                   </li>
-               
                 </ul>
               </div>
             </div>
@@ -329,33 +345,36 @@ const Footer = () => {
             <div className="links-footer ">
               <h2 className="text-primary text-xl font-bold mb-4">Links</h2>
               <div className="mt-4 md:mt-0">
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/services/digital-engineering" className="hover:text-primary">
-                    Service
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/portfolio" className="hover:text-primary">
-                    Portfolio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/about" className="hover:text-primary">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/" className="hover:text-primary">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact-us" className="hover:text-primary">
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="/services/digital-engineering"
+                      className="hover:text-primary"
+                    >
+                      Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/portfolio" className="hover:text-primary">
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="hover:text-primary">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="hover:text-primary">
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact-us" className="hover:text-primary">
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
