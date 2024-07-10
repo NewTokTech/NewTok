@@ -61,8 +61,7 @@ const FooterTest = () => {
                 Newtok Technologies Pvt Ltd.
                 <br />
                 Kochi
-                <br />
-                Kerala, India
+               
               </p>
               <span className="flex phone-number gap-2 text-[20px] text-primary hover:text-white">
                 <BiSolidPhoneCall />{" "}
