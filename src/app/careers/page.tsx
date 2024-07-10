@@ -23,7 +23,7 @@ function Career() {
 
                 </h1>
                 <div className="accordion xl:w-6/12 w-10/12">
-=                    <span className="target-fix" id="accordion"></span>
+                   <span className="target-fix" id="accordion"></span>
 
                     <div>
                         <span className="target-fix" id="accordion1"></span>
@@ -86,7 +86,7 @@ function Career() {
                             <br />
                             <br />
                             <h1 className='text-primary'>Desirable Skills and Expertise</h1>
-                            <span className='text-secondary'>We are seeking a highly experienced and talented Senior Database Architect with a minimum of 5 years of extensive hands-on experience in database design, optimization, and management. As a Senior Database Architect, you will be responsible for designing and managing our organization's database architecture, ensuring data integrity, performance, and scalability across various database systems. If you are a seasoned professional with a deep understanding of database technologies and a track record of successfully architecting and maintaining complex databases, this is an exciting opportunity to lead our data management efforts.</span>
+                            <span className='text-secondary'>We are seeking a highly experienced and talented Senior Database Architect with a minimum of 5 years of extensive hands-on experience in database design, optimization, and management. As a Senior Database Architect, you will be responsible for designing and managing our organization&apos;s database architecture, ensuring data integrity, performance, and scalability across various database systems. If you are a seasoned professional with a deep understanding of database technologies and a track record of successfully architecting and maintaining complex databases, this is an exciting opportunity to lead our data management efforts.</span>
                             {/* <br />
                             <br />
                             <h1 className='text-primary'>Qualification</h1>
@@ -121,7 +121,7 @@ function Career() {
                             <br />
                             <br />
                             <h1 className='text-primary'>Desirable Skills and Expertise</h1>
-                            <span className='text-secondary'>We are seeking an experienced Full Stack Development Team Lead with a minimum of 3 years of team leadership experience, and a background as a full stack developer. In this role, you will be responsible for leading a team of developers and coordinating the delivery of full stack web and application projects. This position requires a unique blend of technical expertise and leadership skills. If you have a strong background in full stack development and proven leadership abilities, this role offers an exciting opportunity to lead and contribute to our development projects' success.</span>
+                            <span className='text-secondary'>We are seeking an experienced Full Stack Development Team Lead with a minimum of 3 years of team leadership experience, and a background as a full stack developer. In this role, you will be responsible for leading a team of developers and coordinating the delivery of full stack web and application projects. This position requires a unique blend of technical expertise and leadership skills. If you have a strong background in full stack development and proven leadership abilities, this role offers an exciting opportunity to lead and contribute to our development projects&apos; success.</span>
                             {/* <br />
                             <br />
                             <h1 className='text-primary'>Qualification</h1>
