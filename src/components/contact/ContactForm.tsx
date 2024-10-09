@@ -39,7 +39,7 @@ const ContactForm = () => {
       })
       .catch((res) => {
         setErrorMessage(
-          "Form Submission Unsuccessfull!, please contact info@newtoktech.com."
+          "Form Submission Unsuccessfull!, please contact info@newtoktechnologies.com."
         );
       });
     setLoading(false);
@@ -82,8 +82,8 @@ const ContactForm = () => {
                 <div className="flex items-center space-x-5 mt-4 font-thin">
                   <GrMail />
                   <div className="ml-4 text-md tracking-wide w-40">
-                    <a href="mailto:info@newtoktech.com" target="_blank">
-                      info@newtoktech.com
+                    <a href="mailto:info@newtoktechnologies.com" target="_blank">
+                      info@newtoktechnologies.com
                     </a>
                   </div>
                 </div>
